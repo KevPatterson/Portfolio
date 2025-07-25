@@ -13,14 +13,19 @@ import Technologies from "./components/main/Technologies";
 const App = () => {
 	return (
 		<LanguageProvider>
-			<div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-violet-200 selection:text-cyan-900 ">
+			<div className="overflow-x-hidden text-slate-300 antialiased selection:bg-purple-200/30 selection:text-slate-900">
 				<div className="fixed top-0 -z-10 h-full w-full">
 					<div className="relative h-full w-full bg-slate-950">
-						<div className="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
-						<div className="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
+						{/* Enhanced background gradients */}
+						<div className="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[600px] w-[600px] rounded-full bg-gradient-radial from-purple-600/20 via-transparent to-transparent animate-pulse"></div>
+						<div className="absolute bottom-0 right-[-20%] top-[-10%] h-[600px] w-[600px] rounded-full bg-gradient-radial from-pink-600/20 via-transparent to-transparent animate-pulse" style={{animationDelay: '1s'}}></div>
+						<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[800px] w-[800px] rounded-full bg-gradient-radial from-blue-600/10 via-transparent to-transparent animate-pulse" style={{animationDelay: '2s'}}></div>
+						
+						{/* Subtle mesh gradient overlay */}
+						<div className="absolute inset-0 bg-gradient-mesh opacity-30"></div>
 					</div>
 				</div>
-				<div className="container mx-auto px-8">
+				<div className="container mx-auto px-8 relative z-10">
 					<Navbar />
 					<Hero />
 					<About />

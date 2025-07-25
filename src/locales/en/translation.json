@@ -91,28 +91,28 @@
       "title": "Client Management CRM",
       "image": "../../assets/clients.jpg",
       "description": "Minimalist web application designed to manage client information easily and effectively.",
-      "technologies": ["React", "TailwindCSS"],
+      "technologies": ["React.js", "TailwindCSS"],
       "code": "https://github.com/KevPatterson/CRM-en-React"
     },
     {
       "title": "Cryptocurrency Quoter",
       "image": "../../assets/cripto.webp",
       "description": "Web application that allows users to quote the value of different cryptocurrencies in real time.",
-      "technologies": ["React", "TailwindCSS"],
+      "technologies": ["React.js", "TailwindCSS"],
       "code": "https://github.com/KevPatterson/CRM-en-React"
     },
     {
       "title": "Veterinary Patient Management",
       "image": "../../assets/veterinaria.png",
       "description": "Frontend application with React and Vite to efficiently manage and administer veterinary patients.",
-      "technologies": ["React", "TailwindCSS", "Vite"],
+      "technologies": ["React.js", "TailwindCSS", "Vite"],
       "code": "https://github.com/KevPatterson/Gestion-de-Pacientes-de-una-Veterinaria"
     },
     {
       "title": "Budget Tracker",
       "image": "../../assets/budget.avif",
       "description": "Interactive frontend application built with React, Vite, and LocalStorage to help you manage your budget efficiently.",
-      "technologies": ["React", "TailwindCSS", "Vite"],
+      "technologies": ["React.js", "TailwindCSS", "Vite"],
       "code": "https://github.com/KevPatterson/Control-de-Gastos-en-React"
     }
   ],

@@ -46,83 +46,89 @@ const Projects: React.FC = () => {
   const projects = t("projects")
 
   return (
-		<div className="border-b border-neutral-900 pb-4">
+		<div className="border-b border-slate-800/50 pb-8">
 			<motion.h2
 				whileInView={{ opacity: 1, y: 0 }}
 				initial={{ opacity: 0, y: -100 }}
 				transition={{ duration: 0.5 }}
-				className="my-20 text-center text-4xl"
+				className="section-title"
 			>
 				{t("project_name")}
 			</motion.h2>
 			<div>
 				{Array.isArray(projects) &&
 					projects.map((project: projects, index) => (
-						<div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+						<div key={index} className="mb-16 flex flex-wrap lg:justify-center items-center">
 							<motion.div
 								whileInView={{ opacity: 1, x: 0 }}
 								initial={{ opacity: 0, x: -100 }}
 								transition={{ duration: 0.5 }}
-								className="w-full lg:w-1/4 sm:w-1/2"
+								className="w-full lg:w-1/3 sm:w-1/2"
 							>
-								<img
-
-									src={imageMap[project.title] || "/placeholder.svg"}
-									alt={project.title}
-									className="mb-6 rounded pr-16 w-full h-full lg:h-auto sm:mb-8"
-								/>
+								<div className="relative group">
+									<div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-pink-600/10 rounded-xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
+									<img
+										src={imageMap[project.title] || "/placeholder.svg"}
+										alt={project.title}
+										className="relative mb-6 rounded-xl shadow-lg w-full h-64 object-cover border border-slate-700/30 group-hover:border-slate-600/50 transition-all duration-300 group-hover:shadow-xl"
+									/>
+								</div>
 							</motion.div>
 							<motion.div
 								whileInView={{ opacity: 1, x: 0 }}
 								initial={{ opacity: 0, x: 100 }}
 								transition={{ duration: 1 }}
-								className="w-full max-w-xl lg:w-3/4 mt-6 md:mt-0 sm:mb-8"
+								className="w-full max-w-xl lg:w-2/3 mt-6 md:mt-0 sm:mb-8 lg:pl-8"
 							>
-								<div className="flex items-center mb-2 sm:mt-4">
-									<span className="font-semibold hover:text-gray-200">
+								<div className="flex items-center mb-4 sm:mt-4">
+									<h3 className="text-2xl font-semibold text-slate-200 hover:text-white transition-colors duration-300">
 										{project.title}
-									</span>
-									{project.url && (
-										<a
-											href={project.url}
-											className="ml-2 hover:text-gray-200"
-											target="_blank"
-											rel="noopener noreferrer"
-											title="Open in new tab"
-										>
-											<FaExternalLinkAlt
-												className="text-blue-500 hover:text-blue-700"
-												style={{ fontSize: 15 }}
-											/>
-										</a>
-									)}
-									{project.code && (
-										<a
-											href={project.code}
-											className="ml-2 hover:text-gray-200"
-											target="_blank"
-											rel="noopener noreferrer"
-                      title="Open in new tab"
-										>
-											<FaGithub
-												className="text-blue-500 hover:text-blue-700"
-												style={{ fontSize: 15 }}
-											/>
-										</a>
-									)}
+									</h3>
+									<div className="flex items-center ml-4 space-x-2">
+										{project.url && (
+											<a
+												href={project.url}
+												className="p-2 rounded-lg bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/30 hover:border-slate-600/50 transition-all duration-300 group"
+												target="_blank"
+												rel="noopener noreferrer"
+												title="Open in new tab"
+											>
+												<FaExternalLinkAlt
+													className="text-blue-400 group-hover:text-blue-300 transition-colors duration-300"
+													style={{ fontSize: 16 }}
+												/>
+											</a>
+										)}
+										{project.code && (
+											<a
+												href={project.code}
+												className="p-2 rounded-lg bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/30 hover:border-slate-600/50 transition-all duration-300 group"
+												target="_blank"
+												rel="noopener noreferrer"
+												title="View code"
+											>
+												<FaGithub
+													className="text-blue-400 group-hover:text-blue-300 transition-colors duration-300"
+													style={{ fontSize: 16 }}
+												/>
+											</a>
+										)}
+									</div>
 								</div>
-								<p className="mb-4 text-neutral-400">{project.description}</p>
+								<p className="mb-6 text-slate-400 leading-relaxed">{project.description}</p>
 
-								{project.technologies?.map((tech: string, index: number) => (
-									<span
-										key={index}
-										className={`mr-2 rounded px-2 py-1 text-sm font-medium ${getColor(
-											tech
-										)}`}
-									>
-										{tech}
-									</span>
-								))}
+								<div className="flex flex-wrap gap-2">
+									{project.technologies?.map((tech: string, index: number) => (
+										<span
+											key={index}
+											className={`tech-badge ${getColor(
+												tech
+											)}`}
+										>
+											{tech}
+										</span>
+									))}
+								</div>
 							</motion.div>
 						</div>
 					))}

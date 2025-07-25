@@ -13,34 +13,45 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="mb-20 flex items-center justify-between py-6">
+    <nav className="mb-8 flex items-center justify-between py-8">
       <div className="flex items-center flex-shrink-0">
-        <img src={logo} alt="logo" className="mx-2 w-12 h-12"/>
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="relative group"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
+          <img src={logo} alt="logo" className="relative mx-2 w-12 h-12 rounded-xl border border-slate-700/30 group-hover:border-slate-600/50 transition-all duration-300"/>
+        </motion.div>
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <a 
-          className="transition-colors duration-200 hover:text-blue-800" 
+        <motion.a 
+          whileHover={{ scale: 1.1, y: -2 }}
+          whileTap={{ scale: 0.95 }}
+          className="p-3 rounded-xl bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/30 hover:border-slate-600/50 transition-all duration-300 group shadow-lg hover:shadow-xl" 
           href="https://www.linkedin.com/in/kevin-patterson-098a5b366"
           target="_blank"
           rel="noopener noreferrer"
           title='Linkedin'
         >
-          <FaLinkedin />
-        </a>
-        <a 
-          className="transition-colors duration-200 hover:text-gray-100" 
+          <FaLinkedin className="text-blue-400 group-hover:text-blue-300 transition-colors duration-300" />
+        </motion.a>
+        <motion.a 
+          whileHover={{ scale: 1.1, y: -2 }}
+          whileTap={{ scale: 0.95 }}
+          className="p-3 rounded-xl bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/30 hover:border-slate-600/50 transition-all duration-300 group shadow-lg hover:shadow-xl" 
           href="https://github.com/KevPatterson/Portfolio"
           target="_blank"
           rel="noopener noreferrer"
           title='Github'
         >
-          <FaGithub />
-        </a>
+          <FaGithub className="text-slate-300 group-hover:text-white transition-colors duration-300" />
+        </motion.a>
         <motion.button
           onClick={toggleLanguage}
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.05, y: -2 }}
           whileTap={{ scale: 0.95 }}
-          className="flex items-center justify-center w-10 h-10 rounded-full  hover:text-white-600 transition-colors duration-200"
+          className="flex items-center justify-center w-12 h-12 rounded-xl bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/30 hover:border-slate-600/50 transition-all duration-300 shadow-lg hover:shadow-xl"
         >
           <AnimatePresence mode="wait">
             <motion.span
@@ -49,7 +60,7 @@ const Navbar = () => {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -10, opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="text-base font-medium"
+              className="text-base font-medium text-slate-200"
             >
               {isEnglish ? 'EN' : 'ES'}
             </motion.span>

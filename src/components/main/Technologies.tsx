@@ -27,81 +27,119 @@ const Technologies = () => {
   const {t} = useTranslation();
 
   return (
-    <div className="border-b border-neutral-900 pb-24 lg:mb-35">
+    <div className="border-b border-slate-800/50 pb-24 lg:mb-35">
       <motion.h2
-      whileInView={{opacity: 1, x: 0}}
-      initial={{opacity: 0, x: 100}}
-      transition={{duration: 1.5}}
-      className="my-20 text-center text-4xl">
+        whileInView={{opacity: 1, x: 0}}
+        initial={{opacity: 0, x: 100}}
+        transition={{duration: 1.5}}
+        className="section-title"
+      >
         {t('technologies.title')}
       </motion.h2>
       <motion.div
-      whileInView={{opacity: 1, x: 0}}
-      initial={{opacity: 0, x: -100}}
-      transition={{duration: 1.5}}
-       className="flex flex-wrap items-center justify-center gap-4">
+        whileInView={{opacity: 1, x: 0}}
+        initial={{opacity: 0, x: -100}}
+        transition={{duration: 1.5}}
+        className="flex flex-wrap items-center justify-center gap-6"
+      >
         <motion.div
-        variants={iconVariants(2.5)}
-        initial="initial"
-        animate="animate"
-        className="rounded-2xl border-4 border-neutral-900 p-4">
-          <FaReact className="text-7xl text-cyan-400 hover:text-cyan-300"/>
+          variants={iconVariants(2.5)}
+          initial="initial"
+          animate="animate"
+          className="relative group"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
+          <div className="relative rounded-2xl border border-slate-700/30 p-6 bg-slate-900/50 backdrop-blur-sm group-hover:border-slate-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <FaReact className="text-7xl text-cyan-400 group-hover:text-cyan-300 transition-colors duration-300"/>
+          </div>
         </motion.div>
         <motion.div
-        variants={iconVariants(3)}
-        initial="initial"
-        animate="animate"       
-        className="rounded-2xl border-4 border-neutral-900 p-4">
-          <RiNextjsLine className="text-7xl hover:text-gray-100"/>
+          variants={iconVariants(3)}
+          initial="initial"
+          animate="animate"       
+          className="relative group"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-600/20 to-gray-600/20 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
+          <div className="relative rounded-2xl border border-slate-700/30 p-6 bg-slate-900/50 backdrop-blur-sm group-hover:border-slate-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <RiNextjsLine className="text-7xl text-slate-300 group-hover:text-white transition-colors duration-300"/>
+          </div>
         </motion.div>
         <motion.div
-         variants={iconVariants(5)}
-         initial="initial"
-         animate="animate"
-         className="rounded-2xl border-4 border-neutral-900 p-4">
-          <SiMongodb className="text-7xl text-green-500 hover:text-green-400"/>
+          variants={iconVariants(5)}
+          initial="initial"
+          animate="animate"
+          className="relative group"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-green-600/20 to-emerald-600/20 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
+          <div className="relative rounded-2xl border border-slate-700/30 p-6 bg-slate-900/50 backdrop-blur-sm group-hover:border-slate-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <SiMongodb className="text-7xl text-green-500 group-hover:text-green-400 transition-colors duration-300"/>
+          </div>
         </motion.div>
         <motion.div
-        variants={iconVariants(6)}
-        initial="initial"
-        animate="animate"
-        className="rounded-2xl border-4 border-neutral-900 p-4">
-          <SiDjango className="text-7xl text-green-950 hover:text-green-700"/>
+          variants={iconVariants(6)}
+          initial="initial"
+          animate="animate"
+          className="relative group"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-green-800/20 to-green-600/20 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
+          <div className="relative rounded-2xl border border-slate-700/30 p-6 bg-slate-900/50 backdrop-blur-sm group-hover:border-slate-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <SiDjango className="text-7xl text-green-700 group-hover:text-green-600 transition-colors duration-300"/>
+          </div>
         </motion.div>
         <motion.div
-        variants={iconVariants(6.75)}
-        initial="initial"
-        animate="animate"
-        className="rounded-2xl border-4 border-neutral-900 p-4">
-          <DiRedis className="text-7xl text-red-600 hover:text-red-500"/>
+          variants={iconVariants(6.75)}
+          initial="initial"
+          animate="animate"
+          className="relative group"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-red-600/20 to-red-500/20 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
+          <div className="relative rounded-2xl border border-slate-700/30 p-6 bg-slate-900/50 backdrop-blur-sm group-hover:border-slate-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <DiRedis className="text-7xl text-red-600 group-hover:text-red-500 transition-colors duration-300"/>
+          </div>
         </motion.div>
         <motion.div
-         variants={iconVariants(8)}
-         initial="initial"
-         animate="animate"
-         className="rounded-2xl border-4 border-neutral-900 p-4">
-          <FaNodeJs className="text-7xl text-green-500 hover:text-green-400"/>
+          variants={iconVariants(8)}
+          initial="initial"
+          animate="animate"
+          className="relative group"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-green-600/20 to-emerald-600/20 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
+          <div className="relative rounded-2xl border border-slate-700/30 p-6 bg-slate-900/50 backdrop-blur-sm group-hover:border-slate-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <FaNodeJs className="text-7xl text-green-500 group-hover:text-green-400 transition-colors duration-300"/>
+          </div>
         </motion.div>
         <motion.div
-        variants={iconVariants(7.5)}
-        initial="initial"
-        animate="animate"
-        className="rounded-2xl border-4 border-neutral-900 p-4">
-          <BiLogoPostgresql className="text-7xl text-cyan-700 hover:text-cyan-600"/>
+          variants={iconVariants(7.5)}
+          initial="initial"
+          animate="animate"
+          className="relative group"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-cyan-700/20 to-blue-700/20 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
+          <div className="relative rounded-2xl border border-slate-700/30 p-6 bg-slate-900/50 backdrop-blur-sm group-hover:border-slate-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <BiLogoPostgresql className="text-7xl text-cyan-700 group-hover:text-cyan-600 transition-colors duration-300"/>
+          </div>
         </motion.div>
         <motion.div
-         variants={iconVariants(4.5)}
-         initial="initial"       
-         animate="animate"
-         className="rounded-2xl border-4 border-neutral-900 p-4">
-        <SiNestjs style={{ color: "#E0234E" }} className="text-7xl hover:text-pink-600" />
+          variants={iconVariants(4.5)}
+          initial="initial"       
+          animate="animate"
+          className="relative group"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-red-600/20 to-pink-600/20 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
+          <div className="relative rounded-2xl border border-slate-700/30 p-6 bg-slate-900/50 backdrop-blur-sm group-hover:border-slate-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <SiNestjs style={{ color: "#E0234E" }} className="text-7xl group-hover:text-pink-600 transition-colors duration-300" />
+          </div>
         </motion.div>
         <motion.div
-        variants={iconVariants(2.5)}
-        initial="initial"
-        animate="animate"
-        className="rounded-2xl border-4 border-neutral-900 p-4">
-          <RiTailwindCssFill className="text-7xl text-cyan-400 hover:text-cyan-300"/>
+          variants={iconVariants(2.5)}
+          initial="initial"
+          animate="animate"
+          className="relative group"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
+          <div className="relative rounded-2xl border border-slate-700/30 p-6 bg-slate-900/50 backdrop-blur-sm group-hover:border-slate-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <RiTailwindCssFill className="text-7xl text-cyan-400 group-hover:text-cyan-300 transition-colors duration-300"/>
+          </div>
         </motion.div>
       </motion.div>
     </div>
