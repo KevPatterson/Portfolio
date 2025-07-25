@@ -1,4 +1,4 @@
-import profilePic from "../../assets/user/Profile.webp"
+import profilePic from "../../assets/user/Profile.png"
 import {motion} from "framer-motion"
 import { useTranslation} from "../../context/LanguajeContext"
 
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
       initial={{opacity: 0, x: 100}}
       animate={{opacity: 1, x: 0}}
       transition={{duration: 1, delay: 1.2}}
-      src={profilePic} alt="profile" className="object-cover w-50% h-50% rounded-2xl" />
+      src={profilePic} alt="profile" className="object-cover w-30% h-30% rounded-2xl" />
     </div>
       </div>
       </div>

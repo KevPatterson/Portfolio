@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from '../../assets/logo-dark.svg';
+import logo from '../../assets/logo.png';
 import { useTranslation } from '../../context/LanguajeContext';
 
 const Navbar = () => {

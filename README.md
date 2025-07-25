@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://portfolio-ross.vercel.app/">
-    <img src="src/assets/logo-dark.svg" alt="Logo" width="120" height="120">
+    <img src="src/assets/logo.png" alt="Logo" width="120" height="120">
   </a>
 
   <h3 align="center">Patterson Portfolio Template</h3>
