@@ -2,7 +2,7 @@
   "hero": {
     "name": "Kevin Patterson",
     "fullStackDeveloper": "Desarrollador Full Stack",
-    "content": "Soy un desarrollador full stack apasionado, especializado en crear aplicaciones web robustas, escalables y seguras. Estudié Ingeniería en Ciberseguridad y tengo 3 años de experiencia práctica en tecnologías de punta como React, Next.js, Node.js, Django, PostgreSQL, Docker, Nest.js y bases de datos PostgreSQLy mySQL, transformo ideas innovadoras en soluciones digitales que impulsan el crecimiento empresarial y ofrecen experiencias de usuario excepcionales."
+    "content": "Soy un desarrollador full stack apasionado, especializado en crear aplicaciones web robustas, escalables y seguras. Estudio Ingeniería en Ciberseguridad en la Universidad de Ciencias Informáticas (UCI) de la Habana y tengo 3 años de experiencia práctica en tecnologías de punta como React, Next.js, Node.js, Django, PostgreSQL, Next.js y bases de datos PostgreSQL y mySQL. Transformo ideas innovadoras en soluciones digitales que impulsan el crecimiento empresarial y ofrecen experiencias de usuario excepcionales sin dejar a un lado la seguridad."
   },
   "about": {
     "title1": "Sobre",
@@ -106,14 +106,14 @@
 			"image": "../../assets/projects/zentry.png",
 			"description": "Aplicación frontend con React y Vite para gestionar y administrar pacientes de una veterinaria de manera eficiente y práctica.",
 			"technologies": ["React", "TailwindCSS", "Vite"],
-			"code": "https://github.com/KevPatterson/CRM-en-React"
+			"code": "https://github.com/KevPatterson/Gestion-de-Pacientes-de-una-Veterinaria"
 		},
     {
 			"title": "Control de Presupuesto",
 			"image": "../../assets/projects/zentry.png",
 			"description": "Aplicación frontend interactiva diseñada en React con Vite y LocalStorage para ayudarte a administrar tu presupuesto de manera eficiente",
 			"technologies": ["React", "TailwindCSS", "Vite"],
-			"code": "https://github.com/KevPatterson/Gestion-de-Pacientes-de-una-Veterinaria"
+			"code": "https://github.com/KevPatterson/Control-de-Gastos-en-React"
 		}
 	],
   "contact": {

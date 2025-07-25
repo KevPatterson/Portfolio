@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://portfolio-ross.vercel.app/">
+  <a href="https://patterson-portfolio.vercel.app">
     <img src="src/assets/logo.png" alt="Logo" width="120" height="120">
   </a>
 
@@ -11,7 +11,7 @@
     An awesome Portfolio template to jumpstart your proffesional projects!
     <br />
     <br />
-    <a href="https://portfolio-ross.vercel.app/">View Demo</a>
+    <a href="https://patterson-portfolio.vercel.app">View Demo</a>
     &middot;
   </p>
 </div>
@@ -90,5 +90,5 @@ See `LICENSE.txt` for more information.
 
 Kevin Patterson  kevinpatterson618@gmail.com
 
-Project Link: https://portfolio-ross.vercel.app/
+Project Link: https://patterson-portfolio.vercel.app
 
