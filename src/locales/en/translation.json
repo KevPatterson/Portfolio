@@ -71,14 +71,14 @@
       "image": "../../assets/projects/React.webp",
       "description": "A news search engine using React.js, TailwindCSS, and Vite. This project was completed as part of a React.js course.",
       "technologies": ["JavaScript", "TailwindCSS", "React.js", "Next.js"],
-      "url": "https://buscador-noticiass.vercel.app/"
+      "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React"
     },
     {
       "title": "Weather App",
       "image": "../../assets/projects/vite-featured.avif",
       "description": "Web application developed in React that allows users to check the current weather in any city around the world.",
       "technologies": ["TypeScript", "Vite", "TailwindCSS", "React.js"],
-      "url": "https://app-clima-two-xi.vercel.app/"
+      "code": "https://github.com/KevPatterson/App-de-Clima-en-React"
     },
     {
       "title": "Car Insurance Quoter",
