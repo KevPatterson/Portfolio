@@ -5,24 +5,39 @@ import { useTranslation } from "../../context/LanguajeContext"
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { projects } from "../../types/projects"
 
-import zentryImg from "../../assets/projects/zentry.webp"
-import storeImg from "../../assets/projects/store.png"
-import pomodoroImg from "../../assets/projects/pomodoro.png"
-import nestImg from "../../assets/projects/nest.jpg"
-import djangoImg from "../../assets/projects/django.jpg"
-import quebolaImg from "../../assets/projects/quebola.ai.png"
+import ReactImg from "../../assets/projects/React.webp"
+import autoImg from "../../assets/projects/auto.webp"
+import viteFeaturedImg from "../../assets/projects/vite-featured.avif"
+import cocinaconnosotrosImg from "../../assets/projects/cocinaconnosotros.png"
+import termalImg from "../../assets/projects/termal.png"
+import clientsImg from "../../assets/clients.jpg"
+import criptoImg from "../../assets/cripto.webp"
+import veterinariaImg from "../../assets/veterinaria.png"
+import budgetImg from "../../assets/budget.avif"
 
 interface ImageMap {
   [key: string]: string;
 }
 
 const imageMap: ImageMap = {
-	"quebola.ai": quebolaImg,
-  "Clone to Adwward Page": zentryImg,
-  "Shoes Store": storeImg,
-  "Pomodoro App": pomodoroImg,
-  "Nest Series": nestImg,
-  "Django Backend-Ecommerce": djangoImg,
+  "Sistema de Gestión de Recetas de Comida": cocinaconnosotrosImg,
+  "Food Recipe Management System": cocinaconnosotrosImg,
+  "Termal Print Pro (MPV)": termalImg,
+  "Thermal Print Pro (MVP)": termalImg,
+  "Buscador de Noticias": ReactImg,
+  "News Search Engine": ReactImg,
+  "App de Clima": viteFeaturedImg,
+  "Weather App": viteFeaturedImg,
+  "Cotizador de Seguros de Autos": autoImg,
+  "Car Insurance Quoter": autoImg,
+  "CRM para Gestión de Clientes": clientsImg,
+  "Client Management CRM": clientsImg,
+  "Cotizador de Criptomonedas": criptoImg,
+  "Cryptocurrency Quoter": criptoImg,
+  "Gestión de Pacientes de una Veterinaria": veterinariaImg,
+  "Veterinary Patient Management": veterinariaImg,
+  "Control de Presupuesto": budgetImg,
+  "Budget Tracker": budgetImg,
 }
 
 const Projects: React.FC = () => {

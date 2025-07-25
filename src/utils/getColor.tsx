@@ -9,14 +9,14 @@ const getColor: (tech: string) => string = (tech: string) => {
     return "text-green-500"
   } else if (tech === "Python") {
     return "text-yellow-500"
-  } else if (tech === "Javascript") {
+  } else if (tech === "Javascript" || tech === "JavaScript") {
     return "text-yellow-500"
   } else if (tech === "HTML") {
     return "text-orange-500"
   } else if (tech === "CSS") {
     return "text-blue-500"
   }
-  else if (tech === "mySQL") {
+  else if (tech === "mySQL" || tech === "MySQL") {
     return "text-amber-400"
   } else if (tech === "PostgreSQL") {
     return "text-blue-700"

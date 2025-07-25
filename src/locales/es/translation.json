@@ -19,7 +19,7 @@
       "role": "Desarrollador Full Stack",
       "company": "UCI",
       "description": "En la UCI, desarrollo aplicaciones web escalables usando Python, Django, PostgreSQL, Nest.js y React.js. Colaboro estrechamente con equipos multifuncionales, valorando la comunicación clara y la confianza mientras construimos soluciones que mejoran verdaderamente la experiencia del usuario, la seguridad y el rendimiento del sistema.",
-      "technologies": ["React.js", "mySQL", "Next.js", "TailwindCSS"]
+      "technologies": ["React.js", "PostgreSQL", "Next.js", "TailwindCSS", "Python", "Django"]
     },
     {
       "year": "Enero 2024 · Agosto 2024",
@@ -68,49 +68,49 @@
 		},
 		{
 			"title": "Buscador de Noticias",
-			"image": "../../assets/projects/zentry.png",
+			"image": "../../assets/projects/React.webp",
 			"description": "Un buscador de noticias usando React.js, TailwindCSS y Vite. Este proyecto fue realizado como parte de un curso de React.js.",
 			"technologies": ["Javascript", "TailwindCSS", "React.js", "Next.js"],
 			"url": "https://buscador-noticiass.vercel.app/"
 		},
 		{
 			"title": "App de Clima",
-			"image": "../../assets/projects/zentry.png",
+			"image": "../../assets/projects/vite-featured.avif",
 			"description": "Aplicación web desarrollada en React que permite a los usuarios consultar el clima actual en cualquier ciudad del mundo.",
-			"technologies": ["Typescript", "Vite", "TailwindCSS"],
+			"technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],
 			"url": "https://app-clima-two-xi.vercel.app/"
 		},
 		{
 			"title": "Cotizador de Seguros de Autos",
-			"image": "../../assets/projects/zentry.png",
+			"image": "../../assets/projects/auto.webp",
 			"description": "Aplicación web para cotizar seguros de autos usando Nest.js, TypeScript y TailwindCSS.",
-			"technologies": ["Typescript", "Vite", "TailwindCSS"],
+			"technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],
 			"url": "https://cotizador-seguro-teal.vercel.app/"
 		},
 		{
 			"title": "CRM para Gestión de Clientes",
-			"image": "../../assets/projects/zentry.png",
+			"image": "../../assets/clients.jpg",
 			"description": "Aplicación web minimalista diseñada para gestionar la información de clientes de manera fácil y efectiva.",
 			"technologies": ["React", "TailwindCSS"],
 			"code": "https://github.com/KevPatterson/CRM-en-React"
 		},
     {
 			"title": "Cotizador de Criptomonedas",
-			"image": "../../assets/projects/zentry.png",
+			"image": "../../assets/cripto.webp",
 			"description": "Aplicación web que permite a los usuarios cotizar el valor de diferentes criptomonedas en tiempo real.",
 			"technologies": ["React", "TailwindCSS"],
 			"code": "https://github.com/KevPatterson/CRM-en-React"
 		},
     {
 			"title": "Gestión de Pacientes de una Veterinaria",
-			"image": "../../assets/projects/zentry.png",
+			"image": "../../assets/veterinaria.png",
 			"description": "Aplicación frontend con React y Vite para gestionar y administrar pacientes de una veterinaria de manera eficiente y práctica.",
 			"technologies": ["React", "TailwindCSS", "Vite"],
 			"code": "https://github.com/KevPatterson/Gestion-de-Pacientes-de-una-Veterinaria"
 		},
     {
 			"title": "Control de Presupuesto",
-			"image": "../../assets/projects/zentry.png",
+			"image": "../../assets/budget.avif",
 			"description": "Aplicación frontend interactiva diseñada en React con Vite y LocalStorage para ayudarte a administrar tu presupuesto de manera eficiente",
 			"technologies": ["React", "TailwindCSS", "Vite"],
 			"code": "https://github.com/KevPatterson/Control-de-Gastos-en-React"

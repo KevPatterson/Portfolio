@@ -7,7 +7,7 @@
   "about": {
     "title1": "About",
     "title2": "Me",
-    "text": "From a very young age, I’ve been fascinated by technology and its endless possibilities. As a committed full stack developer, I combine creativity with technical expertise to design and develop high‑performance, user‑friendly web applications, always emphasizing their security. With 3 years of professional experience, I’ve honed my skills with modern tools and frameworks."
+    "text": "Since a very young age, I’ve been captivated by technology and its endless possibilities. As a committed full stack developer, I combine creativity with technical expertise to design and develop high‑performance, user‑friendly web applications, always adding a focus on their security. With 3 years of professional experience, I’ve perfected my skills with modern tools and frameworks."
   },
   "technologies": {
     "title": "Technologies"
@@ -18,35 +18,35 @@
       "year": "January 2023 · Present",
       "role": "Full Stack Developer",
       "company": "UCI",
-      "description": "At UCI, I build scalable web applications using Python, Django, PostgreSQL, Nest.js, and React.js. I collaborate closely with cross‑functional teams, valuing clear communication and trust while crafting solutions that truly enhance user experience, security, and system performance.",
-      "technologies": ["React.js", "MySQL", "Next.js", "TailwindCSS"]
+      "description": "At UCI, I develop scalable web applications using Python, Django, PostgreSQL, Nest.js, and React.js. I collaborate closely with cross‑functional teams, valuing clear communication and trust as we build solutions that truly enhance user experience, security, and system performance.",
+      "technologies": ["React.js", "PostgreSQL", "Next.js", "TailwindCSS", "Python", "Django"]
     },
     {
       "year": "January 2024 · August 2024",
       "role": "Full Stack Developer",
       "company": "CITMATEL",
-      "description": "At CITMATEL, I focused on designing and developing an Automated Web Hosting System using Next.js and React. This experience deepened my knowledge of process automation and its importance.",
+      "description": "At CITMATEL, I focused on designing and developing an Automated Web Hosting System using Next.js and React. This experience deepened my understanding of process automation and its importance.",
       "technologies": ["React.js", "PostgreSQL", "Next.js", "TailwindCSS"]
     },
     {
       "year": "September 2024 · February 2025",
       "role": "Full Stack Developer",
       "company": "UCI",
-      "description": "At UCI, I developed a Food Recipe Management web application using Python, Django, PostgreSQL, Bootstrap, and jQuery. I worked closely with a professional team, valuing clear communication and trust throughout the project while prioritizing user experience and security above all.",
+      "description": "At UCI, I developed a Food Recipe Management web application using Python, Django, PostgreSQL, Bootstrap, and jQuery. I worked closely with a professional team, valuing clear communication and trust throughout the entire project while always prioritizing user experience and security above all.",
       "technologies": ["Django", "PostgreSQL", "Bootstrap", "jQuery"]
     },
     {
       "year": "June 2025",
       "role": "Front‑End Developer",
       "company": "Rollo",
-      "description": "In my role at Rollo, I led software development for an Intelligent SaaS Platform for Thermal Food and Retail Labels. I enjoyed collaborating with a dedicated team, where our collective efforts made a real difference in daily operations.",
+      "description": "In my role at Rollo, I led software development for an Intelligent SaaS Platform for Thermal Food and Retail Labels. I enjoyed the opportunity to work with a dedicated team, where our collaborative efforts made a real difference in daily operations.",
       "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite", "TypeScript"]
     },
     {
       "year": "Present",
       "role": "Freelance Developer",
       "company": "Freelance",
-      "description": "Working as a freelance developer allowed me to create custom web solutions for real‑world challenges across various communities. This hands‑on experience not only strengthened my technical skills but also underscored the value of understanding and adapting to each client’s unique needs.",
+      "description": "Working as a freelance developer allowed me to create custom web solutions for real‑world challenges in diverse communities. This hands‑on experience not only strengthened my technical skills but also reinforced the value of understanding and adapting to each client’s unique needs.",
       "technologies": ["PostgreSQL", "Django", "React.js"]
     }
   ],
@@ -68,49 +68,49 @@
     },
     {
       "title": "News Search Engine",
-      "image": "../../assets/projects/zentry.png",
-      "description": "A news search engine using React.js, TailwindCSS, and Vite. This project was part of a React.js course.",
+      "image": "../../assets/projects/React.webp",
+      "description": "A news search engine using React.js, TailwindCSS, and Vite. This project was completed as part of a React.js course.",
       "technologies": ["JavaScript", "TailwindCSS", "React.js", "Next.js"],
       "url": "https://buscador-noticiass.vercel.app/"
     },
     {
       "title": "Weather App",
-      "image": "../../assets/projects/zentry.png",
-      "description": "Web application built in React that allows users to check the current weather in any city worldwide.",
-      "technologies": ["TypeScript", "Vite", "TailwindCSS"],
+      "image": "../../assets/projects/vite-featured.avif",
+      "description": "Web application developed in React that allows users to check the current weather in any city around the world.",
+      "technologies": ["TypeScript", "Vite", "TailwindCSS", "React.js"],
       "url": "https://app-clima-two-xi.vercel.app/"
     },
     {
       "title": "Car Insurance Quoter",
-      "image": "../../assets/projects/zentry.png",
+      "image": "../../assets/projects/auto.webp",
       "description": "Web application for quoting car insurance using Nest.js, TypeScript, and TailwindCSS.",
-      "technologies": ["TypeScript", "Vite", "TailwindCSS"],
+      "technologies": ["TypeScript", "Vite", "TailwindCSS", "React.js"],
       "url": "https://cotizador-seguro-teal.vercel.app/"
     },
     {
       "title": "Client Management CRM",
-      "image": "../../assets/projects/zentry.png",
+      "image": "../../assets/clients.jpg",
       "description": "Minimalist web application designed to manage client information easily and effectively.",
       "technologies": ["React", "TailwindCSS"],
       "code": "https://github.com/KevPatterson/CRM-en-React"
     },
     {
       "title": "Cryptocurrency Quoter",
-      "image": "../../assets/projects/zentry.png",
+      "image": "../../assets/cripto.webp",
       "description": "Web application that allows users to quote the value of different cryptocurrencies in real time.",
       "technologies": ["React", "TailwindCSS"],
       "code": "https://github.com/KevPatterson/CRM-en-React"
     },
     {
       "title": "Veterinary Patient Management",
-      "image": "../../assets/projects/zentry.png",
+      "image": "../../assets/veterinaria.png",
       "description": "Frontend application with React and Vite to efficiently manage and administer veterinary patients.",
       "technologies": ["React", "TailwindCSS", "Vite"],
       "code": "https://github.com/KevPatterson/Gestion-de-Pacientes-de-una-Veterinaria"
     },
     {
       "title": "Budget Tracker",
-      "image": "../../assets/projects/zentry.png",
+      "image": "../../assets/budget.avif",
       "description": "Interactive frontend application built with React, Vite, and LocalStorage to help you manage your budget efficiently.",
       "technologies": ["React", "TailwindCSS", "Vite"],
       "code": "https://github.com/KevPatterson/Control-de-Gastos-en-React"
