@@ -26,7 +26,6 @@ const getColor: (tech: string) => string = (tech: string) => {
     return "text-red-600"
   } else if (tech === "TailwindCSS") {
     return "text-cyan-200"
-
   } else if (tech === "Docker") {
     return "text-blue-300"
   } else if (tech === "Redis") {
@@ -41,10 +40,14 @@ const getColor: (tech: string) => string = (tech: string) => {
     return "text-yellow-100"
   } else if (tech === "jQuery") {
     return "text-white-100"
+  } else if (tech === "Cypress" || tech === "cypress") {
+    return "text-fuchsia-500"
+  } else if (tech === "Allure" || tech === "allure") {
+    return "text-lime-400"
   }
   else {
     return "text-neutral-400"
   }
-  }
+}
 
 export default getColor

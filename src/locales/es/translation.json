@@ -15,6 +15,13 @@
   "experiences_title": "Experiencias",
   "experiences": [
     {
+      "year": "Marzo 2022 · Septiembre 2022",
+      "role": "Desarrollador Full Stack",
+      "company": "UCI",
+      "description": "En la UCI me encargué del diseño e implementación de un sistema informático para la gestión de información de eventos extensionistas de la UCI, utilizando la metodología ágil SCRUM para el desarrollo del proyecto, teniendo meetings diarios con el cliente para asegurar la calidad y eficiencia del mismo.",
+      "technologies": ["React.js", "Supabase", "Next.js", "TailwindCSS"]
+    },
+    {
       "year": "Enero 2023 · Presente",
       "role": "Desarrollador Full Stack",
       "company": "UCI",
@@ -36,11 +43,25 @@
       "technologies": ["Django", "PostgreSQL", "Bootstrap", "jQuery"]
     },
     {
+      "year": "Septiembre 2024 · Presente",
+      "role": "Desarrollador Front-End",
+      "company": "CACSA",
+      "description": "Durante mis prácticas en CACSA me encargué de el desarrollo de una plataforma web de servicios de ciberseguridad (CAS) y de la implementación en la misma de un servicio automatizado de protección perimetral basado en Cloudflare.",
+      "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite"]
+    },
+    {
       "year": "Junio 2025",
       "role": "Desarrollador Front-End",
       "company": "Rollo",
-      "description": "En mi rol en Rollo, lideré el desarrollo de software para una plataforma SaaS Inteligente de Etiquetas Térmicas para Alimentos y Retail. Disfruté la oportunidad de trabajar con un equipo dedicado, donde nuestros esfuerzos colaborativos marcaron una diferencia real en las operaciones diarias.",
+      "description": "En mi rol en rollo, lideré el desarrollo frontend de una plataforma SaaS Inteligente de Etiquetas Térmicas para Alimentos y Retail. Disfruté la oportunidad de trabajar con un equipo dedicado, donde nuestros esfuerzos colaborativos marcaron una diferencia real en las operaciones diarias.",
       "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite", "TypeScript"]
+    },
+    {
+      "year": "Septiembre 2025",
+      "role": "Desarrollador Front-End",
+      "company": "ECNA",
+      "description": "Durante mis prácticas en la ECNA fui el encargado de realizar pruebas E2E automatizadas a plataformas web de la entidad, garantizando el funcionamiento y la disponibilidad e integridad de las mismas.",
+      "technologies": ["Cypress", "Allure"]
     },
     {
       "year": "Presente",
