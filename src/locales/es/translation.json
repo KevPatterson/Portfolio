@@ -1,13 +1,13 @@
 {
   "hero": {
     "name": "Kevin Patterson",
-    "fullStackDeveloper": "Desarrollador Full Stack",
-    "content": "Soy un desarrollador full stack apasionado, especializado en crear aplicaciones web robustas, escalables y seguras. Estudio Ingeniería en Ciberseguridad en la Universidad de Ciencias Informáticas (UCI) de la Habana y tengo 3 años de experiencia práctica en tecnologías de punta como React, Next.js, Node.js, Django, PostgreSQL, Next.js y bases de datos PostgreSQL y mySQL. Transformo ideas innovadoras en soluciones digitales que impulsan el crecimiento empresarial y ofrecen experiencias de usuario excepcionales sin dejar a un lado la seguridad."
+    "fullStackDeveloper": "Ingeniero en Ciberseguridad y Desarrollador web Full Stack",
+    "content": "Soy un ingeniero en Ciberseguridad y desarrollador web apasionado, especializado en crear aplicaciones web robustas, escalables y seguras. Estudio Ingeniería en Ciberseguridad en la Universidad de Ciencias Informáticas (UCI) de La Habana y poseo una sólida experiencia práctica en tecnologías modernas como React, Next.js, Node.js, Django, PostgreSQL y MySQL, combinadas con un enfoque avanzado en seguridad ofensiva y defensiva. He participado en competencias de Capture de Flag, en proyectos de análisis de vulnerabilidades, automatización de pruebas E2E y protección perimetral, utilizando herramientas como Nmap, Wireshark, Burp Suite, Nessus, Metasploit, Suricata, Hydra, Nikto y OpenVAS. También tengo experiencia en Ciberinteligencia y OSINT, aplicando metodologías para detección temprana de filtraciones, exposición de servicios críticos y análisis de huella digital corporativa, apoyado en herramientas como Maltego, SpiderFoot, theHarvester, Shodan y Google Dorks."
   },
   "about": {
     "title1": "Sobre",
     "title2": "Mí",
-    "text": "Desde muy joven, me ha cautivado la tecnología y sus infinitas posibilidades. Como desarrollador full stack comprometido, combino la creatividad con la experiencia técnica para diseñar y desarrollar aplicaciones web de alto rendimiento y fáciles de usar, siempre añadiendo un enfoque en la seguridad de las mismas. Con 3 años de experiencia profesional, he perfeccionado mis habilidades con herramientas y frameworks modernos."
+    "text": "Desde muy joven, me ha cautivado la tecnología y sus infinitas posibilidades. Como desarrollador full stack comprometido, combino la creatividad con la experiencia técnica para diseñar y desarrollar aplicaciones web de alto rendimiento y fáciles de usar, siempre añadiendo un enfoque en la seguridad de las mismas. Con 3 años de experiencia profesional, he perfeccionado mis habilidades con herramientas y frameworks modernos, integrando la seguridad en cada etapa del desarrollo, desde la arquitectura del sistema hasta el despliegue y la monitorización. Mi objetivo es transformar ideas innovadoras en soluciones digitales seguras, que impulsen el crecimiento empresarial y ofrezcan experiencias excepcionales sin comprometer la integridad ni la privacidad de los datos."
   },
   "technologies": {
     "title": "Tecnologías"
@@ -18,7 +18,7 @@
       "year": "Marzo 2022 · Septiembre 2022",
       "role": "Desarrollador Full Stack",
       "company": "UCI",
-      "description": "En la UCI me encargué del diseño e implementación de un sistema informático para la gestión de información de eventos extensionistas de la UCI, utilizando la metodología ágil SCRUM para el desarrollo del proyecto, teniendo meetings diarios con el cliente para asegurar la calidad y eficiencia del mismo.",
+      "description": "En la UCI me encargué del diseño e implementación de un sistema informático para la gestión de información de eventos extensionistas de la UCI, utilizando la metodología ágil SCRUM para el desarrollo del proyecto y teniendo meetings diarios con el cliente para asegurar la calidad y eficiencia del mismo.",
       "technologies": ["React.js", "Supabase", "Next.js", "TailwindCSS"]
     },
     {
