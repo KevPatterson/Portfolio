@@ -1,20 +1,20 @@
 import { FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
 import {
-  SiMongodb, SiDjango, SiNestjs, SiTypescript, SiBootstrap, SiJquery,
-  SiSupabase, SiVite, SiCypress, SiCloudflare
+  SiDjango, SiNestjs, SiTypescript, SiBootstrap, SiJquery,
+  SiSupabase, SiVite, SiCypress
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { DiRedis } from "react-icons/di";
 
 // Ciberseguridad
 import { MdSecurity } from "react-icons/md";
 import { TbShieldLock } from "react-icons/tb";
 import { BsHddNetwork } from "react-icons/bs";
 import { AiOutlinePieChart, AiOutlineFileSearch } from "react-icons/ai";
+import { GiArtificialIntelligence } from "react-icons/gi";
 
 // OSINT y Ciberinteligencia
-import { GiSpiderWeb, GiMagnifyingGlass, GiArtificialIntelligence } from "react-icons/gi";
+import { GiSpiderWeb, GiMagnifyingGlass } from "react-icons/gi";
 import { TbReportSearch } from "react-icons/tb";
 
 import { motion } from "framer-motion";
@@ -33,7 +33,6 @@ const iconVariants = (duration: number) => ({
   },
 });
 
-// Componente individual del icono con su nombre
 const TechIcon = ({ icon, name, gradient, duration }: any) => (
   <motion.div
     variants={iconVariants(duration)}
@@ -63,18 +62,15 @@ const Technologies = () => {
     { icon: <RiNextjsLine className="text-white" />, name: "Next.js", gradient: "from-slate-600/20 to-gray-600/20" },
     { icon: <FaNodeJs className="text-green-500" />, name: "Node.js", gradient: "from-green-600/20 to-emerald-600/20" },
     { icon: <SiDjango className="text-green-700" />, name: "Django", gradient: "from-green-800/20 to-green-600/20" },
-    { icon: <SiMongodb className="text-green-500" />, name: "MongoDB", gradient: "from-green-600/20 to-emerald-600/20" },
     { icon: <BiLogoPostgresql className="text-cyan-700" />, name: "PostgreSQL", gradient: "from-cyan-700/20 to-blue-700/20" },
     { icon: <SiNestjs style={{ color: "#E0234E" }} />, name: "Nest.js", gradient: "from-red-600/20 to-pink-600/20" },
     { icon: <RiTailwindCssFill className="text-cyan-400" />, name: "TailwindCSS", gradient: "from-cyan-600/20 to-blue-600/20" },
-    { icon: <DiRedis className="text-red-600" />, name: "Redis", gradient: "from-red-600/20 to-red-500/20" },
     { icon: <FaPython className="text-yellow-400" />, name: "Python", gradient: "from-yellow-600/20 to-amber-500/20" },
     { icon: <SiTypescript className="text-blue-400" />, name: "TypeScript", gradient: "from-blue-500/20 to-indigo-500/20" },
     { icon: <SiBootstrap className="text-purple-400" />, name: "Bootstrap", gradient: "from-purple-600/20 to-indigo-600/20" },
     { icon: <SiJquery className="text-blue-300" />, name: "jQuery", gradient: "from-blue-300/20 to-blue-500/20" },
     { icon: <SiSupabase className="text-green-600" />, name: "Supabase", gradient: "from-emerald-600/20 to-green-600/20" },
     { icon: <SiVite className="text-purple-400" />, name: "Vite", gradient: "from-purple-500/20 to-fuchsia-500/20" },
-    { icon: <SiCloudflare className="text-orange-500" />, name: "Cloudflare", gradient: "from-orange-500/20 to-amber-400/20" },
     { icon: <SiCypress className="text-fuchsia-500" />, name: "Cypress", gradient: "from-fuchsia-500/20 to-pink-500/20" },
     { icon: <AiOutlineFileSearch className="text-lime-400" />, name: "Allure", gradient: "from-lime-400/20 to-green-400/20" },
   ];
@@ -84,14 +80,14 @@ const Technologies = () => {
     { icon: <TbShieldLock className="text-red-400" />, name: "Pentesting", gradient: "from-red-400/20 to-pink-400/20" },
     { icon: <BsHddNetwork className="text-blue-400" />, name: "Análisis de Red", gradient: "from-blue-400/20 to-sky-400/20" },
     { icon: <AiOutlinePieChart className="text-orange-400" />, name: "Monitoreo", gradient: "from-orange-400/20 to-amber-400/20" },
+    { icon: <GiArtificialIntelligence className="text-emerald-400" />, name: "Jupyter / Orange", gradient: "from-emerald-400/20 to-teal-400/20" },
+    { icon: <BsHddNetwork className="text-teal-400" />, name: "WebSpy Analyzer", gradient: "from-teal-400/20 to-cyan-400/20" },
   ];
 
   const osintTechs = [
     { icon: <GiSpiderWeb className="text-sky-500" />, name: "SpiderFoot", gradient: "from-sky-500/20 to-blue-500/20" },
     { icon: <TbReportSearch className="text-violet-600" />, name: "Maltego", gradient: "from-violet-600/20 to-purple-600/20" },
     { icon: <GiMagnifyingGlass className="text-indigo-500" />, name: "Google Dorks", gradient: "from-indigo-500/20 to-blue-400/20" },
-    { icon: <GiArtificialIntelligence className="text-emerald-400" />, name: "Jupyter / Orange", gradient: "from-emerald-400/20 to-teal-400/20" },
-    { icon: <BsHddNetwork className="text-teal-400" />, name: "WebSpy Analyzer", gradient: "from-teal-400/20 to-cyan-400/20" },
   ];
 
   return (
