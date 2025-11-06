@@ -2,7 +2,7 @@
   "hero": {
     "name": "Kevin Patterson",
     "fullStackDeveloper": "Ingeniero en Ciberseguridad y Desarrollador web Full Stack",
-    "content": "Soy un ingeniero en Ciberseguridad y desarrollador web apasionado, especializado en crear aplicaciones web robustas, escalables y seguras. Estudio Ingeniería en Ciberseguridad en la Universidad de Ciencias Informáticas (UCI) de La Habana y poseo una sólida experiencia práctica en tecnologías modernas como React, Next.js, Node.js, Django, PostgreSQL y MySQL, combinadas con un enfoque avanzado en seguridad ofensiva y defensiva. He participado en competencias de Capture de Flag, en proyectos de análisis de vulnerabilidades, automatización de pruebas E2E y protección perimetral, utilizando herramientas como Nmap, Wireshark, Burp Suite, Nessus, Metasploit, Suricata, Hydra, Nikto y OpenVAS. También tengo experiencia en Ciberinteligencia y OSINT, aplicando metodologías para detección temprana de filtraciones, exposición de servicios críticos y análisis de huella digital corporativa, apoyado en herramientas como Maltego, SpiderFoot, theHarvester, Shodan y Google Dorks."
+    "content": "Soy un ingeniero en Ciberseguridad y desarrollador web apasionado, especializado en crear aplicaciones web robustas, escalables y seguras. Estudio Ingeniería en Ciberseguridad en la Universidad de Ciencias Informáticas (UCI) de La Habana y poseo una sólida experiencia práctica en tecnologías modernas como React, Next.js, Node.js, Django, PostgreSQL y MySQL, combinadas con un enfoque avanzado en seguridad ofensiva y defensiva. He participado en competencias de Capture the Flag, en proyectos de análisis de vulnerabilidades, automatización de pruebas E2E y protección perimetral, utilizando herramientas como Nmap, Wireshark, Burp Suite, Nessus, Metasploit, Shodan, OpenVAS, entre otras. También tengo experiencia en Ciberinteligencia y OSINT, aplicando metodologías para detección temprana de filtraciones, exposición de servicios críticos y análisis de huella digital corporativa, apoyado en herramientas como Maltego, SpiderFoot, theHarvester, Shodan y Google Dorks."
   },
   "about": {
     "title1": "Sobre",
@@ -18,7 +18,7 @@
       "year": "Marzo 2022 · Septiembre 2022",
       "role": "Desarrollador Full Stack",
       "company": "UCI",
-      "description": "En la UCI me encargué del diseño e implementación de un sistema informático para la gestión de información de eventos extensionistas de la UCI, utilizando la metodología ágil SCRUM para el desarrollo del proyecto y teniendo meetings diarios con el cliente para asegurar la calidad y eficiencia del mismo.",
+      "description": "En la Universidad de Ciencias Informáticas (UCI) participé en el diseño e implementación de un sistema informático para la gestión integral de los eventos extensionistas de la institución. Este proyecto tuvo como objetivo optimizar el registro, control y seguimiento de las actividades culturales, deportivas y académicas, facilitando la trazabilidad y el análisis de la información en tiempo real; y aplicando la metodología ágil SCRUM con reuniones diarias con el cliente para garantizar una comunicación continua, una entrega iterativa de funcionalidades y un producto final eficiente, estable y alineado a las necesidades reales de la institución.",
       "technologies": ["React.js", "Supabase", "Next.js", "TailwindCSS"]
     },
     {
@@ -39,7 +39,7 @@
       "year": "Enero 2024 · Agosto 2024",
       "role": "Desarrollador Full Stack",
       "company": "CITMATEL",
-      "description": "En CITMATEL, me enfoqué en diseñar y desarrollar un Sistema Automatizado de Hosting de Páginas Web usando Next.js y React. Esta experiencia profundizó mis conocimientos sobre la automatización de procesos y la importancia de esta.",
+      "description": "En CITMATEL, me enfoqué en diseñar y desarrollar un Sistema Automatizado de Hosting de Páginas Web. Esta experiencia profundizó mis conocimientos sobre la automatización de procesos y la importancia de esta.",
       "technologies": ["React.js", "PostgreSQL", "Next.js", "TailwindCSS"]
     },
     {
@@ -53,21 +53,21 @@
       "year": "Septiembre 2024 · Febrero 2025",
       "role": "Desarrollador Full Stack",
       "company": "UCI",
-      "description": "En la UCI, desarrollé una aplicaciones web de Gestión de Recetas de Comida usando Python, Django, PostgreSQL, Bootstrap y jQuery. Colaboré estrechamente con un equipo profesioanl, valorando la comunicación clara y la confianza durante todo el proceso de construcción del proyecto valorando siempre la experiencia del usuario y la seguridad por encima de todo.",
+      "description": "En la UCI, desarrollé una aplicaciones web de Gestión de Recetas de Comida. Colaboré estrechamente con un equipo profesioanl, valorando la comunicación clara y la confianza durante todo el proceso de construcción del proyecto valorando siempre la experiencia del usuario y la seguridad por encima de todo.",
       "technologies": ["Django", "PostgreSQL", "Bootstrap", "jQuery"]
     },
     {
       "year": "Septiembre 2024 · Presente",
       "role": "Desarrollador Front-End",
       "company": "CACSA",
-      "description": "Durante mis prácticas en CACSA me encargué del desarrollo de una plataforma web de servicios de ciberseguridad (CAS) y de la implementación en la misma de un servicio automatizado de protección perimetral basado en Cloudflare.",
+      "description": "Durante mis prácticas en CACSA me encargué del desarrollo de una plataforma web de servicios de ciberseguridad (CAS) y de la implementación en la misma de un servicio automatizado de protección perimetral basado en Cloudflare. Para este se utilizó la metodología ágil SCRUM, desempeñando un rol activo en la planificación de sprints, elaboración de historias de usuario y definición de criterios de aceptación. Además, mantenía reuniones diarias (daily meetings) con el cliente y el equipo de desarrollo para garantizar la alineación con los requerimientos funcionales, la calidad del producto final y la entrega continua de valor.",
       "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite"]
     },
     {
       "year": "Septiembre 2024 · Presente",
       "role": "Cybersecurity Engineer",
       "company": "CACSA",
-      "description": "En CACSA me encargué de la realización de análisis pasivos y activos de vulnerabilidades en páginas web corporativas, la evaluación de vulnerabilidades detectadas, del monitoreo y análisis de la red corporativa, la aplicación de técnicas de correlación de datos en fuentes abiertas para apoyar procesos de análisis forense digital, la creación e implementación de listas de verificación y la realización de auditorías a locales de la empresa.",
+      "description": "En CACSA me encargué de la realización de análisis pasivos y activos de vulnerabilidades en páginas web corporativas y la evaluación de vulnerabilidades detectadas; además del monitoreo y análisis de la red corporativa, la aplicación de técnicas de correlación de datos en fuentes abiertas para apoyar procesos de análisis forense digital, la creación e implementación de listas de verificación y la realización de auditorías a locales de la empresa.",
       "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite"]
     },
     {
@@ -95,7 +95,7 @@
       "year": "Presente",
       "role": "Programador Freelance",
       "company": "Freelance",
-      "description": "Trabajar como programador freelance me permitió crear soluciones web personalizadas para desafíos reales en diversas comunidades. Esta experiencia práctica no solo fortaleció mis habilidades técnicas, sino que también reforzó el valor de comprender y adaptarme a las necesidades únicas de cada cliente.",
+      "description": "Trabajar como programador freelance me permite crear soluciones web personalizadas para desafíos reales en diversas comunidades. Esta experiencia práctica no solo fortalece mis habilidades técnicas, sino que también refuerza el valor de comprender y adaptarme a las necesidades únicas de cada cliente.",
       "technologies": ["PostgreSQL", "Django", "React.js"]
     }
   ],
