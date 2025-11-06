@@ -15,8 +15,7 @@ const getColor: (tech: string) => string = (tech: string) => {
     return "text-orange-500"
   } else if (tech === "CSS") {
     return "text-blue-500"
-  }
-  else if (tech === "mySQL" || tech === "MySQL") {
+  } else if (tech === "mySQL" || tech === "MySQL") {
     return "text-amber-400"
   } else if (tech === "PostgreSQL") {
     return "text-blue-700"
@@ -45,6 +44,26 @@ const getColor: (tech: string) => string = (tech: string) => {
   } else if (tech === "Allure" || tech === "allure") {
     return "text-lime-400"
   }
+
+  // --- Nuevas herramientas añadidas ---
+  else if (tech === "theHarvester" || tech === "TheHarvester") {
+    return "text-rose-500"
+  } else if (tech === "SpiderFoot" || tech === "spiderfoot") {
+    return "text-sky-500"
+  } else if (tech === "Maltego" || tech === "maltego") {
+    return "text-violet-600"
+  } else if (tech === "Google Dorks" || tech === "GoogleDorks" || tech === "google dorks") {
+    return "text-indigo-500"
+  } else if (tech === "Orange Datamining" || tech === "Orange Datamining" || tech === "OrangeDatamining") {
+    return "text-orange-300"
+  } else if (
+    tech === "Jupyter Notebook" || tech === "jupyter notebook"
+  ) {
+    return "text-emerald-400"
+  } else if (tech === "WebSpy Analyzer" || tech === "WebSpyAnalyzer" || tech === "webspy analyzer") {
+    return "text-teal-400"
+  }
+
   else {
     return "text-neutral-400"
   }

@@ -29,11 +29,25 @@
       "technologies": ["React.js", "PostgreSQL", "Next.js", "TailwindCSS", "Python", "Django"]
     },
     {
+      "year": "Septiembre 2023 · Diciembre 2024",
+      "role": "Cybersecurity Engineer",
+      "company": "UCI",
+      "description": "En la UCI me encargué del entrenamiento de un modelo de IA para la detección automatizada de correos de pshishing.",
+      "technologies": ["Jupiter Notebook", "Python", "Orange Datamining"]
+    },
+    {
       "year": "Enero 2024 · Agosto 2024",
       "role": "Desarrollador Full Stack",
       "company": "CITMATEL",
       "description": "En CITMATEL, me enfoqué en diseñar y desarrollar un Sistema Automatizado de Hosting de Páginas Web usando Next.js y React. Esta experiencia profundizó mis conocimientos sobre la automatización de procesos y la importancia de esta.",
       "technologies": ["React.js", "PostgreSQL", "Next.js", "TailwindCSS"]
+    },
+    {
+      "year": "Septiembre 2024 · Noviembre 2024",
+      "role": "Cybersecurity Engineer",
+      "company": "Freelance",
+      "description": "Como proyecto personal independiente desarrollé de una metodología de búsqueda y análisis de información en fuentes abiertas para detección temprana de filtraciones de datos y exposición de servicios críticos.",
+      "technologies": ["Maltego", "Google Dorks", "SpiderFoot", "theHarvester"]
     },
     {
       "year": "Septiembre 2024 · Febrero 2025",
@@ -46,8 +60,22 @@
       "year": "Septiembre 2024 · Presente",
       "role": "Desarrollador Front-End",
       "company": "CACSA",
-      "description": "Durante mis prácticas en CACSA me encargué de el desarrollo de una plataforma web de servicios de ciberseguridad (CAS) y de la implementación en la misma de un servicio automatizado de protección perimetral basado en Cloudflare.",
+      "description": "Durante mis prácticas en CACSA me encargué del desarrollo de una plataforma web de servicios de ciberseguridad (CAS) y de la implementación en la misma de un servicio automatizado de protección perimetral basado en Cloudflare.",
       "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite"]
+    },
+    {
+      "year": "Septiembre 2024 · Presente",
+      "role": "Cybersecurity Engineer",
+      "company": "CACSA",
+      "description": "En CACSA me encargué de la realización de análisis pasivos y activos de vulnerabilidades en páginas web corporativas, la evaluación de vulnerabilidades detectadas, del monitoreo y análisis de la red corporativa, la aplicación de técnicas de correlación de datos en fuentes abiertas para apoyar procesos de análisis forense digital, la creación e implementación de listas de verificación y la realización de auditorías a locales de la empresa.",
+      "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite"]
+    },
+    {
+      "year": "Abril 2025",
+      "role": "Cybersecurity Engineer",
+      "company": "ECNA",
+      "description": "En la ECNA me encargué del anális de trazas web de proxys Squid corporativos, analizando y evaluando los mismos permitiendo la recolección de evidencias forenses digitales siguiendo el debido ciclo de gestión de incidentes.",
+      "technologies": ["WebSpy Analyzer"]
     },
     {
       "year": "Junio 2025",
