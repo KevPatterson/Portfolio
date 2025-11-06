@@ -7,7 +7,6 @@ import getColor from "../../utils/getColor";
 const Experiencies: React.FC = () => {
 
   const {t} = useTranslation();
-
   const experiences = t("experiences")
 
   return (
