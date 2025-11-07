@@ -40,7 +40,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.1, y: -2 }}
           whileTap={{ scale: 0.95 }}
           className="p-3 rounded-xl bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/30 hover:border-slate-600/50 transition-all duration-300 group shadow-lg hover:shadow-xl" 
-          href="https://github.com/KevPatterson/Portfolio"
+          href="https://github.com/KevPatterson"
           target="_blank"
           rel="noopener noreferrer"
           title='Github'
