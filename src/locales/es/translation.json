@@ -30,7 +30,7 @@
     },
     {
       "year": "Septiembre 2023 · Diciembre 2024",
-      "role": "Cybersecurity Engineer",
+      "role": "Ingeniero en Ciberseguridad",
       "company": "UCI",
       "description": "En la UCI me encargué del entrenamiento de un modelo de IA para la detección automatizada de correos de pshishing.",
       "technologies": ["Jupiter Notebook", "Python", "Orange Datamining"]
@@ -44,7 +44,7 @@
     },
     {
       "year": "Septiembre 2024 · Noviembre 2024",
-      "role": "Cybersecurity Engineer",
+      "role": "Ingeniero en Ciberseguridad",
       "company": "Freelance",
       "description": "Como proyecto personal independiente desarrollé de una metodología de búsqueda y análisis de información en fuentes abiertas para detección temprana de filtraciones de datos y exposición de servicios críticos.",
       "technologies": ["Maltego", "Google Dorks", "SpiderFoot", "theHarvester"]
@@ -65,14 +65,14 @@
     },
     {
       "year": "Septiembre 2024 · Presente",
-      "role": "Cybersecurity Engineer",
+      "role": "Ingeniero en Ciberseguridad",
       "company": "CACSA",
       "description": "En CACSA me encargué de la realización de análisis pasivos y activos de vulnerabilidades en páginas web corporativas y la evaluación de vulnerabilidades detectadas; además del monitoreo y análisis de la red corporativa, la aplicación de técnicas de correlación de datos en fuentes abiertas para apoyar procesos de análisis forense digital, la creación e implementación de listas de verificación y la realización de auditorías a locales de la empresa.",
       "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite"]
     },
     {
       "year": "Abril 2025",
-      "role": "Cybersecurity Engineer",
+      "role": "Ingeniero en Ciberseguridad",
       "company": "ECNA",
       "description": "En la ECNA me encargué del anális de trazas web de proxys Squid corporativos, analizando y evaluando los mismos permitiendo la recolección de evidencias forenses digitales siguiendo el debido ciclo de gestión de incidentes.",
       "technologies": ["WebSpy Analyzer"]
