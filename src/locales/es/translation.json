@@ -118,7 +118,7 @@
     {
       "title": "Proyecto de Tesis de Ciberseguridad",
       "image": "../../assets/projects/cuban-cas.png",
-      "description": "Implementación de un servicio automatizado de protección perimetral basado en Cloudflare.",
+      "description": "Implementación de un servicio automatizado de protección perimetral basado en Cloudflare, cuya ejecución se realiza en el borde de la red a través de Cloudflare Workers, los cuales implementan un proxy de seguridad que filtra y enruta el tráfico hacia los orígenes protegidos utilizando información almacenada dinámicamente en Cloudflare KV.",
       "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"],
       "url": "https://cubansaas.tech",
       "code": "https://github.com/KevPatterson/Cuban-CAS"

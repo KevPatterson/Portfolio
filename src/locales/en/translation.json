@@ -109,19 +109,19 @@
   "project_name": "Projects",
   "projects": [
     {
-      "title": "Cybersecurity Thesis Project",
-      "image": "../../assets/projects/cuban-cas.png",
-      "description": "Implementation of an automated perimeter protection service based on Cloudflare.",
-      "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"],
-      "url": "https://cubansaas.tech",
-      "code": "https://github.com/KevPatterson/Cuban-CAS"
-    },
-    {
       "title": "Food Recipe Management System",
       "image": "../../assets/projects/cocinaconnosotros.png",
       "description": "A food recipe management system built with Python, Django, PostgreSQL, Bootstrap, and jQuery.",
       "technologies": ["Python", "Django", "PostgreSQL", "Bootstrap", "jQuery"],
       "url": "https://cocinaconnosotros.pythonanywhere.com/"
+    },
+    {
+      "title": "Cybersecurity Thesis Project",
+      "image": "../../assets/projects/cuban-cas.png",
+      "description": "Implementation of an automated perimeter protection service based on Cloudflare, executed at the network edge through Cloudflare Workers, which implement a security proxy that filters and routes traffic to protected origins using information stored dynamically in Cloudflare KV.",
+      "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"],
+      "url": "https://cubansaas.tech",
+      "code": "https://github.com/KevPatterson/Cuban-CAS"
     },
     {
       "title": "Thermal Print Pro (MVP)",
