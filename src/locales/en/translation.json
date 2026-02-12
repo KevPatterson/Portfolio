@@ -92,6 +92,13 @@
       "technologies": ["Cypress", "Allure"]
     },
     {
+      "year": "November 2025 · February 2026",
+      "role": "Cybersecurity Engineer",
+      "company": "UCI",
+      "description": "As a thesis project to obtain the degree of Cybersecurity Engineer, I designed and implemented an automated perimeter protection service based on Cloudflare, integrating security controls, provisioning automation, and best practices. This project aims to improve the resilience and availability of web platforms by mitigating DDoS attacks, filtering malicious traffic, and ensuring secure access through WAF policies and rate limiting.",
+      "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"]
+    },
+    {
       "year": "Present",
       "role": "Freelance Developer",
       "company": "Freelance",
@@ -101,6 +108,14 @@
   ],
   "project_name": "Projects",
   "projects": [
+    {
+      "title": "Cybersecurity Thesis Project",
+      "image": "../../assets/projects/cuban-cas.png",
+      "description": "Implementation of an automated perimeter protection service based on Cloudflare.",
+      "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"],
+      "url": "https://cubansaas.tech",
+      "code": "https://github.com/KevPatterson/Cuban-CAS"
+    },
     {
       "title": "Food Recipe Management System",
       "image": "../../assets/projects/cocinaconnosotros.png",

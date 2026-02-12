@@ -14,6 +14,7 @@ import clientsImg from "../../assets/clients.jpg"
 import criptoImg from "../../assets/cripto.webp"
 import veterinariaImg from "../../assets/veterinaria.png"
 import budgetImg from "../../assets/budget.avif"
+import cubanCasImg from "../../assets/projects/cuban-cas.png"
 
 interface ImageMap {
   [key: string]: string;
@@ -38,6 +39,8 @@ const imageMap: ImageMap = {
   "Veterinary Patient Management": veterinariaImg,
   "Control de Presupuesto": budgetImg,
   "Budget Tracker": budgetImg,
+	"Proyecto de Tesis de Ciberseguridad": cubanCasImg,
+	"Cybersecurity Thesis Project": cubanCasImg,
 }
 
 const Projects: React.FC = () => {

@@ -92,6 +92,13 @@
       "technologies": ["Cypress", "Allure"]
     },
     {
+      "year": "Noviembre 2025 · Febrero 2026",
+      "role": "Ingeniero en Ciberseguridad",
+      "company": "UCI",
+      "description": "Como proyecto de tesis para optar por el título de Ingeniero en Ciberseguridad diseñé e implementé un servicio automatizado de protección perimetral basado en Cloudflare, integrando controles de seguridad, automatización de aprovisionamiento y buenas prácticas. Este proyecto tiene como objetivo mejorar la resiliencia y disponibilidad de las plataformas web al mitigar ataques DDoS, filtrar tráfico malicioso y garantizar un acceso seguro mediante políticas WAF y limitación de velocidad.",
+      "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"]
+    },
+    {
       "year": "Presente",
       "role": "Programador Freelance",
       "company": "Freelance",
@@ -108,6 +115,14 @@
 			"technologies": ["Python", "Django", "PostgreSQL", "Bootstrap", "jQuery"],
 			"url": "https://cocinaconnosotros.pythonanywhere.com/"
 		},
+    {
+      "title": "Proyecto de Tesis de Ciberseguridad",
+      "image": "../../assets/projects/cuban-cas.png",
+      "description": "Implementación de un servicio automatizado de protección perimetral basado en Cloudflare.",
+      "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"],
+      "url": "https://cubansaas.tech",
+      "code": "https://github.com/KevPatterson/Cuban-CAS"
+    },
 		{
 			"title": "Termal Print Pro (MPV)",
 			"image": "../../assets/projects/termal.png",
