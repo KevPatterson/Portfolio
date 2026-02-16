@@ -39,6 +39,7 @@ const imageMap: ImageMap = {
   "Veterinary Patient Management": veterinariaImg,
   "Control de Presupuesto": budgetImg,
   "Budget Tracker": budgetImg,
+  "Budget Control": budgetImg,
 	"Proyecto de Tesis de Ciberseguridad": cubanCasImg,
 	"Cybersecurity Thesis Project": cubanCasImg,
 }
