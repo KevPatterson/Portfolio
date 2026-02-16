@@ -181,7 +181,6 @@ img {
 	-khtml-user-drag: none;
 	-moz-user-drag: none;
 	-o-user-drag: none;
-	user-drag: none;
 	user-select: none;
 	-webkit-user-select: none;
 }
@@ -231,6 +230,8 @@ img {
 	position: relative;
 	transition: transform 0.3s ease;
 	transition-delay: var(--delay);
+	opacity: 1 !important;
+	visibility: visible !important;
 }
 
 .hover-text span::after {
@@ -240,6 +241,8 @@ img {
 	left: 0;
 	transition: transform 0.3s ease;
 	transition-delay: var(--delay);
+	opacity: 1 !important;
+	visibility: visible !important;
 }
 
 .hover-text:hover span {
@@ -248,10 +251,16 @@ img {
 
 
 /* Fix for gradient text with hover animation */
-.hover-text.gradient-text span,
-.hover-text.gradient-text span::after {
-	background: linear-gradient(to right, rgb(147, 197, 253), rgb(203, 213, 225), rgb(192, 132, 252));
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
+h1.gradient-text .hover-text span,
+h1.gradient-text .hover-text span::after {
+	background: linear-gradient(to right, rgb(147, 197, 253), rgb(203, 213, 225), rgb(192, 132, 252)) !important;
+	-webkit-background-clip: text !important;
+	background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	color: transparent !important;
+}
+
+/* Ensure text is visible */
+.hover-text span {
+	color: inherit;
 }
