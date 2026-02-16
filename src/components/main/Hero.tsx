@@ -1,6 +1,7 @@
 import profilePic from "../../assets/user/Profile.png"
 import {motion} from "framer-motion"
 import { useTranslation} from "../../context/LanguajeContext"
+import { TextHover } from "../TextHover"
 
 
 const container = (delay: number) => ({
@@ -21,9 +22,9 @@ const Hero: React.FC = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-8 text-6xl font-thin tracking-tight lg:text-8xl gradient-text"
+              className="pb-8 text-6xl font-thin tracking-tight lg:text-8xl"
             >
-              {t('hero.name')}
+              <TextHover text={t('hero.name')} className="gradient-text" />
             </motion.h1>
             <motion.span 
               variants={container(0.5)}

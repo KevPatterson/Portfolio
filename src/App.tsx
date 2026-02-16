@@ -8,11 +8,13 @@ import { LanguageProvider } from "./context/LanguajeContext";
 import "@fontsource/open-sans";
 import Navbar from "./components/nav/Navbar";
 import Technologies from "./components/main/Technologies";
+import { MouseTrail } from "./components/MouseTrail";
 
 
 const App = () => {
 	return (
 		<LanguageProvider>
+			<MouseTrail />
 			<div className="overflow-x-hidden text-slate-300 antialiased selection:bg-purple-200/30 selection:text-slate-900">
 				<div className="fixed top-0 -z-10 h-full w-full">
 					<div className="relative h-full w-full bg-slate-950">
