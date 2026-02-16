@@ -172,8 +172,8 @@ html {
 }
 
 .circle {
-	height: 24px;
-	width: 24px;
+	height: 16px;
+	width: 16px;
 	border-radius: 100%;
 	background-color: white;
 	position: fixed;
@@ -190,7 +190,7 @@ html {
 }
 
 .circle-thin {
-	height: 20px;
+	height: 14px;
 	width: 2px;
 }
 
