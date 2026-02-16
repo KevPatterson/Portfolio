@@ -29,6 +29,8 @@ const About: React.FC = () => {
 							<img
 								src={AboutPic}
 								alt="profile"
+								draggable="false"
+								onDragStart={(e) => e.preventDefault()}
 								className="relative rounded-2xl w-80 h-80 lg:w-96 lg:h-96 object-cover shadow-2xl border border-slate-700/30 group-hover:border-slate-600/50 transition-all duration-300"
 							/>
 						</div>

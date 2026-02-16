@@ -171,6 +171,21 @@ html {
 	cursor: none !important;
 }
 
+img, a, button, input, textarea, select {
+	cursor: none !important;
+	pointer-events: auto !important;
+}
+
+img {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
 .circle {
 	height: 16px;
 	width: 16px;
@@ -207,24 +222,23 @@ html {
 /* Text hover animation styles */
 .hover-text {
 	display: inline-block;
-	position: relative;
 	overflow: hidden;
+	line-height: 1.2;
 }
 
 .hover-text span {
 	display: inline-block;
-	transition: transform 0.2s;
 	position: relative;
+	transition: transform 0.3s ease;
 	transition-delay: var(--delay);
 }
 
 .hover-text span::after {
 	content: attr(data-char);
 	position: absolute;
+	top: 100%;
 	left: 0;
-	bottom: -100%;
-	transform: translateY(100%);
-	transition: transform 0.3s;
+	transition: transform 0.3s ease;
 	transition-delay: var(--delay);
 }
 
@@ -232,6 +246,12 @@ html {
 	transform: translateY(-100%);
 }
 
-.hover-text:hover span::after {
-	transform: translateY(0);
+
+/* Fix for gradient text with hover animation */
+.hover-text.gradient-text span,
+.hover-text.gradient-text span::after {
+	background: linear-gradient(to right, rgb(147, 197, 253), rgb(203, 213, 225), rgb(192, 132, 252));
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }

@@ -18,14 +18,7 @@ const Hero: React.FC = () => {
       <div className="flex flex-wrap items-center py-16">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start space-y-6">
-            <motion.h1 
-              variants={container(0)}
-              initial="hidden"
-              animate="visible"
-              className="pb-8 text-6xl font-thin tracking-tight lg:text-8xl"
-            >
-              <TextHover text={t('hero.name')} className="gradient-text" />
-            </motion.h1>
+            <TextHover text={t('hero.name')} className="pb-8 text-6xl font-thin tracking-tight lg:text-8xl gradient-text" />
             <motion.span 
               variants={container(0.5)}
               initial="hidden"
@@ -55,7 +48,9 @@ const Hero: React.FC = () => {
               <div className="absolute rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
               <img
                 src={profilePic} 
-                alt="profile" 
+                alt="profile"
+                draggable="false"
+                onDragStart={(e) => e.preventDefault()}
                 className="relative object-contain w-80 h-80 lg:w-96 lg:h-96 rounded-2xl shadow-2xl transition-all duration-300" 
               />
             </motion.div>

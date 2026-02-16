@@ -42,6 +42,16 @@ export const MouseTrail = () => {
 			coords.y = e.clientY;
 		});
 
+		// Prevent default drag behavior on images
+		const preventDrag = (e: DragEvent) => {
+			e.preventDefault();
+		};
+		
+		const images = document.querySelectorAll('img');
+		images.forEach((img) => {
+			img.addEventListener('dragstart', preventDrag);
+		});
+
 		function animateCircles() {
 			let x = coords.x;
 			let y = coords.y;
@@ -67,6 +77,11 @@ export const MouseTrail = () => {
 			fields.forEach((input) => {
 				input.removeEventListener('mouseover', handleMouseOver);
 				input.removeEventListener('mouseout', handleMouseOut);
+			});
+			
+			const images = document.querySelectorAll('img');
+			images.forEach((img) => {
+				img.removeEventListener('dragstart', preventDrag as any);
 			});
 		};
 	}, []);
