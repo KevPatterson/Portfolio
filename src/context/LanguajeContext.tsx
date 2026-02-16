@@ -1,9 +1,7 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import enTranslations from '../locales/en/translation.json';
 import esTranslations from '../locales/es/translation.json';
 import type { LanguageContextType, LanguageProviderProps } from '../types/translation';
-
-type Translations = typeof enTranslations;
 
 const translations = {
   en: enTranslations,
@@ -13,11 +11,11 @@ const translations = {
 const LanguageContext = createContext <LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
-	const [language, setLanguage] = useState<string>("en");
+	const [language, setLanguage] = useState<'en' | 'es'>("es");
 
 	const t = (key: string): string => {
 		const keys = key.split(".");
-		let value: any = translations[language] as any;
+		let value: any = translations[language as keyof typeof translations] as any;
 
 		for (const k of keys) {
 			if (value === undefined) return key;
