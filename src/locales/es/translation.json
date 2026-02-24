@@ -170,7 +170,8 @@
 			"image": "/src/assets/projects/auto.webp",
 			"description": "Aplicación web para cotizar seguros de autos usando Nest.js, TypeScript y TailwindCSS.",
 			"technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],
-			"url": "https://cotizador-seguro-teal.vercel.app/"
+			"url": "https://cotizador-seguro-teal.vercel.app/",
+      "code": "https://github.com/KevPatterson/Cotizador-de-Seguro-de-Automovil-en-React"
 		},
 		{
 			"title": "CRM para Gestión de Clientes",

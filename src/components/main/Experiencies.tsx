@@ -17,7 +17,7 @@ const Experiencies: React.FC = () => {
         whileInView={{opacity: 1, y: 0}}
         initial={{opacity: 0, y: 100}}
         transition={{duration: 0.5}}
-        className="flex items-center justify-between cursor-pointer group mb-8"
+        className="flex items-center justify-center cursor-pointer group mb-8"
         onClick={() => setIsOpen(!isOpen)}
       >
         <h2 className="section-title group-hover:text-purple-400 transition-colors duration-300">
@@ -26,7 +26,7 @@ const Experiencies: React.FC = () => {
         <motion.div
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.3 }}
-          className="text-purple-400 group-hover:text-purple-300"
+          className="text-purple-400 group-hover:text-purple-300 ml-4"
         >
           <FaChevronDown size={24} />
         </motion.div>
