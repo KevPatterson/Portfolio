@@ -20,7 +20,7 @@ const Experiencies: React.FC = () => {
         className="flex justify-center mb-8"
       >
         <div className="flex items-center cursor-pointer group" onClick={() => setIsOpen(!isOpen)}>
-          <h2 className="section-title group-hover:text-purple-400 transition-colors duration-300">
+          <h2 className="text-4xl font-light tracking-tight bg-gradient-to-r from-slate-200 via-slate-300 to-slate-200 bg-clip-text text-transparent group-hover:from-purple-400 group-hover:via-purple-300 group-hover:to-purple-400 transition-all duration-300">
             {t('experiences_title')}
           </h2>
           <motion.div
