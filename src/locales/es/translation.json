@@ -106,6 +106,13 @@
       "technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"]
     },
     {
+      "year": "Febrero 2026 · Presente",
+      "role": "Ingeniero de Ciberseguridad / Desarrollador de Herramientas",
+      "company": "Freelance",
+      "description": "Como desarrollador freelance diseñé y desarrollé WebSec Framework: un framework modular y ejecutable nativamente (sin Docker) para auditorías de seguridad web autorizadas. Implementé crawling inteligente (soporte JS), fingerprinting tecnológico, un motor modular de detección (XSS, SQLi, LFI, CSRF, CORS, XXE, SSRF, Command Injection, Auth), y un sistema avanzado de validación que reduce falsos positivos mediante comparaciones baseline y scoring multinivel. Incluye generación de reportes HTML/PDF profesionales, evidencias request/response auditables, y orquestación segura para integración en pipelines CI/CD y entornos internos.",
+      "technologies": ["Python"]
+    },
+    {
       "year": "Presente",
       "role": "Programador Freelance",
       "company": "Freelance",
@@ -139,13 +146,13 @@
 		},
         {
       "title": "WebSec Framework - Framework para auditorías automáticas de seguridad web",
-      "image": "../../assets/projects/cuban-cas.png",
+      "image": "../../assets/projects/websec.png",
       "description": "Framework modular y ejecutable nativamente (Actualmente en desarrollo) para auditorías de seguridad de aplicaciones web. Automatiza todo el flujo: crawling inteligente (incl. JS), fingerprinting tecnológico, escaneo por módulos (XSS, SQLi, LFI, CSRF, CORS, XXE, SSRF, Command Injection, Auth), validación automática de falsos positivos y generación de reportes HTML/PDF profesionales con scoring contextual de riesgo, el cual además incluye integración con algunas herramientas externas",
       "technologies": ["Python"],
       "code": "https://github.com/KevPatterson/WebSec-Framework"
     },
 		{
-			"title": "Termal Print Pro (MPV) - SaaS de Etiquetas Térmicas para Alimentos y Retail",
+			"title": "Termal Print Pro (MPV) - Sistema SaaS de Etiquetas Térmicas para Alimentos y Retail",
 			"image": "../../assets/projects/termal.png",
 			"description": "Producto Mínimo Viable de una Plataforma SaaS Inteligente de Etiquetas Térmicas para Alimentos y Retail usando React.js, TailwindCSS y Vite.",
 			"technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
