@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
 
@@ -39,6 +39,11 @@
     <!-- ===================== BÁSICO ===================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Internacionalización -->
+    <meta http-equiv="content-language" content="en">
+    <link rel="alternate" hreflang="en" href="https://patterson-portfolio.vercel.app/en/">
+    <link rel="alternate" hreflang="es" href="https://patterson-portfolio.vercel.app/es/">
 
     <!-- Título: lo que aparece en Google y en la pestaña del navegador -->
     <title>Portfolio Kevin Patterson</title>
@@ -81,6 +86,7 @@
     <meta property="og:image:alt" content="Kevin Patterson - Frontend Developer Portfolio" />
     <meta property="og:site_name" content="Kevin Patterson Portfolio" />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="es_ES" />
 
     <!-- ===================== TWITTER / X CARD ===================== -->
     <!--
@@ -102,12 +108,20 @@
       <meta name="twitter:site" content="@TuUsuario" />
     -->
 
-    <!-- ===================== FAVICON ===================== -->
+    <!-- ===================== FAVICON Y PWA ===================== -->
     <!--
       Vite coloca el favicon en /public. Si ya tienes uno, deja esto como está.
       Si no, puedes generar uno en https://favicon.io
     -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/vite.svg" />
+    <link rel="apple-touch-icon" href="/vite.svg" />
+    
+    <!-- PWA -->
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <!-- <link rel="manifest" href="/manifest.json" /> -->
 
     <!-- ===================== SCHEMA.ORG (datos estructurados para Google) ===================== -->
     <!--
@@ -134,6 +148,12 @@
     <!-- Preconecta con Google Fonts si los usas, para cargar más rápido -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <!-- <link rel="dns-prefetch" href="https://cdn.tudominio.com"> -->
+    <!-- <link rel="preload" href="fuente.woff2" as="font" type="font/woff2" crossorigin> -->
+    <!-- <link rel="prefetch" href="/siguiente-pagina.html"> -->
+    
+    <!-- Privacy -->
+    <meta name="dnt" content="1" />
   </head>
   <body>
     <div id="root"></div>
