@@ -318,3 +318,375 @@ Si agregas:
 - [OWASP: Secure Headers Project](https://owasp.org/www-project-secure-headers/)
 - [Security Headers](https://securityheaders.com/)
 - [HSTS Preload](https://hstspreload.org/)
+
+
+---
+
+## 🆕 Headers Adicionales Implementados
+
+### 9. Content-Type (charset)
+
+**Valor:** `text/html; charset=UTF-8`
+
+**Propósito:** Especifica explícitamente el tipo de contenido y la codificación de caracteres.
+
+**Importancia:**
+- Previene ataques de confusión de charset
+- Asegura renderizado correcto de caracteres especiales
+- Evita vulnerabilidades de interpretación de contenido
+
+**Implementación:**
+```html
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+```
+
+### 10. Cross-Origin-Opener-Policy (COOP)
+
+**Valor:** `same-origin`
+
+**Propósito:** Aísla el contexto de navegación de otros orígenes, protegiendo contra ataques Spectre.
+
+**Opciones:**
+- `unsafe-none`: Sin aislamiento (por defecto)
+- `same-origin-allow-popups`: Aísla pero permite popups
+- `same-origin`: Aislamiento completo (recomendado)
+
+**Beneficios:**
+- Protege contra ataques de timing side-channel (Spectre)
+- Previene que ventanas de otros orígenes accedan a tu contexto
+- Habilita características avanzadas como `SharedArrayBuffer`
+
+**Compatibilidad:** Chrome 83+, Firefox 79+, Safari 15.2+
+
+### 11. Cross-Origin-Embedder-Policy (COEP)
+
+**Valor:** `require-corp`
+
+**Propósito:** Requiere que todos los recursos cargados tengan CORS o CORP explícito.
+
+**Opciones:**
+- `unsafe-none`: Sin restricciones (por defecto)
+- `require-corp`: Requiere CORP en todos los recursos (recomendado)
+- `credentialless`: Carga recursos sin credenciales
+
+**Beneficios:**
+- Habilita "cross-origin isolation"
+- Permite usar APIs poderosas como `SharedArrayBuffer`
+- Protege contra ataques de timing
+
+**Nota:** Puede requerir ajustes en recursos externos. Para assets propios, usa `Cross-Origin-Resource-Policy: cross-origin`.
+
+### 12. Cross-Origin-Resource-Policy (CORP)
+
+**Valor:** 
+- HTML: `same-origin`
+- Assets: `cross-origin`
+
+**Propósito:** Controla qué orígenes pueden cargar tus recursos.
+
+**Opciones:**
+- `same-origin`: Solo el mismo origen
+- `same-site`: Mismo sitio (incluye subdominios)
+- `cross-origin`: Cualquier origen (para CDN/assets públicos)
+
+**Uso:**
+```javascript
+// En vercel.json
+{
+  "source": "/(.*)",
+  "headers": [
+    { "key": "Cross-Origin-Resource-Policy", "value": "same-origin" }
+  ]
+},
+{
+  "source": "/assets/(.*)",
+  "headers": [
+    { "key": "Cross-Origin-Resource-Policy", "value": "cross-origin" }
+  ]
+}
+```
+
+### 13. Origin-Agent-Cluster
+
+**Valor:** `?1`
+
+**Propósito:** Solicita que el navegador asigne el documento a un "agent cluster" específico del origen.
+
+**Beneficios:**
+- Mejor aislamiento de seguridad
+- Previene que scripts de otros orígenes interfieran
+- Mejora el rendimiento al permitir mejor paralelización
+
+**Formato:** Structured Header boolean (`?1` = true, `?0` = false)
+
+**Compatibilidad:** Chrome 88+, Edge 88+
+
+### 14. Clear-Site-Data
+
+**Valor:** No implementado por defecto (se usa bajo demanda)
+
+**Propósito:** Limpia datos del navegador (cookies, cache, storage) cuando el usuario cierra sesión.
+
+**Uso típico:**
+```javascript
+// En endpoint de logout
+res.setHeader('Clear-Site-Data', '"cache", "cookies", "storage"');
+```
+
+**Directivas:**
+- `"cache"`: Limpia cache del navegador
+- `"cookies"`: Elimina cookies
+- `"storage"`: Limpia localStorage, sessionStorage, IndexedDB
+- `"executionContexts"`: Recarga todas las pestañas del origen
+- `"*"`: Limpia todo
+
+**Ejemplo de implementación:**
+```javascript
+// api/logout.js
+export default function handler(req, res) {
+  res.setHeader('Clear-Site-Data', '"cache", "cookies", "storage"');
+  res.status(200).json({ message: 'Logged out' });
+}
+```
+
+**Nota:** Solo funciona en contextos seguros (HTTPS).
+
+### 15. Expect-CT (Certificate Transparency)
+
+**Valor:** `max-age=86400, enforce`
+
+**Propósito:** Requiere que los certificados SSL aparezcan en logs públicos de Certificate Transparency.
+
+**Directivas:**
+- `max-age`: Duración en segundos (86400 = 24 horas)
+- `enforce`: Rechaza conexiones si el certificado no está en CT logs
+- `report-uri`: URL para reportar violaciones
+
+**Estado:** ⚠️ DEPRECADO - Los navegadores modernos requieren CT por defecto.
+
+**Incluido por:** Compatibilidad con navegadores antiguos.
+
+**Alternativa moderna:** Los certificados emitidos después de abril 2018 deben estar en CT logs automáticamente.
+
+### 16. Content-Security-Policy-Report-Only
+
+**Valor:** Igual que CSP pero con `report-uri`
+
+**Propósito:** Prueba políticas CSP sin bloquear contenido, solo reportando violaciones.
+
+**Uso:**
+```html
+<meta http-equiv="Content-Security-Policy-Report-Only" 
+      content="default-src 'self'; report-uri /csp-report">
+```
+
+**Beneficios:**
+- Prueba nuevas políticas sin romper el sitio
+- Identifica recursos que violan la política
+- Monitorea intentos de ataque
+
+**Workflow recomendado:**
+1. Implementa CSP-Report-Only con política estricta
+2. Monitorea reportes durante 1-2 semanas
+3. Ajusta la política según reportes
+4. Mueve a CSP (enforce) cuando esté lista
+
+**Endpoint de reportes:**
+```javascript
+// api/csp-report.js
+export default async function handler(req, res) {
+  const report = req.body;
+  console.log('CSP Violation:', report);
+  // Enviar a sistema de logging
+  return res.status(204).end();
+}
+```
+
+---
+
+## 📊 Tabla Completa de Headers
+
+| # | Header | Valor | Capa | Estado |
+|---|--------|-------|------|--------|
+| 1 | Content-Type | text/html; charset=UTF-8 | HTML, Vite, Vercel | ✅ |
+| 2 | Content-Security-Policy | Restrictivo | HTML, Vite, Vercel | ✅ |
+| 3 | CSP-Report-Only | Con report-uri | HTML, Vercel | ✅ |
+| 4 | X-Frame-Options | DENY | HTML, Vite, Vercel | ✅ |
+| 5 | X-Content-Type-Options | nosniff | HTML, Vite, Vercel | ✅ |
+| 6 | X-XSS-Protection | 1; mode=block | HTML, Vite, Vercel | ✅ |
+| 7 | Referrer-Policy | strict-origin-when-cross-origin | HTML, Vite, Vercel | ✅ |
+| 8 | Permissions-Policy | APIs deshabilitadas | HTML, Vite, Vercel | ✅ |
+| 9 | Strict-Transport-Security | max-age=31536000 | HTML, Vercel | ✅ |
+| 10 | Cache-Control | Optimizado | HTML, Vite, Vercel | ✅ |
+| 11 | Cross-Origin-Opener-Policy | same-origin | HTML, Vite, Vercel | ✅ |
+| 12 | Cross-Origin-Embedder-Policy | require-corp | HTML, Vite, Vercel | ✅ |
+| 13 | Cross-Origin-Resource-Policy | same-origin/cross-origin | Vercel | ✅ |
+| 14 | Origin-Agent-Cluster | ?1 | Vercel | ✅ |
+| 15 | Expect-CT | max-age=86400, enforce | HTML, Vercel | ✅ |
+| 16 | Clear-Site-Data | Bajo demanda | API | 📝 |
+
+**Total:** 16 headers de seguridad implementados
+
+---
+
+## 🔍 Cross-Origin Isolation
+
+La combinación de COOP + COEP habilita "cross-origin isolation", que permite:
+
+### APIs Habilitadas
+- `SharedArrayBuffer` (memoria compartida entre workers)
+- `performance.measureUserAgentSpecificMemory()`
+- `performance.now()` con mayor precisión
+- `Atomics.wait()` y `Atomics.waitAsync()`
+
+### Verificación
+```javascript
+// En la consola del navegador
+console.log(self.crossOriginIsolated); // Debe ser true
+```
+
+### Consideraciones
+- Todos los recursos externos deben tener CORS habilitado
+- Imágenes de otros dominios necesitan `crossorigin` attribute
+- Puede requerir ajustes en CDNs externos
+
+### Solución para recursos externos
+```html
+<!-- Para imágenes de otros dominios -->
+<img src="https://example.com/image.jpg" crossorigin="anonymous">
+
+<!-- Para scripts de CDN -->
+<script src="https://cdn.example.com/lib.js" crossorigin="anonymous"></script>
+```
+
+---
+
+## 🚨 Monitoreo de CSP
+
+### Configurar Reportes
+
+1. **Crear endpoint** (ya incluido en `api/csp-report.js`)
+
+2. **Actualizar CSP con report-uri:**
+```
+Content-Security-Policy: default-src 'self'; report-uri /csp-report
+```
+
+3. **Integrar con servicio de logging:**
+
+**Opción A: Sentry**
+```javascript
+// api/csp-report.js
+import * as Sentry from '@sentry/node';
+
+export default async function handler(req, res) {
+  const report = req.body;
+  Sentry.captureMessage('CSP Violation', {
+    level: 'warning',
+    extra: report
+  });
+  return res.status(204).end();
+}
+```
+
+**Opción B: LogRocket**
+```javascript
+import LogRocket from 'logrocket';
+
+LogRocket.captureMessage('CSP Violation', {
+  extra: report
+});
+```
+
+**Opción C: Custom logging**
+```javascript
+// Enviar a tu API
+await fetch('https://your-api.com/logs', {
+  method: 'POST',
+  body: JSON.stringify(report)
+});
+```
+
+### Analizar Reportes
+
+Los reportes CSP incluyen:
+- `document-uri`: Página donde ocurrió la violación
+- `violated-directive`: Directiva violada
+- `blocked-uri`: Recurso bloqueado
+- `source-file`: Archivo que causó la violación
+- `line-number`: Línea del código
+- `column-number`: Columna del código
+
+### Dashboard de Reportes
+
+Puedes usar servicios como:
+- **report-uri.com** (gratuito para bajo volumen)
+- **Sentry** (incluye CSP monitoring)
+- **DataDog** (monitoreo completo)
+
+---
+
+## 🔧 Troubleshooting Avanzado
+
+### Problema: COEP bloquea recursos
+
+**Síntoma:** Recursos externos no cargan
+
+**Solución:**
+```javascript
+// Opción 1: Agregar CORS al recurso externo (si controlas el servidor)
+res.setHeader('Access-Control-Allow-Origin', '*');
+res.setHeader('Cross-Origin-Resource-Policy', 'cross-origin');
+
+// Opción 2: Usar proxy para recursos externos
+// En vercel.json
+{
+  "rewrites": [
+    {
+      "source": "/proxy/:path*",
+      "destination": "https://external-cdn.com/:path*"
+    }
+  ]
+}
+```
+
+### Problema: COOP rompe OAuth/popups
+
+**Síntoma:** Login con Google/Facebook no funciona
+
+**Solución:**
+```javascript
+// Cambiar a same-origin-allow-popups
+'Cross-Origin-Opener-Policy': 'same-origin-allow-popups'
+```
+
+### Problema: Origin-Agent-Cluster causa errores
+
+**Síntoma:** Scripts cross-origin fallan
+
+**Solución:**
+```javascript
+// Deshabilitar temporalmente
+'Origin-Agent-Cluster': '?0'
+```
+
+---
+
+## 📈 Puntuación Esperada (Actualizada)
+
+Con todos los headers implementados:
+
+- **Security Headers**: A+ ⭐
+- **Mozilla Observatory**: A+ ⭐
+- **SSL Labs**: A+ ⭐
+- **Cross-Origin Isolation**: ✅ Habilitado
+
+---
+
+## 🎯 Próximos Pasos
+
+1. **Monitorear reportes CSP** durante 1 semana
+2. **Verificar cross-origin isolation** en producción
+3. **Ajustar CORP** si hay recursos externos bloqueados
+4. **Implementar Clear-Site-Data** si agregas autenticación
+5. **Considerar HSTS preload** en hstspreload.org
