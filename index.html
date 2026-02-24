@@ -3,6 +3,18 @@
   <head>
     <meta charset="UTF-8" />
 
+    <!-- ===================== SEGURIDAD ===================== -->
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <!-- Protección contra clickjacking -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <!-- Protección contra MIME type sniffing -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <!-- Protección XSS en navegadores antiguos -->
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <!-- Política de referrer -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
     <!-- ===================== GOOGLE SEARCH CONSOLE ===================== -->
     <meta name="google-site-verification" content="9onTfubrPFfnRj8Dni6BI8Wpd3_Wmw3Vfvo2pZJiESY" />
 

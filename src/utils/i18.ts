@@ -11,7 +11,7 @@ i18n
     fallbackLng: 'en', // Idioma por defecto en caso de que no se detecte o no se encuentre traducción
     debug: false, // Activa el modo debug solo en desarrollo
     interpolation: {
-      escapeValue: false, 
+      escapeValue: true, // Protección contra XSS
     },
     backend: {
       loadPath: '../locales/{{lng}}/{{ns}}.json', // Ruta de los archivos de traducción
