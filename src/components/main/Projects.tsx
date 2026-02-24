@@ -15,16 +15,24 @@ import criptoImg from "../../assets/cripto.webp"
 import veterinariaImg from "../../assets/veterinaria.png"
 import budgetImg from "../../assets/budget.avif"
 import cubanCasImg from "../../assets/projects/cuban-cas.png"
+import sinergiaCubaImg from "../../assets/projects/sinergia-cuba.png"
+import websecImg from "../../assets/projects/websec.png"
 
 interface ImageMap {
   [key: string]: string;
 }
 
 const imageMap: ImageMap = {
-  "Sistema de Gestión de Recetas de Comida": cocinaconnosotrosImg,
-  "Food Recipe Management System": cocinaconnosotrosImg,
-  "Termal Print Pro (MPV)": termalImg,
-  "Thermal Print Pro (MVP)": termalImg,
+  "Cocina con Nosotros - Sistema de Gestión de Recetas de Comida": cocinaconnosotrosImg,
+  "Cocina con Nosotros - Food Recipe Management System": cocinaconnosotrosImg,
+  "CubanSaas - Proyecto de Tesis de Ciberseguridad": cubanCasImg,
+  "CubanSaas - Cybersecurity Thesis Project": cubanCasImg,
+  "Sinnergia Cuba - ERP SaaS multi-tenant para MiPyMEs cubanas": sinergiaCubaImg,
+  "Sinnergia Cuba - Multi-tenant SaaS ERP for Cuban SMEs": sinergiaCubaImg,
+  "WebSec Framework - Framework para auditorías automáticas de seguridad web": websecImg,
+  "WebSec Framework - Framework for automated web security audits": websecImg,
+  "Termal Print Pro (MPV) - Sistema SaaS de Etiquetas Térmicas para Alimentos y Retail": termalImg,
+  "Termal Print Pro (MVP) - Intelligent SaaS Platform for Thermal Labels in Food and Retail": termalImg,
   "Buscador de Noticias": ReactImg,
   "News Search Engine": ReactImg,
   "App de Clima": viteFeaturedImg,
@@ -38,10 +46,7 @@ const imageMap: ImageMap = {
   "Gestión de Pacientes de una Veterinaria": veterinariaImg,
   "Veterinary Patient Management": veterinariaImg,
   "Control de Presupuesto": budgetImg,
-  "Budget Tracker": budgetImg,
   "Budget Control": budgetImg,
-	"Proyecto de Tesis de Ciberseguridad": cubanCasImg,
-	"Cybersecurity Thesis Project": cubanCasImg,
 }
 
 const Projects: React.FC = () => {
