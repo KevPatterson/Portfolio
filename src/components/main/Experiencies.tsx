@@ -1,5 +1,6 @@
-import React from "react"
-import {motion} from "framer-motion"
+import React, { useState } from "react"
+import {motion, AnimatePresence} from "framer-motion"
+import { FaChevronDown } from "react-icons/fa"
 
 import {useTranslation} from "../../context/LanguajeContext"
 import getColor from "../../utils/getColor";
@@ -7,19 +8,38 @@ import getColor from "../../utils/getColor";
 const Experiencies: React.FC = () => {
 
   const {t} = useTranslation();
+  const [isOpen, setIsOpen] = useState(false)
   const experiences = t("experiences")
 
   return (
     <div className="border-b border-slate-800/50 pb-8">
-      <motion.h2
+      <motion.div
         whileInView={{opacity: 1, y: 0}}
         initial={{opacity: 0, y: 100}}
         transition={{duration: 0.5}}
-        className="section-title"
+        className="flex items-center justify-between cursor-pointer group mb-8"
+        onClick={() => setIsOpen(!isOpen)}
       >
-        {t('experiences_title')}
-      </motion.h2>
-      <div className="space-y-12">
+        <h2 className="section-title group-hover:text-purple-400 transition-colors duration-300">
+          {t('experiences_title')}
+        </h2>
+        <motion.div
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.3 }}
+          className="text-purple-400 group-hover:text-purple-300"
+        >
+          <FaChevronDown size={24} />
+        </motion.div>
+      </motion.div>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.4 }}
+            className="space-y-12"
+          >
         {Array.isArray(experiences) &&
         experiences.map((experience, index) => (
           <motion.div
@@ -62,7 +82,9 @@ const Experiencies: React.FC = () => {
             </div>
           </motion.div>
         ))}
-      </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }
