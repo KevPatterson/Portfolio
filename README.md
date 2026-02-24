@@ -8,7 +8,7 @@
   <h3 align="center">Patterson Portfolio Template</h3>
 
   <p align="center">
-    An awesome Portfolio template to jumpstart your proffesional projects!
+    An awesome Portfolio template to jumpstart your professional projects!
     <br />
     <br />
     <a href="https://patterson-portfolio.vercel.app">View Demo</a>
@@ -24,7 +24,7 @@
 This is a minimalist portfolio template that you can use to create your own portfolio. It is built with React and Vite, and it is fully responsive. You can easily customize it to fit your needs.
 
 Here's why:
-* You should use this template to create your own portfoliom and showcase your work.
+* You should use this template to create your own portfolio and showcase your work.
 * You should use this, and dont start building your portfolio from scratch.
 
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. 
