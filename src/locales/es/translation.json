@@ -145,7 +145,7 @@
       "code": "https://github.com/KevPatterson/WebSec-Framework"
     },
 		{
-			"title": "Termal Print Pro (MPV)",
+			"title": "Termal Print Pro (MPV) - SaaS de Etiquetas Térmicas para Alimentos y Retail",
 			"image": "../../assets/projects/termal.png",
 			"description": "Producto Mínimo Viable de una Plataforma SaaS Inteligente de Etiquetas Térmicas para Alimentos y Retail usando React.js, TailwindCSS y Vite.",
 			"technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
