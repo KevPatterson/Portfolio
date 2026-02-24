@@ -99,6 +99,13 @@
       "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"]
     },
     {
+      "year": "Febrero 2026 · Presente",
+      "role": "Desarrollador Full Stack",
+      "company": "Freelance",
+      "description": "Como desarrollador freelance definí la estructura del proyecto, el esquema en PostgreSQL con RLS, las funciones críticas en la base de datos y la plataforma frontend PWA orientada a operaciones en entornos con conectividad inestable de un ERP SaaS multi-tenant para MiPyMEs cubanas, con soporte offline-first, multi-moneda (CUP/MLC/USD) y generación de reportes fiscales exportables conforme a la ONAT y el Ministerio de Finanzas y Precios",
+      "technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"]
+    },
+    {
       "year": "Presente",
       "role": "Programador Freelance",
       "company": "Freelance",
@@ -123,6 +130,13 @@
       "url": "https://cubansaas.tech",
       "code": "https://github.com/KevPatterson/Cuban-CAS"
     },
+    {
+			"title": "ERP SaaS multi-tenant para MiPyMEs cubanas",
+			"image": "../../assets/projects/sinergia-cuba.png",
+			"description": "Sinergia Cuba es un ERP SaaS diseñado para MiPyMEs cubanas que combina operativa diaria (inventario, solicitudes de materiales, facturación) con cumplimiento fiscal y análisis financiero. La plataforma es multi-tenant (una empresa = un espacio aislado), offline-first (PWA + sincronización inteligente) y preparada para generar reportes y exportaciones compatibles con los requerimientos de la ONAT y el Ministerio de Finanzas y Precios",
+			"technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"],
+			"url": "https://sinergiacuba.vercel.app/"
+		},
 		{
 			"title": "Termal Print Pro (MPV)",
 			"image": "../../assets/projects/termal.png",
