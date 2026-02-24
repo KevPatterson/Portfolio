@@ -1,0 +1,24 @@
+# Robots.txt para Portfolio Kevin Patterson
+# Permite la indexación completa del sitio
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://patterson-portfolio.vercel.app/sitemap.xml
+
+# Crawl-delay para bots más agresivos
+Crawl-delay: 1
+
+# Bloquear bots maliciosos conocidos
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

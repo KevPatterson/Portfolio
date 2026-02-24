@@ -1,0 +1,320 @@
+# Headers de Seguridad - Guía Completa
+
+Este documento explica todos los headers de seguridad implementados en el proyecto.
+
+## 📋 Resumen de Headers Implementados
+
+| Header | Implementado | Capas |
+|--------|--------------|-------|
+| Content-Security-Policy | ✅ | HTML, Vite, Vercel |
+| X-Frame-Options | ✅ | HTML, Vite, Vercel |
+| X-Content-Type-Options | ✅ | HTML, Vite, Vercel |
+| X-XSS-Protection | ✅ | HTML, Vite, Vercel |
+| Referrer-Policy | ✅ | HTML, Vite, Vercel |
+| Permissions-Policy | ✅ | HTML, Vite, Vercel |
+| Strict-Transport-Security | ✅ | HTML, Vercel |
+| Cache-Control | ✅ | HTML, Vite, Vercel |
+
+## 🔒 Detalles de Cada Header
+
+### 1. Content-Security-Policy (CSP)
+
+**Valor:**
+```
+default-src 'self'; 
+script-src 'self' 'unsafe-inline'; 
+style-src 'self' 'unsafe-inline'; 
+img-src 'self' data: https:; 
+font-src 'self' data:; 
+connect-src 'self'; 
+frame-ancestors 'none'; 
+base-uri 'self'; 
+form-action 'self'
+```
+
+**Propósito:** Previene ataques XSS y de inyección de código al controlar qué recursos pueden cargarse.
+
+**Directivas:**
+- `default-src 'self'`: Solo permite recursos del mismo origen
+- `script-src 'self' 'unsafe-inline'`: Scripts solo del mismo origen (inline necesario para React)
+- `style-src 'self' 'unsafe-inline'`: Estilos solo del mismo origen (inline necesario para Tailwind)
+- `img-src 'self' data: https:`: Imágenes del mismo origen, data URIs y HTTPS
+- `font-src 'self' data:`: Fuentes del mismo origen y data URIs
+- `connect-src 'self'`: Conexiones AJAX/WebSocket solo al mismo origen
+- `frame-ancestors 'none'`: No permite que el sitio sea embebido en iframes
+- `base-uri 'self'`: Previene ataques de inyección de base tag
+- `form-action 'self'`: Formularios solo pueden enviarse al mismo origen
+
+### 2. X-Frame-Options
+
+**Valor:** `DENY`
+
+**Propósito:** Previene ataques de clickjacking al no permitir que el sitio sea embebido en iframes.
+
+**Opciones:**
+- `DENY`: No permite ningún iframe
+- `SAMEORIGIN`: Solo permite iframes del mismo origen
+- `ALLOW-FROM uri`: Permite iframes de un origen específico (obsoleto)
+
+### 3. X-Content-Type-Options
+
+**Valor:** `nosniff`
+
+**Propósito:** Previene que el navegador "adivine" el tipo MIME de los archivos, forzando el uso del Content-Type declarado.
+
+**Protege contra:** Ataques donde un archivo malicioso se hace pasar por otro tipo de archivo.
+
+### 4. X-XSS-Protection
+
+**Valor:** `1; mode=block`
+
+**Propósito:** Activa el filtro XSS del navegador (legacy, para navegadores antiguos).
+
+**Opciones:**
+- `0`: Desactiva el filtro
+- `1`: Activa el filtro
+- `1; mode=block`: Activa y bloquea la página si detecta XSS
+
+**Nota:** Este header es legacy. Los navegadores modernos usan CSP.
+
+### 5. Referrer-Policy
+
+**Valor:** `strict-origin-when-cross-origin`
+
+**Propósito:** Controla qué información de referrer se envía en las peticiones.
+
+**Comportamiento:**
+- Mismo origen: Envía URL completa
+- HTTPS → HTTPS: Envía solo el origen
+- HTTPS → HTTP: No envía nada
+- HTTP → cualquiera: Envía solo el origen
+
+**Otras opciones:**
+- `no-referrer`: No envía referrer
+- `origin`: Solo envía el origen
+- `same-origin`: Solo envía referrer en mismo origen
+
+### 6. Permissions-Policy (antes Feature-Policy)
+
+**Valor:**
+```
+geolocation=(), 
+microphone=(), 
+camera=(), 
+payment=(), 
+usb=(), 
+magnetometer=(), 
+gyroscope=(), 
+accelerometer=(), 
+ambient-light-sensor=()
+```
+
+**Propósito:** Deshabilita APIs del navegador que no se utilizan, reduciendo la superficie de ataque.
+
+**APIs deshabilitadas:**
+- `geolocation`: Ubicación GPS
+- `microphone`: Acceso al micrófono
+- `camera`: Acceso a la cámara
+- `payment`: API de pagos
+- `usb`: Acceso a dispositivos USB
+- `magnetometer`: Sensor magnético
+- `gyroscope`: Giroscopio
+- `accelerometer`: Acelerómetro
+- `ambient-light-sensor`: Sensor de luz ambiental
+
+**Sintaxis:**
+- `()`: Deshabilita para todos
+- `(self)`: Permite solo para el mismo origen
+- `(self "https://example.com")`: Permite para origen específico
+
+### 7. Strict-Transport-Security (HSTS)
+
+**Valor:** `max-age=31536000; includeSubDomains; preload`
+
+**Propósito:** Fuerza el uso de HTTPS y previene ataques de downgrade.
+
+**Directivas:**
+- `max-age=31536000`: Duración de 1 año (en segundos)
+- `includeSubDomains`: Aplica a todos los subdominios
+- `preload`: Permite inclusión en la lista de preload de navegadores
+
+**Importante:** Solo funciona cuando el sitio se sirve por HTTPS.
+
+**Preload:** Para incluir tu sitio en la lista de preload de navegadores, visita: https://hstspreload.org/
+
+### 8. Cache-Control
+
+**Valores implementados:**
+
+**Para HTML:**
+```
+no-cache, no-store, must-revalidate
+```
+- Siempre obtiene la versión más reciente del servidor
+
+**Para Assets estáticos (CSS, JS, imágenes):**
+```
+public, max-age=31536000, immutable
+```
+- Cache de 1 año
+- `immutable`: El archivo nunca cambiará (gracias al hash en el nombre)
+
+**Para desarrollo:**
+```
+no-cache, no-store, must-revalidate
+```
+- No cachea nada durante el desarrollo
+
+**Directivas:**
+- `no-cache`: Valida con el servidor antes de usar cache
+- `no-store`: No almacena en cache
+- `must-revalidate`: Debe revalidar cuando expira
+- `public`: Puede ser cacheado por cualquier cache
+- `max-age`: Tiempo en segundos que el recurso es válido
+- `immutable`: El recurso nunca cambiará
+
+## 🏗️ Arquitectura de Implementación
+
+### Capa 1: HTML (index.html)
+```html
+<meta http-equiv="Header-Name" content="value">
+```
+- Fallback para navegadores que no respetan headers HTTP
+- Siempre presente, incluso en desarrollo local
+
+### Capa 2: Vite (vite.config.ts)
+```typescript
+server: {
+  headers: {
+    'Header-Name': 'value'
+  }
+}
+```
+- Aplica durante el desarrollo (`npm run dev`)
+- Útil para testing de headers
+
+### Capa 3: Vercel (vercel.json)
+```json
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Header-Name", "value": "value" }
+      ]
+    }
+  ]
+}
+```
+- Headers HTTP reales a nivel de servidor
+- Más confiables que meta tags
+- Solo aplica en producción
+
+## 🧪 Cómo Verificar los Headers
+
+### Opción 1: Herramientas Online
+
+1. **Security Headers**: https://securityheaders.com/
+   - Analiza todos los headers de seguridad
+   - Da una calificación (A+, A, B, etc.)
+
+2. **Mozilla Observatory**: https://observatory.mozilla.org/
+   - Análisis completo de seguridad
+   - Recomendaciones específicas
+
+### Opción 2: DevTools del Navegador
+
+1. Abre DevTools (F12)
+2. Ve a la pestaña "Network"
+3. Recarga la página
+4. Haz clic en el documento HTML
+5. Ve a la pestaña "Headers"
+6. Revisa "Response Headers"
+
+### Opción 3: cURL
+
+```bash
+curl -I https://patterson-portfolio.vercel.app/
+```
+
+### Opción 4: PowerShell
+
+```powershell
+Invoke-WebRequest -Uri "https://patterson-portfolio.vercel.app/" -Method Head | Select-Object -ExpandProperty Headers
+```
+
+## 📊 Puntuación Esperada
+
+Con esta configuración, deberías obtener:
+
+- **Security Headers**: A+ o A
+- **Mozilla Observatory**: A+ o A
+- **SSL Labs**: A+ (si HSTS preload está activo)
+
+## 🔄 Mantenimiento
+
+### Revisar Headers Periódicamente
+
+```bash
+# Verificar headers en producción
+curl -I https://patterson-portfolio.vercel.app/
+
+# Verificar headers en desarrollo
+curl -I http://localhost:5173/
+```
+
+### Actualizar CSP si Agregas Nuevos Recursos
+
+Si agregas:
+- **API externa**: Actualiza `connect-src`
+- **CDN de imágenes**: Actualiza `img-src`
+- **Google Fonts**: Actualiza `font-src` y `style-src`
+- **Analytics**: Actualiza `script-src` y `connect-src`
+
+### Ejemplo: Agregar Google Analytics
+
+```typescript
+// En vite.config.ts y vercel.json
+'Content-Security-Policy': 
+  "default-src 'self'; " +
+  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; " +
+  "connect-src 'self' https://www.google-analytics.com; " +
+  // ... resto de directivas
+```
+
+## 🚨 Troubleshooting
+
+### Problema: Recursos bloqueados por CSP
+
+**Síntoma:** Errores en consola como "Refused to load..."
+
+**Solución:**
+1. Identifica el tipo de recurso bloqueado
+2. Actualiza la directiva CSP correspondiente
+3. Prueba en desarrollo primero
+4. Despliega a producción
+
+### Problema: HSTS no funciona
+
+**Causa:** El sitio no se sirve por HTTPS
+
+**Solución:** Vercel sirve automáticamente por HTTPS, pero verifica que:
+1. El dominio esté configurado correctamente
+2. No haya redirecciones HTTP → HTTPS rotas
+
+### Problema: Cache muy agresivo
+
+**Síntoma:** Cambios no se reflejan en producción
+
+**Solución:**
+1. Verifica que los assets tengan hash en el nombre
+2. HTML debe tener `no-cache`
+3. Limpia cache del navegador (Ctrl+Shift+R)
+
+## 📚 Referencias
+
+- [MDN: Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+- [MDN: HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
+- [OWASP: Secure Headers Project](https://owasp.org/www-project-secure-headers/)
+- [Security Headers](https://securityheaders.com/)
+- [HSTS Preload](https://hstspreload.org/)
