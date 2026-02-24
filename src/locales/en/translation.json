@@ -111,13 +111,6 @@
       "company": "Freelance",
       "description": "As a freelance developer, I designed and developed WebSec Framework: a modular framework executable natively (without Docker) for authorized web security audits. I implemented intelligent crawling (JS support), technology fingerprinting, a modular detection engine (XSS, SQLi, LFI, CSRF, CORS, XXE, SSRF, Command Injection, Auth), and an advanced validation system that reduces false positives through baseline comparisons and multi-level scoring. It includes professional HTML/PDF report generation, auditable request/response evidence, and secure orchestration for integration into CI/CD pipelines and internal environments.",
       "technologies": ["Python"]
-    },
-    {
-      "year": "Present",
-      "role": "Freelance Developer",
-      "company": "Freelance",
-      "description": "Working as a freelance developer allows me to create custom web solutions for real-world challenges across different communities. This hands-on experience not only strengthens my technical skills but also reinforces the importance of understanding and adapting to each client's unique needs.",
-      "technologies": ["PostgreSQL", "Django", "React.js"]
     }
   ],
   "project_name": "Projects",

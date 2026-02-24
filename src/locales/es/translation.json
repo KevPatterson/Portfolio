@@ -111,13 +111,6 @@
       "company": "Freelance",
       "description": "Como desarrollador freelance diseñé y desarrollé WebSec Framework: un framework modular y ejecutable nativamente (sin Docker) para auditorías de seguridad web autorizadas. Implementé crawling inteligente (soporte JS), fingerprinting tecnológico, un motor modular de detección (XSS, SQLi, LFI, CSRF, CORS, XXE, SSRF, Command Injection, Auth), y un sistema avanzado de validación que reduce falsos positivos mediante comparaciones baseline y scoring multinivel. Incluye generación de reportes HTML/PDF profesionales, evidencias request/response auditables, y orquestación segura para integración en pipelines CI/CD y entornos internos.",
       "technologies": ["Python"]
-    },
-    {
-      "year": "Presente",
-      "role": "Programador Freelance",
-      "company": "Freelance",
-      "description": "Trabajar como programador freelance me permite crear soluciones web personalizadas para desafíos reales en diversas comunidades. Esta experiencia práctica no solo fortalece mis habilidades técnicas, sino que también refuerza el valor de comprender y adaptarme a las necesidades únicas de cada cliente.",
-      "technologies": ["PostgreSQL", "Django", "React.js"]
     }
   ],
   "project_name": "Proyectos",
