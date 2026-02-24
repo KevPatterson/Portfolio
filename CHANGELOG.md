@@ -14,6 +14,15 @@
 - **Causa**: La característica `ambient-light-sensor` no es reconocida por navegadores modernos
 - **Solución**: Removida de la política de permisos
 
+### 🛡️ Defensa en Profundidad - Headers Duplicados
+
+#### Estrategia de Seguridad Implementada
+Se implementó una estrategia de **defensa en profundidad** duplicando headers de seguridad:
+- **Primera capa**: Headers HTTP en `vercel.json` (nivel servidor)
+- **Segunda capa**: Meta tags en `index.html` (nivel documento)
+
+**Razón**: Si los headers HTTP fallan por caché, CDN, proxy o error de configuración, los meta tags actúan como respaldo. En seguridad, múltiples capas siempre son mejor práctica.
+
 ### 🔧 Cambios en Archivos
 
 #### `vercel.json`
@@ -54,22 +63,34 @@
 
 ### 🛡️ Seguridad
 
-#### Headers Activos (Configurados Correctamente)
+#### Headers Activos (Configurados en 2 Capas)
+
+**Capa 1 - HTTP Headers (`vercel.json`)**
+- ✅ `Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; ...`
 - ✅ `X-Content-Type-Options: nosniff`
 - ✅ `X-Frame-Options: DENY`
 - ✅ `X-XSS-Protection: 1; mode=block`
 - ✅ `Referrer-Policy: strict-origin-when-cross-origin`
 - ✅ `Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()`
 - ✅ `Strict-Transport-Security: max-age=31536000; includeSubDomains; preload`
+
+**Capa 2 - Meta Tags (`index.html`)**
+- ✅ `Content-Security-Policy` (ajustado para Vite)
+- ✅ `X-Frame-Options: DENY`
+- ✅ `X-Content-Type-Options: nosniff`
+- ✅ `Referrer-Policy: strict-origin-when-cross-origin`
+- ✅ `Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()`
 - ✅ `Referrer-Policy: strict-origin-when-cross-origin`
 - ✅ `Permissions-Policy: geolocation=(), microphone=(), ...`
 - ✅ `Strict-Transport-Security: max-age=31536000; includeSubDomains; preload`
 
-#### Headers Removidos (Causaban Problemas)
-- ❌ Content Security Policy (bloqueaba assets de Vite)
-- ❌ Cross-Origin-Embedder-Policy (impedía carga de módulos)
-- ❌ Cross-Origin-Opener-Policy (causaba errores de MIME)
-- ❌ Cross-Origin-Resource-Policy (bloqueaba recursos)
+#### Headers Removidos (Causaban Problemas en Versión Inicial)
+- ❌ ~~Cross-Origin-Embedder-Policy~~ (impedía carga de módulos)
+- ❌ ~~Cross-Origin-Opener-Policy~~ (causaba errores de MIME)
+- ❌ ~~Cross-Origin-Resource-Policy~~ (bloqueaba recursos)
+- ❌ ~~CSP demasiado restrictivo~~ (bloqueaba assets de Vite)
+
+**Nota**: CSP fue re-implementado con una política más permisiva que permite `unsafe-inline` y `unsafe-eval` necesarios para Vite en desarrollo.
 
 ### ⚡ Optimizaciones
 

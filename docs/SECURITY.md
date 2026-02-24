@@ -85,45 +85,48 @@
 
 ### Arquitectura de Seguridad en Capas
 
-El proyecto implementa seguridad en 3 capas:
+El proyecto implementa **defensa en profundidad** con seguridad en 2 capas redundantes:
 
-1. **Capa HTML** (`index.html`)
-   - Meta tags de seguridad
-   - Fallback para navegadores que no respetan headers HTTP
-
-2. **Capa de Desarrollo** (`vite.config.ts`)
-   - Headers de seguridad en servidor de desarrollo
-   - Configuración de build seguro
-
-3. **Capa de Producción** (`vercel.json`)
+1. **Capa HTTP** (`vercel.json`) - Primera línea de defensa
    - Headers HTTP a nivel de servidor
    - Configuración de caché optimizada
    - HSTS con preload
+   - CSP completo y permisivo para Vite
+
+2. **Capa HTML** (`index.html`) - Segunda línea de defensa
+   - Meta tags de seguridad como respaldo
+   - Fallback si headers HTTP fallan (caché, CDN, proxy)
+   - CSP ajustado para compatibilidad con Vite
+
+**Filosofía**: Si por alguna razón los headers HTTP fallan, los meta tags actúan como respaldo. En seguridad, la redundancia es una buena práctica.
 
 ### Headers de Seguridad Implementados
 
-| Header | Valor | Propósito |
-|--------|-------|-----------|
-| Content-Security-Policy | Restrictivo | Previene XSS y inyección de código |
-| X-Frame-Options | DENY | Previene clickjacking |
-| X-Content-Type-Options | nosniff | Previene MIME sniffing |
-| X-XSS-Protection | 1; mode=block | Protección XSS legacy |
-| Referrer-Policy | strict-origin-when-cross-origin | Control de información de referrer |
-| Permissions-Policy | APIs deshabilitadas | Deshabilita APIs no utilizadas |
-| Strict-Transport-Security | max-age=31536000 | Fuerza HTTPS |
-| Cache-Control | Optimizado por tipo | Control de caché apropiado |
+| Header | Valor | Propósito | Capas |
+|--------|-------|-----------|-------|
+| Content-Security-Policy | Permisivo para Vite | Previene XSS y inyección de código | HTTP + Meta |
+| X-Frame-Options | DENY | Previene clickjacking | HTTP + Meta |
+| X-Content-Type-Options | nosniff | Previene MIME sniffing | HTTP + Meta |
+| X-XSS-Protection | 1; mode=block | Protección XSS legacy | HTTP |
+| Referrer-Policy | strict-origin-when-cross-origin | Control de información de referrer | HTTP + Meta |
+| Permissions-Policy | APIs deshabilitadas | Deshabilita APIs no utilizadas | HTTP + Meta |
+| Strict-Transport-Security | max-age=31536000 | Fuerza HTTPS | HTTP |
+
+**Nota sobre CSP**: La política incluye `unsafe-inline` y `unsafe-eval` necesarios para el funcionamiento de Vite y React en modo desarrollo. Esto es un compromiso aceptable entre seguridad y funcionalidad para aplicaciones SPA modernas.
 
 ### Vite Configuration
 - Source maps deshabilitados en producción
 - Console.log eliminados automáticamente en build
-- Headers de seguridad configurados en servidor de desarrollo
 - Minificación con Terser para ofuscar código
+- Code splitting optimizado (react-vendor, framer-motion, i18n)
 
 ### Vercel Configuration
 - Headers HTTP a nivel de servidor (más confiables que meta tags)
+- CSP permisivo que permite funcionamiento de Vite
 - Cache inmutable para assets estáticos (1 año)
 - No-cache para HTML (siempre fresco)
 - HSTS con preload habilitado
+- MIME types específicos para JS y CSS
 
 ### Control de Indexación
 - `robots.txt` configurado para SEO óptimo

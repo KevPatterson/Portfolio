@@ -4,11 +4,25 @@
     <meta charset="UTF-8" />
 
     <!-- ===================== SEGURIDAD ===================== -->
-    <!-- NOTA: Los headers de seguridad principales se configuran en vercel.json -->
+    <!-- Los headers de seguridad principales se configuran en vercel.json -->
     <!-- Solo incluimos aquí los que funcionan correctamente en meta tags -->
+    <!-- NOTA: Para defensa en profundidad se utilizaron algunos Headers duplicados en meta tags como respaldo -->
+    <!-- Si los headers HTTP fallan (caché, CDN, proxy), estos actúan como segunda línea de defensa -->
+    
+    <!-- Content Security Policy - Ajustado para permitir assets de Vite -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'">
+    
+    <!-- Protección contra clickjacking -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    
+    <!-- Previene MIME type sniffing -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
     
     <!-- Política de referrer -->
     <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Permissions Policy - Solo características básicas para compatibilidad -->
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
     
     <!-- Privacy -->
     <meta name="dnt" content="1">
