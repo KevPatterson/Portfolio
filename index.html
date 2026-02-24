@@ -4,34 +4,11 @@
     <meta charset="UTF-8" />
 
     <!-- ===================== SEGURIDAD ===================== -->
-    <!-- Content-Type con charset explícito -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
-    <!-- CSP Report-Only para testing de nuevas políticas -->
-    <meta http-equiv="Content-Security-Policy-Report-Only" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; report-uri /csp-report">
-    <!-- Cross-Origin Policies -->
-    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
-    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
-    <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin">
-    <!-- Protección contra clickjacking -->
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <!-- Protección contra MIME type sniffing -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <!-- Protección XSS en navegadores antiguos -->
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <!-- NOTA: Los headers de seguridad principales se configuran en vercel.json -->
+    <!-- Solo incluimos aquí los que funcionan correctamente en meta tags -->
+    
     <!-- Política de referrer -->
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <!-- Permissions Policy (Feature Policy) - Deshabilita APIs no utilizadas -->
-    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), ambient-light-sensor=()">
-    <!-- Cache Control -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <!-- Strict Transport Security (HSTS) - Solo funciona con HTTPS -->
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
-    <!-- Expect-CT (Certificate Transparency) - Deprecado pero incluido para compatibilidad -->
-    <meta http-equiv="Expect-CT" content="max-age=86400, enforce">
 
     <!-- ===================== GOOGLE SEARCH CONSOLE ===================== -->
     <meta name="google-site-verification" content="9onTfubrPFfnRj8Dni6BI8Wpd3_Wmw3Vfvo2pZJiESY" />
@@ -118,9 +95,10 @@
     <link rel="apple-touch-icon" href="/vite.svg" />
     
     <!-- PWA -->
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#020617" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <!-- <link rel="manifest" href="/manifest.json" /> -->
 
     <!-- ===================== SCHEMA.ORG (datos estructurados para Google) ===================== -->
