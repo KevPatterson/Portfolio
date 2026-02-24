@@ -86,7 +86,7 @@
     },
     {
       "year": "Septiembre 2025",
-      "role": "Desarrollador Front-End",
+      "role": "QA Automation Engineer",
       "company": "ECNA",
       "description": "Durante mis prácticas en la ECNA fui el encargado de realizar pruebas E2E automatizadas a plataformas web de la entidad, garantizando el funcionamiento y la disponibilidad e integridad de las mismas.",
       "technologies": ["Cypress", "Allure"]
@@ -116,14 +116,14 @@
   "project_name": "Proyectos",
   "projects": [
 		{
-			"title": "Sistema de Gestión de Recetas de Comida",
+			"title": "Cocina con Nosotros - Sistema de Gestión de Recetas de Comida",
 			"image": "../../assets/projects/cocinaconnosotros.png",
 			"description": "Un sistema de gestión de recetas de comida usando Python, Django, PostgreSQL, Bootstrap y jQuery.",
 			"technologies": ["Python", "Django", "PostgreSQL", "Bootstrap", "jQuery"],
 			"url": "https://cocinaconnosotros.pythonanywhere.com/"
 		},
     {
-      "title": "Proyecto de Tesis de Ciberseguridad",
+      "title": "CubanSaas - Proyecto de Tesis de Ciberseguridad",
       "image": "../../assets/projects/cuban-cas.png",
       "description": "Implementación de un servicio automatizado de protección perimetral basado en Cloudflare, cuya ejecución se realiza en el borde de la red a través de Cloudflare Workers, los cuales implementan un proxy de seguridad que filtra y enruta el tráfico hacia los orígenes protegidos utilizando información almacenada dinámicamente en Cloudflare KV.",
       "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"],
@@ -131,12 +131,19 @@
       "code": "https://github.com/KevPatterson/Cuban-CAS"
     },
     {
-			"title": "ERP SaaS multi-tenant para MiPyMEs cubanas",
+			"title": "Sinnergia Cuba - ERP SaaS multi-tenant para MiPyMEs cubanas",
 			"image": "../../assets/projects/sinergia-cuba.png",
-			"description": "Sinergia Cuba es un ERP SaaS diseñado para MiPyMEs cubanas que combina operativa diaria (inventario, solicitudes de materiales, facturación) con cumplimiento fiscal y análisis financiero. La plataforma es multi-tenant (una empresa = un espacio aislado), offline-first (PWA + sincronización inteligente) y preparada para generar reportes y exportaciones compatibles con los requerimientos de la ONAT y el Ministerio de Finanzas y Precios",
+			"description": "Sinergia Cuba es un ERP SaaS diseñado para MiPyMEs cubanas (Actualmente en desarrollo) que combina operativa diaria (inventario, solicitudes de materiales, facturación) con cumplimiento fiscal y análisis financiero. La plataforma es multi-tenant (una empresa = un espacio aislado), offline-first (PWA + sincronización inteligente) y preparada para generar reportes y exportaciones compatibles con los requerimientos de la ONAT y el Ministerio de Finanzas y Precios",
 			"technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"],
 			"url": "https://sinergiacuba.vercel.app/"
 		},
+        {
+      "title": "WebSec Framework - Framework para auditorías automáticas de seguridad web",
+      "image": "../../assets/projects/cuban-cas.png",
+      "description": "Framework modular y ejecutable nativamente (Actualmente en desarrollo) para auditorías de seguridad de aplicaciones web. Automatiza todo el flujo: crawling inteligente (incl. JS), fingerprinting tecnológico, escaneo por módulos (XSS, SQLi, LFI, CSRF, CORS, XXE, SSRF, Command Injection, Auth), validación automática de falsos positivos y generación de reportes HTML/PDF profesionales con scoring contextual de riesgo, el cual además incluye integración con algunas herramientas externas",
+      "technologies": ["Python"],
+      "code": "https://github.com/KevPatterson/WebSec-Framework"
+    },
 		{
 			"title": "Termal Print Pro (MPV)",
 			"image": "../../assets/projects/termal.png",
