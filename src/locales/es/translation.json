@@ -124,14 +124,14 @@
   "projects": [
 		{
 			"title": "Cocina con Nosotros - Sistema de Gestión de Recetas de Comida",
-			"image": "../../assets/projects/cocinaconnosotros.png",
+			"image": "/src/assets/projects/cocinaconnosotros.png",
 			"description": "Un sistema de gestión de recetas de comida usando Python, Django, PostgreSQL, Bootstrap y jQuery.",
 			"technologies": ["Python", "Django", "PostgreSQL", "Bootstrap", "jQuery"],
 			"url": "https://cocinaconnosotros.pythonanywhere.com/"
 		},
     {
       "title": "CubanSaas - Proyecto de Tesis de Ciberseguridad",
-      "image": "../../assets/projects/cuban-cas.png",
+      "image": "/src/assets/projects/cuban-cas.png",
       "description": "Implementación de un servicio automatizado de protección perimetral basado en Cloudflare, cuya ejecución se realiza en el borde de la red a través de Cloudflare Workers, los cuales implementan un proxy de seguridad que filtra y enruta el tráfico hacia los orígenes protegidos utilizando información almacenada dinámicamente en Cloudflare KV.",
       "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"],
       "url": "https://cubansaas.tech",
@@ -139,70 +139,70 @@
     },
     {
 			"title": "Sinnergia Cuba - ERP SaaS multi-tenant para MiPyMEs cubanas",
-			"image": "../../assets/projects/sinergia-cuba.png",
+			"image": "/src/assets/projects/sinergia-cuba.png",
 			"description": "Sinergia Cuba es un ERP SaaS diseñado para MiPyMEs cubanas (Actualmente en desarrollo) que combina operativa diaria (inventario, solicitudes de materiales, facturación) con cumplimiento fiscal y análisis financiero. La plataforma es multi-tenant (una empresa = un espacio aislado), offline-first (PWA + sincronización inteligente) y preparada para generar reportes y exportaciones compatibles con los requerimientos de la ONAT y el Ministerio de Finanzas y Precios",
 			"technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"],
 			"url": "https://sinergiacuba.vercel.app/"
 		},
         {
       "title": "WebSec Framework - Framework para auditorías automáticas de seguridad web",
-      "image": "../../assets/projects/websec.png",
+      "image": "/src/assets/projects/websec.png",
       "description": "Framework modular y ejecutable nativamente (Actualmente en desarrollo) para auditorías de seguridad de aplicaciones web. Automatiza todo el flujo: crawling inteligente (incl. JS), fingerprinting tecnológico, escaneo por módulos (XSS, SQLi, LFI, CSRF, CORS, XXE, SSRF, Command Injection, Auth), validación automática de falsos positivos y generación de reportes HTML/PDF profesionales con scoring contextual de riesgo, el cual además incluye integración con algunas herramientas externas",
       "technologies": ["Python"],
       "code": "https://github.com/KevPatterson/WebSec-Framework"
     },
 		{
 			"title": "Termal Print Pro (MPV) - Sistema SaaS de Etiquetas Térmicas para Alimentos y Retail",
-			"image": "../../assets/projects/termal.png",
+			"image": "/src/assets/projects/termal.png",
 			"description": "Producto Mínimo Viable de una Plataforma SaaS Inteligente de Etiquetas Térmicas para Alimentos y Retail usando React.js, TailwindCSS y Vite.",
 			"technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
 			"url": "https://thermalprint-pro.vercel.app/"
 		},
 		{
 			"title": "Buscador de Noticias",
-			"image": "../../assets/projects/React.webp",
+			"image": "/src/assets/projects/React.webp",
 			"description": "Un buscador de noticias usando React.js, TailwindCSS y Vite. Este proyecto fue realizado como parte de un curso de React.js.",
 			"technologies": ["Javascript", "TailwindCSS", "React.js", "Next.js"],
      "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React"
 		},
 		{
 			"title": "App de Clima",
-			"image": "../../assets/projects/vite-featured.avif",
+			"image": "/src/assets/projects/vite-featured.avif",
 			"description": "Aplicación web desarrollada en React que permite a los usuarios consultar el clima actual en cualquier ciudad del mundo.",
 			"technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],
       "code": "https://github.com/KevPatterson/App-de-Clima-en-React"
 		},
 		{
 			"title": "Cotizador de Seguros de Autos",
-			"image": "../../assets/projects/auto.webp",
+			"image": "/src/assets/projects/auto.webp",
 			"description": "Aplicación web para cotizar seguros de autos usando Nest.js, TypeScript y TailwindCSS.",
 			"technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],
 			"url": "https://cotizador-seguro-teal.vercel.app/"
 		},
 		{
 			"title": "CRM para Gestión de Clientes",
-			"image": "../../assets/clients.jpg",
+			"image": "/src/assets/clients.jpg",
 			"description": "Aplicación web minimalista diseñada para gestionar la información de clientes de manera fácil y efectiva.",
 			"technologies": ["React.js", "TailwindCSS"],
 			"code": "https://github.com/KevPatterson/CRM-en-React"
 		},
     {
 			"title": "Cotizador de Criptomonedas",
-			"image": "../../assets/cripto.webp",
+			"image": "/src/assets/cripto.webp",
 			"description": "Aplicación web que permite a los usuarios cotizar el valor de diferentes criptomonedas en tiempo real.",
 			"technologies": ["React.js", "TailwindCSS"],
 			"code": "https://github.com/KevPatterson/CRM-en-React"
 		},
     {
 			"title": "Gestión de Pacientes de una Veterinaria",
-			"image": "../../assets/veterinaria.png",
+			"image": "/src/assets/veterinaria.png",
 			"description": "Aplicación frontend con React y Vite para gestionar y administrar pacientes de una veterinaria de manera eficiente y práctica.",
 			"technologies": ["React.js", "TailwindCSS", "Vite"],
 			"code": "https://github.com/KevPatterson/Gestion-de-Pacientes-de-una-Veterinaria"
 		},
     {
 			"title": "Control de Presupuesto",
-			"image": "../../assets/budget.avif",
+			"image": "/src/assets/budget.avif",
 			"description": "Aplicación frontend interactiva diseñada en React con Vite y LocalStorage para ayudarte a administrar tu presupuesto de manera eficiente",
 			"technologies": ["React.js", "TailwindCSS", "Vite"],
 			"code": "https://github.com/KevPatterson/Control-de-Gastos-en-React"

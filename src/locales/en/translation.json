@@ -125,14 +125,14 @@
   "projects": [
 		{
 			"title": "Cocina con Nosotros - Food Recipe Management System",
-			"image": "../../assets/projects/cocinaconnosotros.png",
+			"image": "/src/assets/projects/cocinaconnosotros.png",
 			"description": "A food recipe management system built with Python, Django, PostgreSQL, Bootstrap, and jQuery.",
 			"technologies": ["Python", "Django", "PostgreSQL", "Bootstrap", "jQuery"],
 			"url": "https://cocinaconnosotros.pythonanywhere.com/"
 		},
     {
       "title": "CubanSaas - Cybersecurity Thesis Project",
-      "image": "../../assets/projects/cuban-cas.png",
+      "image": "/src/assets/projects/cuban-cas.png",
       "description": "Implementation of an automated perimeter protection service based on Cloudflare, executed at the network edge through Cloudflare Workers, which implement a security proxy that filters and routes traffic to protected origins using information stored dynamically in Cloudflare KV.",
       "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"],
       "url": "https://cubansaas.tech",
@@ -140,70 +140,70 @@
     },
     {
 			"title": "Sinnergia Cuba - Multi-tenant SaaS ERP for Cuban SMEs",
-			"image": "../../assets/projects/sinergia-cuba.png",
+			"image": "/src/assets/projects/sinergia-cuba.png",
 			"description": "Sinergia Cuba is a SaaS ERP designed for Cuban SMEs (Currently in development) that combines daily operations (inventory, material requests, invoicing) with tax compliance and financial analysis. The platform is multi-tenant (one company = one isolated space), offline-first (PWA + intelligent synchronization), and prepared to generate reports and exports compatible with the requirements of ONAT and the Ministry of Finance and Prices.",
 			"technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"],
 			"url": "https://sinergiacuba.vercel.app/"
 		},
     {
       "title": "WebSec Framework - Framework for automated web security audits",
-      "image": "../../assets/projects/websec.png",
+      "image": "/src/assets/projects/websec.png",
       "description": "Modular framework executable natively (Currently in development) for web application security audits. Automates the entire workflow: intelligent crawling (incl. JS), technology fingerprinting, module-based scanning (XSS, SQLi, LFI, CSRF, CORS, XXE, SSRF, Command Injection, Auth), automatic false positive validation, and professional HTML/PDF report generation with contextual risk scoring, which also includes integration with some external tools.",
       "technologies": ["Python"],
       "code": "https://github.com/KevPatterson/WebSec-Framework"
     },
 		{
 			"title": "Termal Print Pro (MVP) - Intelligent SaaS Platform for Thermal Labels in Food and Retail",
-			"image": "../../assets/projects/termal.png",
+			"image": "/src/assets/projects/termal.png",
 			"description": "Minimum Viable Product of an intelligent SaaS platform for thermal labeling in Food and Retail, built with React.js, TailwindCSS, and Vite.",
 			"technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
 			"url": "https://thermalprint-pro.vercel.app/"
 		},
     {
       "title": "News Search Engine",
-      "image": "../../assets/projects/React.webp",
+      "image": "/src/assets/projects/React.webp",
       "description": "A news search engine built with React.js, TailwindCSS, and Vite. This project was created as part of a React.js course.",
       "technologies": ["Javascript", "TailwindCSS", "React.js", "Next.js"],
       "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React"
     },
     {
       "title": "Weather App",
-      "image": "../../assets/projects/vite-featured.avif",
+      "image": "/src/assets/projects/vite-featured.avif",
       "description": "A React web application that allows users to check the current weather in any city in the world.",
       "technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],
       "code": "https://github.com/KevPatterson/App-de-Clima-en-React"
     },
     {
       "title": "Car Insurance Quoter",
-      "image": "../../assets/projects/auto.webp",
+      "image": "/src/assets/projects/auto.webp",
       "description": "A web app to quote car insurance using Nest.js, TypeScript, and TailwindCSS.",
       "technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],
       "url": "https://cotizador-seguro-teal.vercel.app/"
     },
     {
       "title": "Client Management CRM",
-      "image": "../../assets/clients.jpg",
+      "image": "/src/assets/clients.jpg",
       "description": "A minimalist web app designed to easily and effectively manage client information.",
       "technologies": ["React.js", "TailwindCSS"],
       "code": "https://github.com/KevPatterson/CRM-en-React"
     },
     {
       "title": "Cryptocurrency Quoter",
-      "image": "../../assets/cripto.webp",
+      "image": "/src/assets/cripto.webp",
       "description": "A web application that allows users to quote the value of different cryptocurrencies in real time.",
       "technologies": ["React.js", "TailwindCSS"],
       "code": "https://github.com/KevPatterson/CRM-en-React"
     },
     {
       "title": "Veterinary Patient Management",
-      "image": "../../assets/veterinaria.png",
+      "image": "/src/assets/veterinaria.png",
       "description": "A frontend app built with React and Vite to efficiently and practically manage veterinary patients.",
       "technologies": ["React.js", "TailwindCSS", "Vite"],
       "code": "https://github.com/KevPatterson/Gestion-de-Pacientes-de-una-Veterinaria"
     },
     {
       "title": "Budget Control",
-      "image": "../../assets/budget.avif",
+      "image": "/src/assets/budget.avif",
       "description": "An interactive frontend app designed in React with Vite and LocalStorage to help you efficiently manage your budget.",
       "technologies": ["React.js", "TailwindCSS", "Vite"],
       "code": "https://github.com/KevPatterson/Control-de-Gastos-en-React"
