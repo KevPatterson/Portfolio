@@ -145,6 +145,13 @@
       "technologies": ["Python"],
       "code": "https://github.com/KevPatterson/WebSec-Framework"
     },
+    {
+      "title": "Encant Shop - Accessories Catalog",
+      "image": "/src/assets/projects/encantshop.png",
+      "description": "Digital product catalog for an accessories store. Allows browsing collections, filtering by categories, and visualizing products in an attractive and intuitive way. It also includes an admin panel for product management.",
+      "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
+      "url": "https://encantshop.vercel.app/"
+    },
 		{
 			"title": "Termal Print Pro (MVP) - Intelligent SaaS Platform for Thermal Labels in Food and Retail",
 			"image": "/src/assets/projects/termal.png",

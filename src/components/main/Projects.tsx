@@ -18,6 +18,7 @@ import budgetImg from "../../assets/budget.avif"
 import cubanCasImg from "../../assets/projects/cuban-cas.png"
 import sinergiaCubaImg from "../../assets/projects/sinergia-cuba.png"
 import websecImg from "../../assets/projects/websec.png"
+import encantshopImg from "../../assets/projects/encantshop.png.png"
 
 interface ImageMap {
   [key: string]: string;
@@ -32,6 +33,8 @@ const imageMap: ImageMap = {
   "Sinnergia Cuba - Multi-tenant SaaS ERP for Cuban SMEs": sinergiaCubaImg,
   "WebSec Framework - Framework para auditorías automáticas de seguridad web": websecImg,
   "WebSec Framework - Framework for automated web security audits": websecImg,
+  "Encant Shop - Catálogo de Accesorios": encantshopImg,
+  "Encant Shop - Accessories Catalog": encantshopImg,
   "Termal Print Pro (MPV) - Sistema SaaS de Etiquetas Térmicas para Alimentos y Retail": termalImg,
   "Termal Print Pro (MVP) - Intelligent SaaS Platform for Thermal Labels in Food and Retail": termalImg,
   "Buscador de Noticias": ReactImg,
