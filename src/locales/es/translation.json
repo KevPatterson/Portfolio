@@ -151,6 +151,13 @@
       "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
       "url": "https://encantshop.vercel.app/"
     },
+    {
+      "title": "Mipyme Store - Tienda Digital de Electrodomésticos",
+      "image": "/src/assets/projects/mipyme-store.png",
+      "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase"],
+      "description": "Tienda digital completa para una mipyme cubana de electrodomésticos. Incluye catálogo de productos con filtros por categoría, búsqueda en tiempo real, tarjetas con efectos 3D interactivos y redirección directa a WhatsApp para gestionar pedidos. Cuenta con un panel de administración para gestión completa de productos, categorías e imágenes mediante CRUD con Supabase.",
+      "url": "https://mipyme-store.vercel.app/"
+    },
 		{
 			"title": "Termal Print Pro (MPV) - Sistema SaaS de Etiquetas Térmicas para Alimentos y Retail",
 			"image": "/src/assets/projects/termal.png",
