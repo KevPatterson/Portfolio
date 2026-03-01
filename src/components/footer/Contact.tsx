@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "../../context/LanguajeContext";
-import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 const Contact: React.FC = () => {
 	const { t } = useTranslation();
@@ -43,16 +43,30 @@ const Contact: React.FC = () => {
 							{t("contact.phoneNo")}
 						</p>
 					</motion.div>
-					<motion.a
-						whileInView={{ opacity: 1, x: 0 }}
-						initial={{ opacity: 0, x: -100 }}
-						transition={{ duration: 0.5, delay: 0.3 }}
-						className="btn-primary inline-flex items-center"
-						href={`mailto:${t("contact.email")}`}
-					>
-						<FaEnvelope className="mr-2" />
-						{t("contact.email")}
-					</motion.a>
+					<div className="flex flex-col sm:flex-row gap-4 justify-center">
+						<motion.a
+							whileInView={{ opacity: 1, x: 0 }}
+							initial={{ opacity: 0, x: 100 }}
+							transition={{ duration: 0.5, delay: 0.3 }}
+							className="btn-primary inline-flex items-center justify-center bg-green-600 hover:bg-green-700"
+							href={`https://wa.me/5356954200`}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FaWhatsapp className="mr-2" />
+							{t("contact.whatsapp")}
+						</motion.a>
+						<motion.a
+							whileInView={{ opacity: 1, x: 0 }}
+							initial={{ opacity: 0, x: -100 }}
+							transition={{ duration: 0.5, delay: 0.3 }}
+							className="btn-primary inline-flex items-center justify-center"
+							href={`mailto:${t("contact.email")}`}
+						>
+							<FaEnvelope className="mr-2" />
+							{t("contact.email")}
+						</motion.a>
+					</div>
 				</motion.div>
 			</div>
 		</div>
