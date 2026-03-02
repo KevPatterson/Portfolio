@@ -6,40 +6,24 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { projects } from "../../types/projects"
 import { useState } from "react"
 
+// Imágenes locales de fallback (solo para proyectos sin URL pública)
 import ReactImg from "../../assets/projects/React.webp"
 import autoImg from "../../assets/projects/auto.webp"
 import viteFeaturedImg from "../../assets/projects/vite-featured.avif"
-import cocinaconnosotrosImg from "../../assets/projects/cocinaconnosotros.png"
-import termalImg from "../../assets/projects/termal.png"
 import clientsImg from "../../assets/clients.jpg"
 import criptoImg from "../../assets/cripto.webp"
 import veterinariaImg from "../../assets/veterinaria.png"
 import budgetImg from "../../assets/budget.avif"
-import cubanCasImg from "../../assets/projects/cuban-cas.png"
-import sinergiaCubaImg from "../../assets/projects/sinergia-cuba.png"
 import websecImg from "../../assets/projects/websec.png"
-import encantshopImg from "../../assets/projects/encantshop.png.png"
-import mipymeStoreImg from "../../assets/projects/mipyme-store.png"
 
 interface ImageMap {
   [key: string]: string;
 }
 
-const imageMap: ImageMap = {
-  "Cocina con Nosotros - Sistema de Gestión de Recetas de Comida": cocinaconnosotrosImg,
-  "Cocina con Nosotros - Food Recipe Management System": cocinaconnosotrosImg,
-  "CubanSaas - Proyecto de Tesis de Ciberseguridad": cubanCasImg,
-  "CubanSaas - Cybersecurity Thesis Project": cubanCasImg,
-  "Sinnergia Cuba - ERP SaaS multi-tenant para MiPyMEs cubanas": sinergiaCubaImg,
-  "Sinnergia Cuba - Multi-tenant SaaS ERP for Cuban SMEs": sinergiaCubaImg,
+// Fallback solo para proyectos sin `url` (no tienen preview en microlink)
+const fallbackImageMap: ImageMap = {
   "WebSec Framework - Framework para auditorías automáticas de seguridad web": websecImg,
   "WebSec Framework - Framework for automated web security audits": websecImg,
-  "Encant Shop - Catálogo de Accesorios": encantshopImg,
-  "Encant Shop - Accessories Catalog": encantshopImg,
-  "Mipyme Store - Tienda Digital de Electrodomésticos": mipymeStoreImg,
-  "Mipyme Store - Home Appliances Digital Shop": mipymeStoreImg,
-  "Termal Print Pro (MPV) - Sistema SaaS de Etiquetas Térmicas para Alimentos y Retail": termalImg,
-  "Termal Print Pro (MVP) - Intelligent SaaS Platform for Thermal Labels in Food and Retail": termalImg,
   "Buscador de Noticias": ReactImg,
   "News Search Engine": ReactImg,
   "App de Clima": viteFeaturedImg,
@@ -54,6 +38,43 @@ const imageMap: ImageMap = {
   "Veterinary Patient Management": veterinariaImg,
   "Control de Presupuesto": budgetImg,
   "Budget Control": budgetImg,
+}
+
+const getMicrolinkUrl = (url: string): string =>
+  `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url`
+
+interface ProjectImageProps {
+  project: projects
+  className?: string
+}
+
+const ProjectImage: React.FC<ProjectImageProps> = ({ project, className }) => {
+  const microlinkSrc = project.url ? getMicrolinkUrl(project.url) : null
+  const fallbackSrc = fallbackImageMap[project.title] || "/placeholder.svg"
+
+  const [src, setSrc] = useState<string>(microlinkSrc ?? fallbackSrc)
+  const [isLoading, setIsLoading] = useState<boolean>(!!microlinkSrc)
+
+  return (
+    <div className="relative w-full h-64">
+      {isLoading && (
+        <div className="absolute inset-0 rounded-xl bg-slate-800/60 animate-pulse flex items-center justify-center">
+          <span className="text-slate-500 text-sm">Loading preview...</span>
+        </div>
+      )}
+      <img
+        src={src}
+        alt={project.title}
+        className={className}
+        style={{ opacity: isLoading ? 0 : 1, transition: "opacity 0.3s" }}
+        onLoad={() => setIsLoading(false)}
+        onError={() => {
+          setIsLoading(false)
+          if (src !== fallbackSrc) setSrc(fallbackSrc)
+        }}
+      />
+    </div>
+  )
 }
 
 const Projects: React.FC = () => {
@@ -102,9 +123,8 @@ const Projects: React.FC = () => {
 							>
 								<div className="relative group">
 									<div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-pink-600/10 rounded-xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
-									<img
-										src={imageMap[project.title] || "/placeholder.svg"}
-										alt={project.title}
+									<ProjectImage
+										project={project}
 										className="relative mb-6 rounded-xl shadow-lg w-full h-64 object-cover border border-slate-700/30 group-hover:border-slate-600/50 transition-all duration-300 group-hover:shadow-xl"
 									/>
 								</div>
