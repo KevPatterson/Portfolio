@@ -4,7 +4,7 @@ import { FaGithub, FaChevronDown } from "react-icons/fa"
 import { useTranslation } from "../../context/LanguajeContext"
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { projects } from "../../types/projects"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 // Imágenes locales de fallback (solo para proyectos sin URL pública)
 import ReactImg from "../../assets/projects/React.webp"
@@ -40,8 +40,8 @@ const fallbackImageMap: ImageMap = {
   "Budget Control": budgetImg,
 }
 
-const getMicrolinkUrl = (url: string): string =>
-  `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url`
+const getMicrolinkApiUrl = (url: string): string =>
+  `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false`
 
 interface ProjectImageProps {
   project: projects
@@ -49,11 +49,35 @@ interface ProjectImageProps {
 }
 
 const ProjectImage: React.FC<ProjectImageProps> = ({ project, className }) => {
-  const microlinkSrc = project.url ? getMicrolinkUrl(project.url) : null
   const fallbackSrc = fallbackImageMap[project.title] || "/placeholder.svg"
+  const [src, setSrc] = useState<string>(fallbackSrc)
+  const [isLoading, setIsLoading] = useState<boolean>(!!project.url)
 
-  const [src, setSrc] = useState<string>(microlinkSrc ?? fallbackSrc)
-  const [isLoading, setIsLoading] = useState<boolean>(!!microlinkSrc)
+  useEffect(() => {
+    if (!project.url) return
+
+    let cancelled = false
+
+    fetch(getMicrolinkApiUrl(project.url))
+      .then((res) => res.json())
+      .then((data) => {
+        if (cancelled) return
+        const screenshotUrl: string | undefined = data?.data?.screenshot?.url
+        if (screenshotUrl) {
+          setSrc(screenshotUrl)
+        } else {
+          setSrc(fallbackSrc)
+        }
+      })
+      .catch(() => {
+        if (!cancelled) setSrc(fallbackSrc)
+      })
+      .finally(() => {
+        if (!cancelled) setIsLoading(false)
+      })
+
+    return () => { cancelled = true }
+  }, [project.url, fallbackSrc])
 
   return (
     <div className="relative w-full h-64">
@@ -69,7 +93,6 @@ const ProjectImage: React.FC<ProjectImageProps> = ({ project, className }) => {
         style={{ opacity: isLoading ? 0 : 1, transition: "opacity 0.3s" }}
         onLoad={() => setIsLoading(false)}
         onError={() => {
-          setIsLoading(false)
           if (src !== fallbackSrc) setSrc(fallbackSrc)
         }}
       />
