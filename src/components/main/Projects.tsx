@@ -27,12 +27,15 @@ import sinergiaCubaImg from "../../assets/projects/sinergia-cuba.png"
 import incidentManagerImg from "../../assets/projects/incident-manager.png"
 import lacabinaImg from "../../assets/projects/lacabina.png"
 import parselParcelImg from "../../assets/projects/parsel-parcel.png"
+import crmProImg from "../../assets/projects/crmpro.png"
 
 interface ImageMap {
   [key: string]: string;
 }
 
 const fallbackImageMap: ImageMap = {
+  "CRM Pro - Sistema de Gestión de Clientes Empresarial": crmProImg,
+  "CRM Pro - Enterprise Client Management System": crmProImg,
   "Cocina con Nosotros - Sistema de Gestión de Recetas de Comida": cocinaImg,
   "Cocina con Nosotros - Food Recipe Management System": cocinaImg,
   "CubanSaas - Proyecto de Tesis de Ciberseguridad": cubanCasImg,

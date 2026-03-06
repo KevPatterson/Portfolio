@@ -123,6 +123,13 @@
 			"url": "https://cocinaconnosotros.pythonanywhere.com/"
 		},
     {
+      "title": "CRM Pro - Sistema de Gestión de Clientes Empresarial",
+      "image": "/src/assets/projects/crmpro.png",
+      "description": "Plataforma CRM empresarial con gestión completa de clientes, pipeline de ventas, seguimiento de actividades, reportes y métricas en tiempo real. Diseño moderno orientado a equipos comerciales.",
+      "technologies": ["React.js", "TailwindCSS", "TypeScript", "Vite"],
+      "url": "https://crmpro-demo.vercel.app/"
+    },
+    {
       "title": "CubanSaas - Proyecto de Tesis de Ciberseguridad",
       "image": "/src/assets/projects/cuban-cas.png",
       "description": "Implementación de un servicio automatizado de protección perimetral basado en Cloudflare, cuya ejecución se realiza en el borde de la red a través de Cloudflare Workers, los cuales implementan un proxy de seguridad que filtra y enruta el tráfico hacia los orígenes protegidos utilizando información almacenada dinámicamente en Cloudflare KV.",
