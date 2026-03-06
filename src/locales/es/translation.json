@@ -132,7 +132,7 @@
     },
     {
 			"title": "Sinnergia Cuba - ERP SaaS multi-tenant para MiPyMEs cubanas",
-			"image": "/src/assets/projects/sinergia-cuba.png",
+			"image": "/src/assets/projects/erp-cuba.png",
 			"description": "Sinergia Cuba es un ERP SaaS diseñado para MiPyMEs cubanas que combina operativa diaria (inventario, solicitudes de materiales, facturación) con cumplimiento fiscal y análisis financiero. La plataforma es multi-tenant (una empresa = un espacio aislado), offline-first (PWA + sincronización inteligente) y preparada para generar reportes y exportaciones compatibles con los requerimientos de la ONAT y el Ministerio de Finanzas y Precios",
 			"technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"],
 			"url": "https://sinergiacuba.vercel.app/"
