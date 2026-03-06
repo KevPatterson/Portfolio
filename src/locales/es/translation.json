@@ -197,7 +197,7 @@
   "title": "La Cabina — Marketplace de Estudios de Grabación en Cuba",
   "image": "/src/assets/projects/lacabina.png",
   "description": "Plataforma estilo Airbnb que conecta estudios de grabación en Cuba con músicos y artistas. Directorio, perfiles de estudios, sistema de reservas y reseñas.",
-  "technologies": ["Javascript", "React.js", "TailwindCSS"],
+  "technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
   "url": "https://lacabina-five.vercel.app/"
 },
 {

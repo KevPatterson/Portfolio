@@ -167,6 +167,55 @@
 			"url": "https://thermalprint-pro.vercel.app/"
 		},
     {
+  "title": "Incident Management System",
+  "image": "/src/assets/projects/incident-manager.png",
+  "description": "Incident tracking dashboard with a synthwave aesthetic. Real-time incident panel with P1–P4 priority levels. Filters by status, assignee, and time range. On-call team status with live availability.",
+  "technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
+  "url": "https://demo-incident-management.vercel.app/"
+},
+{
+  "title": "Marketplace",
+  "image": "/src/assets/projects/mercadocu.png",
+  "description": "Cuban e-commerce platform with a multi-currency catalog (CUP, USD, MLC), real-time exchange rates via El Toque, shopping cart, and secure payments through EnZona.",
+  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+  "url": "https://mercadocu.vercel.app/"
+},
+{
+  "title": "Las Delicias — Digital Menu",
+  "image": "/src/assets/projects/las-delicias.png",
+  "description": "Website for a Cuban cuisine restaurant featuring an interactive menu, reservation system, online ordering, and gallery. Warm design with Caribbean identity and online booking section.",
+  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+  "url": "https://restaurantecubano.vercel.app/"
+},
+{
+  "title": "RopaStore — Fashion E-commerce",
+  "image": "/src/assets/projects/ropastore.png",
+  "description": "Catalog with detailed product pages and image gallery. Shopping cart with direct WhatsApp ordering. Multi-currency support: USD, CUP, and MLC.",
+  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+  "url": "https://ropastore-two.vercel.app/"
+},
+{
+  "title": "La Cabina — Recording Studio Marketplace in Cuba",
+  "image": "/src/assets/projects/lacabina.png",
+  "description": "Airbnb-style platform connecting recording studios in Cuba with musicians and artists. Directory, studio profiles, booking system, and reviews.",
+  "technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
+  "url": "https://lacabina-five.vercel.app/"
+},
+{
+  "title": "ERP SaaS — Business Management System for SMEs",
+  "image": "/src/assets/projects/sinergia-cuba.png",
+  "description": "Minimum Viable Product of a SaaS ERP targeting Cuban micro, small, and medium-sized businesses. Operations, resource, and business process management in a single platform. Scalable multi-tenant architecture and a full admin dashboard.",
+  "technologies": ["Javascript", "React.js", "TailwindCSS", "Vite"],
+  "url": "https://mpv-mipyme.vercel.app/"
+},
+{
+  "title": "Parsel & Parcel House — Magical Artifacts Shop",
+  "image": "/src/assets/projects/parsel-parcel.png",
+  "description": "Gothic-mystical themed e-commerce with a catalog of enchanted parcels, rare artifacts, and magical supplies. Organized by Houses with a shopping cart and review system.",
+  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+  "url": "https://parsel-parcel-house.vercel.app/"
+},
+    {
       "title": "News Search Engine",
       "image": "/src/assets/projects/React.webp",
       "description": "A news search engine built with React.js, TailwindCSS, and Vite. This project was created as part of a React.js course.",

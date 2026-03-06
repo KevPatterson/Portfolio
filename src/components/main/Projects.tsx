@@ -4,7 +4,7 @@ import { FaGithub, FaChevronDown } from "react-icons/fa"
 import { useTranslation } from "../../context/LanguajeContext"
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { projects } from "../../types/projects"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 import ReactImg from "../../assets/projects/React.webp"
 import autoImg from "../../assets/projects/auto.webp"
@@ -14,14 +14,44 @@ import criptoImg from "../../assets/cripto.webp"
 import veterinariaImg from "../../assets/veterinaria.png"
 import budgetImg from "../../assets/budget.avif"
 import websecImg from "../../assets/projects/websec.png"
+import cocinaImg from "../../assets/projects/cocinaconnosotros.png"
+import cubanCasImg from "../../assets/projects/cuban-cas.png"
+import erpCubaImg from "../../assets/projects/erp-cuba.png"
+import encantShopImg from "../../assets/projects/encantshop.png.png"
+import mipymeStoreImg from "../../assets/projects/mipyme-store.png"
+import termalImg from "../../assets/projects/termal.png"
+import mercadocuImg from "../../assets/projects/mercadocu.png"
+import lasDeliciasImg from "../../assets/projects/las-delicias.png"
+import ropastoreImg from "../../assets/projects/ropastore.png"
+import sinergiaCubaImg from "../../assets/projects/sinergia-cuba.png"
 
 interface ImageMap {
   [key: string]: string;
 }
 
+// Fallback solo para proyectos sin `url` (no tienen preview en microlink)
 const fallbackImageMap: ImageMap = {
+  "Cocina con Nosotros - Sistema de Gestión de Recetas de Comida": cocinaImg,
+  "Cocina con Nosotros - Food Recipe Management System": cocinaImg,
+  "CubanSaas - Proyecto de Tesis de Ciberseguridad": cubanCasImg,
+  "CubanSaas - Cybersecurity Thesis Project": cubanCasImg,
+  "Sinnergia Cuba - ERP SaaS multi-tenant para MiPyMEs cubanas": erpCubaImg,
+  "Sinnergia Cuba - Multi-tenant SaaS ERP for Cuban SMEs": erpCubaImg,
   "WebSec Framework - Framework para auditorías automáticas de seguridad web": websecImg,
   "WebSec Framework - Framework for automated web security audits": websecImg,
+  "Encant Shop - Catálogo de Accesorios": encantShopImg,
+  "Encant Shop - Accessories Catalog": encantShopImg,
+  "Mipyme Store - Tienda Digital de Electrodomésticos": mipymeStoreImg,
+  "Mipyme Store - Home Appliances Digital Shop": mipymeStoreImg,
+  "Termal Print Pro (MPV) - Sistema SaaS de Etiquetas Térmicas para Alimentos y Retail": termalImg,
+  "Termal Print Pro (MVP) - Intelligent SaaS Platform for Thermal Labels in Food and Retail": termalImg,
+  "Marketplace": mercadocuImg,
+  "Las Delicias — Menú Digital": lasDeliciasImg,
+    "Las Delicias — Digital Menu": lasDeliciasImg,
+  "RopaStore — E-coomerce de Moda": ropastoreImg,
+  "RopaStore — Fashion E-commerce": ropastoreImg,
+  "ERP SaaS - Sistema de Gestión para MiPymes": sinergiaCubaImg,
+  "ERP SaaS — Business Management System for SMEs": sinergiaCubaImg,
   "Buscador de Noticias": ReactImg,
   "News Search Engine": ReactImg,
   "App de Clima": viteFeaturedImg,
@@ -38,6 +68,9 @@ const fallbackImageMap: ImageMap = {
   "Budget Control": budgetImg,
 }
 
+const getMicrolinkApiUrl = (url: string): string =>
+  `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false`
+
 interface ProjectImageProps {
   project: projects
   className?: string
@@ -45,17 +78,50 @@ interface ProjectImageProps {
 
 const ProjectImage: React.FC<ProjectImageProps> = ({ project, className }) => {
   const fallbackSrc = fallbackImageMap[project.title] || "/placeholder.svg"
-  const primarySrc = project.image || fallbackSrc
+  const [src, setSrc] = useState<string>(fallbackSrc)
+  const [isLoading, setIsLoading] = useState<boolean>(!!project.url)
+
+  useEffect(() => {
+    if (!project.url) return
+
+    let cancelled = false
+
+    fetch(getMicrolinkApiUrl(project.url))
+      .then((res) => res.json())
+      .then((data) => {
+        if (cancelled) return
+        const screenshotUrl: string | undefined = data?.data?.screenshot?.url
+        if (screenshotUrl) {
+          setSrc(screenshotUrl)
+        } else {
+          setSrc(fallbackSrc)
+        }
+      })
+      .catch(() => {
+        if (!cancelled) setSrc(fallbackSrc)
+      })
+      .finally(() => {
+        if (!cancelled) setIsLoading(false)
+      })
+
+    return () => { cancelled = true }
+  }, [project.url, fallbackSrc])
 
   return (
     <div className="relative w-full h-64">
+      {isLoading && (
+        <div className="absolute inset-0 rounded-xl bg-slate-800/60 animate-pulse flex items-center justify-center">
+          <span className="text-slate-500 text-sm">Loading preview...</span>
+        </div>
+      )}
       <img
-        src={primarySrc}
+        src={src}
         alt={project.title}
         className={className}
-        onError={(e) => {
-          const target = e.currentTarget
-          if (target.src !== fallbackSrc) target.src = fallbackSrc
+        style={{ opacity: isLoading ? 0 : 1, transition: "opacity 0.3s" }}
+        onLoad={() => setIsLoading(false)}
+        onError={() => {
+          if (src !== fallbackSrc) setSrc(fallbackSrc)
         }}
       />
     </div>
