@@ -133,7 +133,7 @@
     {
 			"title": "Sinnergia Cuba - ERP SaaS multi-tenant para MiPyMEs cubanas",
 			"image": "/src/assets/projects/sinergia-cuba.png",
-			"description": "Sinergia Cuba es un ERP SaaS diseñado para MiPyMEs cubanas (Actualmente en desarrollo) que combina operativa diaria (inventario, solicitudes de materiales, facturación) con cumplimiento fiscal y análisis financiero. La plataforma es multi-tenant (una empresa = un espacio aislado), offline-first (PWA + sincronización inteligente) y preparada para generar reportes y exportaciones compatibles con los requerimientos de la ONAT y el Ministerio de Finanzas y Precios",
+			"description": "Sinergia Cuba es un ERP SaaS diseñado para MiPyMEs cubanas que combina operativa diaria (inventario, solicitudes de materiales, facturación) con cumplimiento fiscal y análisis financiero. La plataforma es multi-tenant (una empresa = un espacio aislado), offline-first (PWA + sincronización inteligente) y preparada para generar reportes y exportaciones compatibles con los requerimientos de la ONAT y el Ministerio de Finanzas y Precios",
 			"technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"],
 			"url": "https://sinergiacuba.vercel.app/"
 		},
@@ -165,6 +165,55 @@
 			"technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
 			"url": "https://thermalprint-pro.vercel.app/"
 		},
+    {
+  "title": "Sistema de Gestión de Incidentes",
+  "image": "/src/assets/projects/incident-manager.png",
+  "description": "Dashboard de gestión y seguimiento de incidentes con estética synthwave. Panel de incidencias con prioridades P1–P4 en tiempo real. Filtros por estado, asignado y rango de tiempo. Estado de equipo on-call con disponibilidad en vivo",
+  "technologies": ["Javascript", "React.js", "TailwindCSS","Next.js"],
+  "url": "https://demo-incident-management.vercel.app/"
+},
+{
+  "title": "Marketplace",
+  "image": "/src/assets/projects/mercadocu.png",
+  "description": "Plataforma de comercio electrónico cubana con catálogo multimoneda (CUP, USD, MLC), tasas de cambio en tiempo real vía El Toque, carrito de compras y pagos seguros por EnZona.",
+  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+  "url": "https://mercadocu.vercel.app/"
+},
+{
+  "title": "Las Delicias — Menú Digital",
+  "image": "/src/assets/projects/las-delicias.png",
+  "description": "Sitio web para restaurante de cocina cubana con menú interactivo, sistema de reservaciones, pedidos en línea y galería. Diseño cálido con identidad caribeña y sección de reservas online",
+  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+  "url": "https://restaurantecubano.vercel.app/"
+},
+{
+  "title": "RopaStore — E-coomerce de Moda",
+  "image": "/src/assets/projects/ropastore.png",
+  "description": "Catálogo con fichas de producto detalladas y galería de imágenes. Carrito de compras con pedido directo por WhatsApp. Soporte multi-moneda: USD, CUP y MLC",
+  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+  "url": "https://ropastore-two.vercel.app/"
+},
+{
+  "title": "La Cabina — Marketplace de Estudios de Grabación en Cuba",
+  "image": "/src/assets/projects/lacabina.png",
+  "description": "Plataforma estilo Airbnb que conecta estudios de grabación en Cuba con músicos y artistas. Directorio, perfiles de estudios, sistema de reservas y reseñas.",
+  "technologies": ["Javascript", "React.js", "TailwindCSS"],
+  "url": "https://lacabina-five.vercel.app/"
+},
+{
+  "title": "ERP SaaS - Sistema de Gestión para MiPymes",
+  "image": "/src/assets/projects/sinergia-cuba.png",
+  "description": "Producto Mínimo Viable de un ERP SaaS orientado a micro, pequeñas y medianas empresas cubanas. Gestión de operaciones, recursos y procesos de negocio en una sola plataforma. Arquitectura multi-tenant escalable. Gestión integral de recursos empresariales. Panel de administración completo",
+  "technologies": ["Javascript", "React.js", "TailwindCSS", "Vite"],
+  "url": "https://mpv-mipyme.vercel.app/"
+},
+{
+  "title": "Parsel & Parcel House — Tienda de Artefactos Mágicos",
+  "image": "/src/assets/projects/parsel-parcel.png",
+  "description": "E-commerce temático de estética gótico-mística con catálogo de paquetes encantados, artefactos raros y suministros mágicos. Organizado por Casas con sistema de carrito y reseñas.",
+  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+  "url": "https://parsel-parcel-house.vercel.app/"
+},
 		{
 			"title": "Buscador de Noticias",
 			"image": "/src/assets/projects/React.webp",
