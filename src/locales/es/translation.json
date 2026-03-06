@@ -137,12 +137,19 @@
 			"technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"],
 			"url": "https://sinergiacuba.vercel.app/"
 		},
-        {
+    {
       "title": "WebSec Framework - Framework para auditorías automáticas de seguridad web",
       "image": "/src/assets/projects/websec.png",
       "description": "Framework modular y ejecutable nativamente (Actualmente en desarrollo) para auditorías de seguridad de aplicaciones web. Automatiza todo el flujo: crawling inteligente (incl. JS), fingerprinting tecnológico, escaneo por módulos (XSS, SQLi, LFI, CSRF, CORS, XXE, SSRF, Command Injection, Auth), validación automática de falsos positivos y generación de reportes HTML/PDF profesionales con scoring contextual de riesgo, el cual además incluye integración con algunas herramientas externas",
       "technologies": ["Python"],
       "code": "https://github.com/KevPatterson/WebSec-Framework"
+    },
+    {
+      "title": "Parsel & Parcel House — Tienda de Artefactos Mágicos",
+      "image": "/src/assets/projects/parsel-parcel.png",
+      "description": "E-commerce temático de estética gótico-mística con catálogo de paquetes encantados, artefactos raros y suministros mágicos. Organizado por Casas con sistema de carrito y reseñas.",
+      "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+      "url": "https://parsel-parcel-house.vercel.app/"
     },
     {
       "title": "Encant Shop - Catálogo de Accesorios",
@@ -206,13 +213,6 @@
   "description": "Producto Mínimo Viable de un ERP SaaS orientado a micro, pequeñas y medianas empresas cubanas. Gestión de operaciones, recursos y procesos de negocio en una sola plataforma. Arquitectura multi-tenant escalable. Gestión integral de recursos empresariales. Panel de administración completo",
   "technologies": ["Javascript", "React.js", "TailwindCSS", "Vite"],
   "url": "https://mpv-mipyme.vercel.app/"
-},
-{
-  "title": "Parsel & Parcel House — Tienda de Artefactos Mágicos",
-  "image": "/src/assets/projects/parsel-parcel.png",
-  "description": "E-commerce temático de estética gótico-mística con catálogo de paquetes encantados, artefactos raros y suministros mágicos. Organizado por Casas con sistema de carrito y reseñas.",
-  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
-  "url": "https://parsel-parcel-house.vercel.app/"
 },
 		{
 			"title": "Buscador de Noticias",

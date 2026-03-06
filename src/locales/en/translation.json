@@ -146,6 +146,13 @@
       "code": "https://github.com/KevPatterson/WebSec-Framework"
     },
     {
+      "title": "Parsel & Parcel House — Magical Artifacts Shop",
+      "image": "/src/assets/projects/parsel-parcel.png",
+      "description": "Gothic-mystical themed e-commerce with a catalog of enchanted parcels, rare artifacts, and magical supplies. Organized by Houses with a shopping cart and review system.",
+      "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+      "url": "https://parsel-parcel-house.vercel.app/"
+    },
+    {
       "title": "Encant Shop - Accessories Catalog",
       "image": "/src/assets/projects/encantshop.png",
       "description": "Digital product catalog for an accessories store. Allows browsing collections, filtering by categories, and visualizing products in an attractive and intuitive way. It also includes an admin panel for product management.",
@@ -207,13 +214,6 @@
   "description": "Minimum Viable Product of a SaaS ERP targeting Cuban micro, small, and medium-sized businesses. Operations, resource, and business process management in a single platform. Scalable multi-tenant architecture and a full admin dashboard.",
   "technologies": ["Javascript", "React.js", "TailwindCSS", "Vite"],
   "url": "https://mpv-mipyme.vercel.app/"
-},
-{
-  "title": "Parsel & Parcel House — Magical Artifacts Shop",
-  "image": "/src/assets/projects/parsel-parcel.png",
-  "description": "Gothic-mystical themed e-commerce with a catalog of enchanted parcels, rare artifacts, and magical supplies. Organized by Houses with a shopping cart and review system.",
-  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
-  "url": "https://parsel-parcel-house.vercel.app/"
 },
     {
       "title": "News Search Engine",
