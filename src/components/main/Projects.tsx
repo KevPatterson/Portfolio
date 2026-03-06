@@ -4,7 +4,7 @@ import { FaGithub, FaChevronDown } from "react-icons/fa"
 import { useTranslation } from "../../context/LanguajeContext"
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { projects } from "../../types/projects"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 import ReactImg from "../../assets/projects/React.webp"
 import autoImg from "../../assets/projects/auto.webp"
@@ -24,12 +24,14 @@ import mercadocuImg from "../../assets/projects/mercadocu.png"
 import lasDeliciasImg from "../../assets/projects/las-delicias.png"
 import ropastoreImg from "../../assets/projects/ropastore.png"
 import sinergiaCubaImg from "../../assets/projects/sinergia-cuba.png"
+import incidentManagerImg from "../../assets/projects/incident-manager.png"
+import lacabinaImg from "../../assets/projects/lacabina.png"
+import parselParcelImg from "../../assets/projects/parsel-parcel.png"
 
 interface ImageMap {
   [key: string]: string;
 }
 
-// Fallback solo para proyectos sin `url` (no tienen preview en microlink)
 const fallbackImageMap: ImageMap = {
   "Cocina con Nosotros - Sistema de Gestión de Recetas de Comida": cocinaImg,
   "Cocina con Nosotros - Food Recipe Management System": cocinaImg,
@@ -45,9 +47,15 @@ const fallbackImageMap: ImageMap = {
   "Mipyme Store - Home Appliances Digital Shop": mipymeStoreImg,
   "Termal Print Pro (MPV) - Sistema SaaS de Etiquetas Térmicas para Alimentos y Retail": termalImg,
   "Termal Print Pro (MVP) - Intelligent SaaS Platform for Thermal Labels in Food and Retail": termalImg,
+  "Sistema de Gestión de Incidentes": incidentManagerImg,
+  "Incident Management System": incidentManagerImg,
+  "La Cabina — Marketplace de Estudios de Grabación en Cuba": lacabinaImg,
+  "La Cabina — Recording Studio Marketplace in Cuba": lacabinaImg,
+  "Parsel & Parcel House — Tienda de Artefactos Mágicos": parselParcelImg,
+  "Parsel & Parcel House — Magical Artifacts Shop": parselParcelImg,
   "Marketplace": mercadocuImg,
   "Las Delicias — Menú Digital": lasDeliciasImg,
-    "Las Delicias — Digital Menu": lasDeliciasImg,
+  "Las Delicias — Digital Menu": lasDeliciasImg,
   "RopaStore — E-coomerce de Moda": ropastoreImg,
   "RopaStore — Fashion E-commerce": ropastoreImg,
   "ERP SaaS - Sistema de Gestión para MiPymes": sinergiaCubaImg,
@@ -68,9 +76,6 @@ const fallbackImageMap: ImageMap = {
   "Budget Control": budgetImg,
 }
 
-const getMicrolinkApiUrl = (url: string): string =>
-  `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false`
-
 interface ProjectImageProps {
   project: projects
   className?: string
@@ -79,47 +84,13 @@ interface ProjectImageProps {
 const ProjectImage: React.FC<ProjectImageProps> = ({ project, className }) => {
   const fallbackSrc = fallbackImageMap[project.title] || "/placeholder.svg"
   const [src, setSrc] = useState<string>(fallbackSrc)
-  const [isLoading, setIsLoading] = useState<boolean>(!!project.url)
-
-  useEffect(() => {
-    if (!project.url) return
-
-    let cancelled = false
-
-    fetch(getMicrolinkApiUrl(project.url))
-      .then((res) => res.json())
-      .then((data) => {
-        if (cancelled) return
-        const screenshotUrl: string | undefined = data?.data?.screenshot?.url
-        if (screenshotUrl) {
-          setSrc(screenshotUrl)
-        } else {
-          setSrc(fallbackSrc)
-        }
-      })
-      .catch(() => {
-        if (!cancelled) setSrc(fallbackSrc)
-      })
-      .finally(() => {
-        if (!cancelled) setIsLoading(false)
-      })
-
-    return () => { cancelled = true }
-  }, [project.url, fallbackSrc])
 
   return (
     <div className="relative w-full h-64">
-      {isLoading && (
-        <div className="absolute inset-0 rounded-xl bg-slate-800/60 animate-pulse flex items-center justify-center">
-          <span className="text-slate-500 text-sm">Loading preview...</span>
-        </div>
-      )}
       <img
         src={src}
         alt={project.title}
         className={className}
-        style={{ opacity: isLoading ? 0 : 1, transition: "opacity 0.3s" }}
-        onLoad={() => setIsLoading(false)}
         onError={() => {
           if (src !== fallbackSrc) setSrc(fallbackSrc)
         }}
