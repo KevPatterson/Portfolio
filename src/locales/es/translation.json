@@ -138,8 +138,8 @@
       "code": "https://github.com/KevPatterson/Cuban-CAS"
     },
     {
-			"title": "Sinnergia Cuba - ERP SaaS multi-tenant para MiPyMEs cubanas",
-			"image": "/src/assets/projects/erp-cuba.png",
+			"title": "Sinergia Cuba - ERP SaaS multi-tenant para MiPyMEs cubanas",
+			"image": "/src/assets/projects/sinergia-cuba.png",
 			"description": "Sinergia Cuba es un ERP SaaS diseñado para MiPyMEs cubanas que combina operativa diaria (inventario, solicitudes de materiales, facturación) con cumplimiento fiscal y análisis financiero. La plataforma es multi-tenant (una empresa = un espacio aislado), offline-first (PWA + sincronización inteligente) y preparada para generar reportes y exportaciones compatibles con los requerimientos de la ONAT y el Ministerio de Finanzas y Precios",
 			"technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"],
 			"url": "https://sinergiacuba.vercel.app/"
@@ -201,9 +201,9 @@
       "url": "https://mipyme-store.vercel.app/"
     },
 		{
-			"title": "Termal Print Pro (MPV) - Sistema SaaS de Etiquetas Térmicas para Alimentos y Retail",
+			"title": "Termal Print Pro (MVP) - Sistema SaaS de Etiquetas Térmicas para Alimentos y Retail",
 			"image": "/src/assets/projects/termal.png",
-			"description": "Producto Mínimo Viable de una Plataforma SaaS Inteligente de Etiquetas Térmicas para Alimentos y Retail usando React.js, TailwindCSS y Vite.",
+			"description": "Producto Mínimo Viable de una Plataforma SaaS Inteligente de Etiquetas Térmicas para Alimentos y Retail usando React.js, TailwindCSS y Next.js.",
 			"technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
 			"url": "https://thermalprint-pro.vercel.app/"
 		},
@@ -229,7 +229,7 @@
   "url": "https://restaurantecubano.vercel.app/"
 },
 {
-  "title": "RopaStore — E-coomerce de Moda",
+  "title": "RopaStore — E-commerce de Moda",
   "image": "/src/assets/projects/ropastore.png",
   "description": "Catálogo con fichas de producto detalladas y galería de imágenes. Carrito de compras con pedido directo por WhatsApp. Soporte multi-moneda: USD, CUP y MLC",
   "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
@@ -250,9 +250,9 @@
   "url": "https://mpv-mipyme.vercel.app/"
 },
 		{
-			"title": "Buscador de Noticias",
+			"title": "CubaPress - Buscador de Noticias",
 			"image": "/src/assets/projects/React.webp",
-			"description": "Un buscador de noticias usando React.js, TailwindCSS y Vite. Este proyecto fue realizado como parte de un curso de React.js.",
+			"description": "Buscador de noticias diseñado para centralizar información de medios cubanos e internacionales. Implementa un sistema inteligente de fallback entre múltiples APIs y fuentes RSS, garantizando disponibilidad continua del servicio. Este proyecto fue realizado como parte de un curso de React.js y mejorado para el uso diario del mismo.",
 			"technologies": ["Javascript", "TailwindCSS", "React.js", "Next.js"],
       "url": "https://newsearch-delta.vercel.app",
       "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React"
@@ -267,7 +267,7 @@
 		{
 			"title": "Cotizador de Seguros de Autos",
 			"image": "/src/assets/projects/auto.webp",
-			"description": "Aplicación web para cotizar seguros de autos usando Nest.js, TypeScript y TailwindCSS.",
+			"description": "Aplicación web para cotizar seguros de autos usando React.js, TypeScript y TailwindCSS.",
 			"technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],
 			"url": "https://cotizador-seguro-teal.vercel.app/",
       "code": "https://github.com/KevPatterson/Cotizador-de-Seguro-de-Automovil-en-React"
@@ -276,15 +276,15 @@
 			"title": "CRM para Gestión de Clientes",
 			"image": "/src/assets/clients.jpg",
 			"description": "Aplicación web minimalista diseñada para gestionar la información de clientes de manera fácil y efectiva.",
-			"technologies": ["React.js", "TailwindCSS"],
+			"technologies": ["React.js", "TailwindCSS", "Vite"],
 			"code": "https://github.com/KevPatterson/CRM-en-React"
 		},
     {
 			"title": "Cotizador de Criptomonedas",
 			"image": "/src/assets/cripto.webp",
 			"description": "Aplicación web que permite a los usuarios cotizar el valor de diferentes criptomonedas en tiempo real.",
-			"technologies": ["React.js", "TailwindCSS"],
-			"code": "https://github.com/KevPatterson/CRM-en-React"
+			"technologies": ["React.js", "TailwindCSS", "Vite"],
+			"code": "https://github.com/KevPatterson/Cotizador-de-Criptomonedas-en-React"
 		},
     {
 			"title": "Gestión de Pacientes de una Veterinaria",

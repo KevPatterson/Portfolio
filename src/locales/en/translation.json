@@ -139,7 +139,7 @@
       "code": "https://github.com/KevPatterson/Cuban-CAS"
     },
     {
-			"title": "Sinnergia Cuba - Multi-tenant SaaS ERP for Cuban SMEs",
+			"title": "Sinergia Cuba - Multi-tenant SaaS ERP for Cuban SMEs",
 			"image": "/src/assets/projects/sinergia-cuba.png",
 			"description": "Sinergia Cuba is a SaaS ERP designed for Cuban SMEs (Currently in development) that combines daily operations (inventory, material requests, invoicing) with tax compliance and financial analysis. The platform is multi-tenant (one company = one isolated space), offline-first (PWA + intelligent synchronization), and prepared to generate reports and exports compatible with the requirements of ONAT and the Ministry of Finance and Prices.",
 			"technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"],
@@ -204,7 +204,7 @@
 		{
 			"title": "Termal Print Pro (MVP) - Intelligent SaaS Platform for Thermal Labels in Food and Retail",
 			"image": "/src/assets/projects/termal.png",
-			"description": "Minimum Viable Product of an intelligent SaaS platform for thermal labeling in Food and Retail, built with React.js, TailwindCSS, and Vite.",
+			"description": "Minimum Viable Product of an intelligent SaaS platform for thermal labeling in Food and Retail, built with React.js, TailwindCSS, and Next.js.",
 			"technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
 			"url": "https://thermalprint-pro.vercel.app/"
 		},
@@ -251,10 +251,11 @@
   "url": "https://mpv-mipyme.vercel.app/"
 },
     {
-      "title": "News Search Engine",
+      "title": "CubaPress - News Search Engine",
       "image": "/src/assets/projects/React.webp",
-      "description": "A news search engine built with React.js, TailwindCSS, and Vite. This project was created as part of a React.js course.",
+      "description": "News search engine designed to centralize information from Cuban and international media. Implements an intelligent fallback system between multiple APIs and RSS feeds, ensuring continuous service availability. This project was created as part of a React.js course and improved for daily use.",
       "technologies": ["Javascript", "TailwindCSS", "React.js", "Next.js"],
+      "url": "https://newsearch-delta.vercel.app",
       "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React"
     },
     {
@@ -267,7 +268,7 @@
     {
       "title": "Car Insurance Quoter",
       "image": "/src/assets/projects/auto.webp",
-      "description": "A web app to quote car insurance using Nest.js, TypeScript, and TailwindCSS.",
+      "description": "A web app to quote car insurance using React.js, TypeScript, and TailwindCSS.",
       "technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],
       "url": "https://cotizador-seguro-teal.vercel.app/",
       "code": "https://github.com/KevPatterson/Cotizador-de-Seguro-de-Automovil-en-React"
@@ -276,15 +277,15 @@
       "title": "Client Management CRM",
       "image": "/src/assets/clients.jpg",
       "description": "A minimalist web app designed to easily and effectively manage client information.",
-      "technologies": ["React.js", "TailwindCSS"],
+      "technologies": ["React.js", "TailwindCSS", "Vite"],
       "code": "https://github.com/KevPatterson/CRM-en-React"
     },
     {
       "title": "Cryptocurrency Quoter",
       "image": "/src/assets/cripto.webp",
       "description": "A web application that allows users to quote the value of different cryptocurrencies in real time.",
-      "technologies": ["React.js", "TailwindCSS"],
-      "code": "https://github.com/KevPatterson/CRM-en-React"
+      "technologies": ["React.js", "TailwindCSS", "Vite"],
+      "code": "https://github.com/KevPatterson/Cotizador-de-Criptomonedas-en-React"
     },
     {
       "title": "Veterinary Patient Management",
