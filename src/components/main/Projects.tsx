@@ -33,6 +33,8 @@ import cuadreCajaImg from "../../assets/projects/cuadre-caja.png"
 import serberoinkImg from "../../assets/projects/serberoink.png"
 import clavisoftImg from "../../assets/projects/clavisoft.png"
 import gabyshopImg from "../../assets/projects/gabyshop.png"
+import cubapressImg from "../../assets/projects/cubapress.png"
+import encantshopImg from "../../assets/projects/encantshop.png.png"
 
 interface ImageMap {
   [key: string]: string;
@@ -66,12 +68,12 @@ const fallbackImageMap: ImageMap = {
   "RopaStore — Fashion E-commerce": ropastoreImg,
   "ERP SaaS - Sistema de Gestión para MiPymes": sinergiaCubaImg,
   "ERP SaaS — Business Management System for SMEs": sinergiaCubaImg,
-  "CubaPress - Buscador de Noticias": ReactImg,
-  "CubaPress - News Search Engine": ReactImg,
+  "CubaPress - Buscador de Noticias": cubapressImg,
+  "CubaPress - News Search Engine": cubapressImg,
   "Gaby's Prints - Tienda de Impresiones Personalizadas": gabyshopImg,
   "Gaby's Prints - Custom Printing Shop": gabyshopImg,
-  "Encant Shop - Catálogo de Accesorios": gabyshopImg,
-  "Encant Shop - Accessories Catalog": gabyshopImg,
+  "Encant Shop - Catálogo de Accesorios": encantshopImg,
+  "Encant Shop - Accessories Catalog": encantshopImg,
   "SubFinder - Buscador de Subtítulos Multi-Fuente": ReactImg,
   "SubFinder - Multi-Source Subtitle Search Engine": ReactImg,
   "GoalStream - Plataforma de Streaming de Fútbol": ReactImg,
