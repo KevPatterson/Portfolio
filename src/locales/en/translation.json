@@ -118,21 +118,18 @@
   "projects": [
 		{
 			"title": "Cocina con Nosotros - Food Recipe Management System",
-			"image": "/src/assets/projects/cocinaconnosotros.png",
 			"description": "A food recipe management system built with Python, Django, PostgreSQL, Bootstrap, and jQuery.",
 			"technologies": ["Python", "Django", "PostgreSQL", "Bootstrap", "jQuery"],
 			"url": "https://cocinaconnosotros.pythonanywhere.com/"
 		},
     {
       "title": "CRM Pro - Enterprise Client Management System",
-      "image": "/src/assets/projects/crmpro.png",
       "description": "Enterprise CRM platform with full client management, sales pipeline, activity tracking, real-time reports, and metrics. Modern design built for commercial teams.",
       "technologies": ["React.js", "TailwindCSS", "TypeScript", "Vite"],
       "url": "https://crmpro-demo.vercel.app/"
     },
     {
       "title": "CubanSaas - Cybersecurity Thesis Project",
-      "image": "/src/assets/projects/cuban-cas.png",
       "description": "Implementation of an automated perimeter protection service based on Cloudflare, executed at the network edge through Cloudflare Workers, which implement a security proxy that filters and routes traffic to protected origins using information stored dynamically in Cloudflare KV.",
       "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"],
       "url": "https://cubansaas.tech",
@@ -140,119 +137,102 @@
     },
     {
 			"title": "Sinergia Cuba - Multi-tenant SaaS ERP for Cuban SMEs",
-			"image": "/src/assets/projects/sinergia-cuba.png",
 			"description": "Sinergia Cuba is a SaaS ERP designed for Cuban SMEs (Currently in development) that combines daily operations (inventory, material requests, invoicing) with tax compliance and financial analysis. The platform is multi-tenant (one company = one isolated space), offline-first (PWA + intelligent synchronization), and prepared to generate reports and exports compatible with the requirements of ONAT and the Ministry of Finance and Prices.",
 			"technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"],
 			"url": "https://sinergiacuba.vercel.app/"
 		},
     {
       "title": "WebSec Framework - Framework for automated web security audits",
-      "image": "/src/assets/projects/websec.png",
       "description": "Modular framework executable natively (Currently in development) for web application security audits. Automates the entire workflow: intelligent crawling (incl. JS), technology fingerprinting, module-based scanning (XSS, SQLi, LFI, CSRF, CORS, XXE, SSRF, Command Injection, Auth), automatic false positive validation, and professional HTML/PDF report generation with contextual risk scoring, which also includes integration with some external tools.",
       "technologies": ["Python"],
       "code": "https://github.com/KevPatterson/WebSec-Framework"
     },
     {
       "title": "Parsel & Parcel House — Magical Artifacts Shop",
-      "image": "/src/assets/projects/parsel-parcel.png",
       "description": "Gothic-mystical themed e-commerce with a catalog of enchanted parcels, rare artifacts, and magical supplies. Organized by Houses with a shopping cart and review system.",
       "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
       "url": "https://parsel-parcel-house.vercel.app/"
     },
     {
       "title": "Clavisoft - Software Services Platform",
-      "image": "/src/assets/projects/clavisoft.png",
       "description": "Professional web platform for a software development company. Showcases services, project portfolio, and custom technology solutions.",
       "technologies": ["React.js", "TailwindCSS", "Vite", "TypeScript"],
       "url": "https://clavisoft.vercel.app"
     },
     {
       "title": "Gaby's Prints - Custom Printing Shop",
-      "image": "https://api.microlink.io/?url=https://gabys-prints.vercel.app/&screenshot=true&meta=false&embed=screenshot.url",
       "description": "E-commerce specialized in custom prints and personalized products. Interactive catalog with customization options.",
       "technologies": ["React.js", "TailwindCSS", "Vite", "Supabase"],
       "url": "https://gabyshop.vercel.app/gabys-prints"
     },
     {
       "title": "Encant Shop - Accessories Catalog",
-      "image": "https://api.microlink.io/?url=https://encant-shop.vercel.app/&screenshot=true&meta=false&embed=screenshot.url",
       "description": "Digital product catalog for an accessories store. Allows browsing collections, filtering by categories, and visualizing products in an attractive and intuitive way. It also includes an admin panel for product management.",
       "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
       "url": "https://gabyshop.vercel.app/encant-shop"
     },
     {
       "title": "Gaby Shop - Online Product Store",
-      "image": "https://api.microlink.io/?url=https://gabyshop.vercel.app/&screenshot=true&meta=false&embed=screenshot.url",
       "description": "Online store with a varied product catalog. Modern interface with shopping cart and integrated order system.",
       "technologies": ["React.js", "TailwindCSS", "Vite", "Supabase"],
       "url": "https://gabyshop.vercel.app"
     },
     {
       "title": "OSINT Terminal - Open Source Intelligence Tool",
-      "image": "/src/assets/projects/osint-framework.png",
       "description": "Interactive terminal application for OSINT analysis. Professional tool for gathering and analyzing open-source information with a terminal-style interface.",
       "technologies": ["React.js", "TypeScript", "TailwindCSS", "Vite"],
       "url": "https://osint-terminal-app.vercel.app"
     },
     {
       "title": "Mipyme Store - Home Appliances Digital Shop",
-      "image": "/src/assets/projects/mipyme-store.png",
       "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase"],
       "description": "Full-featured digital store for a Cuban small business specializing in home appliances. Features a product catalog with category filters, real-time search, interactive 3D card effects, and direct WhatsApp redirection for order management. Includes an admin panel for complete product, category, and image management through a CRUD interface powered by Supabase.",
       "url": "https://mipyme-store.vercel.app/"
     },
 		{
 			"title": "Termal Print Pro (MVP) - Intelligent SaaS Platform for Thermal Labels in Food and Retail",
-			"image": "/src/assets/projects/termal.png",
 			"description": "Minimum Viable Product of an intelligent SaaS platform for thermal labeling in Food and Retail, built with React.js, TailwindCSS, and Next.js.",
 			"technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
 			"url": "https://thermalprint-pro.vercel.app/"
 		},
     {
   "title": "Incident Management System",
-  "image": "/src/assets/projects/incident-manager.png",
   "description": "Incident tracking dashboard with a synthwave aesthetic. Real-time incident panel with P1–P4 priority levels. Filters by status, assignee, and time range. On-call team status with live availability.",
   "technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
   "url": "https://demo-incident-management.vercel.app/"
 },
 {
   "title": "Marketplace",
-  "image": "/src/assets/projects/mercadocu.png",
   "description": "Cuban e-commerce platform with a multi-currency catalog (CUP, USD, MLC), real-time exchange rates via El Toque, shopping cart, and secure payments through EnZona.",
   "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
   "url": "https://mercadocu.vercel.app/"
 },
 {
   "title": "Las Delicias — Digital Menu",
-  "image": "/src/assets/projects/las-delicias.png",
   "description": "Website for a Cuban cuisine restaurant featuring an interactive menu, reservation system, online ordering, and gallery. Warm design with Caribbean identity and online booking section.",
   "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
   "url": "https://restaurantecubano.vercel.app/"
 },
 {
   "title": "RopaStore — Fashion E-commerce",
-  "image": "/src/assets/projects/ropastore.png",
   "description": "Catalog with detailed product pages and image gallery. Shopping cart with direct WhatsApp ordering. Multi-currency support: USD, CUP, and MLC.",
   "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
   "url": "https://ropastore-two.vercel.app/"
 },
 {
   "title": "La Cabina — Recording Studio Marketplace in Cuba",
-  "image": "/src/assets/projects/lacabina.png",
   "description": "Airbnb-style platform connecting recording studios in Cuba with musicians and artists. Directory, studio profiles, booking system, and reviews.",
   "technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
   "url": "https://lacabina-five.vercel.app/"
 },
 {
   "title": "ERP SaaS — Business Management System for SMEs",
-  "image": "/src/assets/projects/sinergia-cuba.png",
   "description": "Minimum Viable Product of a SaaS ERP targeting Cuban micro, small, and medium-sized businesses. Operations, resource, and business process management in a single platform. Scalable multi-tenant architecture and a full admin dashboard.",
   "technologies": ["Javascript", "React.js", "TailwindCSS", "Vite"],
   "url": "https://mpv-mipyme.vercel.app/"
 },
     {
       "title": "CubaPress - News Search Engine",
-      "image": "https://api.microlink.io/?url=https://newsearch-delta.vercel.app&screenshot=true&embed=screenshot.url",
       "description": "News search engine designed to centralize information from Cuban and international media. Implements an intelligent fallback system between multiple APIs and RSS feeds, ensuring continuous service availability. This project was created as part of a React.js course and improved for daily use.",
       "technologies": ["Javascript", "TailwindCSS", "React.js", "Next.js"],
       "url": "https://newsearch-delta.vercel.app",
@@ -260,21 +240,18 @@
     },
     {
       "title": "SubFinder - Multi-Source Subtitle Search Engine",
-      "image": "/src/assets/projects/React.webp",
       "description": "Modern web application for searching and downloading subtitles in multiple languages. Integrates various sources (OpenSubtitles, Subdl, Subdivx) in an elegant interface with favorites system, search history, and secure authentication via Supabase.",
       "technologies": ["React.js", "Vite", "TailwindCSS", "Supabase", "TypeScript"],
       "code": "https://github.com/KevPatterson/subfinder"
     },
     {
       "title": "GoalStream - Football Streaming Platform",
-      "image": "/src/assets/projects/React.webp",
       "description": "Live football streaming platform with retro terminal-style interface and neon green aesthetics. Features HLS player with multi-quality support (SD, HD, FHD, 4K), admin panel for match and stream management, and optimized responsive design.",
       "technologies": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "HLS.js"],
       "code": "https://github.com/KevPatterson/goalstream"
     },
     {
       "title": "Serbero Ink - Tattoo Studio Website",
-      "image": "/src/assets/projects/serberoink.png",
       "description": "Tattoo studio website with integrated custom CMS. Operates without traditional database, content lives in versioned files on GitHub. Includes automatic ES/EN translation, password-protected admin panel, and automatic content refresh.",
       "technologies": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "GitHub API"],
       "code": "https://github.com/KevPatterson/serberoink",
@@ -282,7 +259,6 @@
     },
     {
       "title": "CuadreCaja - Offline Cash Register System",
-      "image": "/src/assets/projects/cuadre-caja.png",
       "description": "PWA for managing daily cash register reconciliation in Cuban small and medium businesses. Works completely offline with local storage, includes 6-step wizard, OCR with Gemini to scan previous reconciliations, and CSV/PDF export.",
       "technologies": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "PWA"],
       "code": "https://github.com/KevPatterson/cuadrecaja",
@@ -290,14 +266,12 @@
     },
     {
       "title": "Weather App",
-      "image": "/src/assets/projects/vite-featured.avif",
       "description": "A React web application that allows users to check the current weather in any city in the world.",
       "technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],
       "code": "https://github.com/KevPatterson/App-de-Clima-en-React"
     },
     {
       "title": "Car Insurance Quoter",
-      "image": "/src/assets/projects/auto.webp",
       "description": "A web app to quote car insurance using React.js, TypeScript, and TailwindCSS.",
       "technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],
       "url": "https://cotizador-seguro-teal.vercel.app/",
@@ -305,28 +279,24 @@
     },
     {
       "title": "Client Management CRM",
-      "image": "/src/assets/clients.jpg",
       "description": "A minimalist web app designed to easily and effectively manage client information.",
       "technologies": ["React.js", "TailwindCSS", "Vite"],
       "code": "https://github.com/KevPatterson/CRM-en-React"
     },
     {
       "title": "Cryptocurrency Quoter",
-      "image": "/src/assets/cripto.webp",
       "description": "A web application that allows users to quote the value of different cryptocurrencies in real time.",
       "technologies": ["React.js", "TailwindCSS", "Vite"],
       "code": "https://github.com/KevPatterson/Cotizador-de-Criptomonedas-en-React"
     },
     {
       "title": "Veterinary Patient Management",
-      "image": "/src/assets/veterinaria.png",
       "description": "A frontend app built with React and Vite to efficiently and practically manage veterinary patients.",
       "technologies": ["React.js", "TailwindCSS", "Vite"],
       "code": "https://github.com/KevPatterson/Gestion-de-Pacientes-de-una-Veterinaria"
     },
     {
       "title": "Budget Control",
-      "image": "/src/assets/budget.avif",
       "description": "An interactive frontend app designed in React with Vite and LocalStorage to help you efficiently manage your budget.",
       "technologies": ["React.js", "TailwindCSS", "Vite"],
       "code": "https://github.com/KevPatterson/Control-de-Gastos-en-React"
