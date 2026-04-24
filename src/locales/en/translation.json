@@ -160,11 +160,39 @@
       "url": "https://parsel-parcel-house.vercel.app/"
     },
     {
+      "title": "Clavisoft - Software Services Platform",
+      "image": "/src/assets/projects/encantshop.png",
+      "description": "Professional web platform for a software development company. Showcases services, project portfolio, and custom technology solutions.",
+      "technologies": ["React.js", "TailwindCSS", "Vite", "TypeScript"],
+      "url": "https://clavisoft.vercel.app"
+    },
+    {
+      "title": "Gaby's Prints - Custom Printing Shop",
+      "image": "/src/assets/projects/encantshop.png",
+      "description": "E-commerce specialized in custom prints and personalized products. Interactive catalog with customization options.",
+      "technologies": ["React.js", "TailwindCSS", "Vite", "Supabase"],
+      "url": "https://gabys-prints.vercel.app"
+    },
+    {
       "title": "Encant Shop - Accessories Catalog",
       "image": "/src/assets/projects/encantshop.png",
       "description": "Digital product catalog for an accessories store. Allows browsing collections, filtering by categories, and visualizing products in an attractive and intuitive way. It also includes an admin panel for product management.",
       "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
-      "url": "https://encantshop.vercel.app/"
+      "url": "https://encant-shop.vercel.app"
+    },
+    {
+      "title": "Gaby Shop - Online Product Store",
+      "image": "/src/assets/projects/encantshop.png",
+      "description": "Online store with a varied product catalog. Modern interface with shopping cart and integrated order system.",
+      "technologies": ["React.js", "TailwindCSS", "Vite", "Supabase"],
+      "url": "https://gabyshop.vercel.app"
+    },
+    {
+      "title": "OSINT Terminal - Open Source Intelligence Tool",
+      "image": "/src/assets/projects/websec.png",
+      "description": "Interactive terminal application for OSINT analysis. Professional tool for gathering and analyzing open-source information with a terminal-style interface.",
+      "technologies": ["React.js", "TypeScript", "TailwindCSS", "Vite"],
+      "url": "https://osint-terminal-app.vercel.app"
     },
     {
       "title": "Mipyme Store - Home Appliances Digital Shop",

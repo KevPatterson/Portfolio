@@ -159,11 +159,39 @@
       "url": "https://parsel-parcel-house.vercel.app/"
     },
     {
+      "title": "Clavisoft - Plataforma de Servicios de Software",
+      "image": "/src/assets/projects/encantshop.png",
+      "description": "Plataforma web profesional para empresa de desarrollo de software. Presenta servicios, portafolio de proyectos y soluciones tecnológicas personalizadas.",
+      "technologies": ["React.js", "TailwindCSS", "Vite", "TypeScript"],
+      "url": "https://clavisoft.vercel.app"
+    },
+    {
+      "title": "Gaby Shop - Tienda Online de Productos",
+      "image": "/src/assets/projects/encantshop.png",
+      "description": "Tienda online con catálogo de productos variados. Interfaz moderna con carrito de compras y sistema de pedidos integrado.",
+      "technologies": ["React.js", "TailwindCSS", "Vite", "Supabase"],
+      "url": "https://gabyshop.vercel.app"
+    },
+    {
+      "title": "Gaby's Prints - Tienda de Impresiones Personalizadas",
+      "image": "/src/assets/projects/encantshop.png",
+      "description": "E-commerce especializado en impresiones personalizadas y productos customizados. Catálogo interactivo con opciones de personalización.",
+      "technologies": ["React.js", "TailwindCSS", "Vite", "Supabase"],
+      "url": "https://gabyshop.vercel.app/gabys-prints"
+    },
+    {
       "title": "Encant Shop - Catálogo de Accesorios",
       "image": "/src/assets/projects/encantshop.png",
       "description": "Catálogo digital de productos para una tienda de accesorios. Permite explorar colecciones, filtrar por categorías y visualizar productos de forma atractiva e intuitiva. Además cuenta con un panel de administración para la gestión de los productos.",
       "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
-      "url": "https://encantshop.vercel.app/"
+      "url": "https://gabyshop.vercel.app/encant-shop"
+    },
+    {
+      "title": "OSINT Terminal - Herramienta de Inteligencia de Fuentes Abiertas",
+      "image": "/src/assets/projects/websec.png",
+      "description": "Aplicación terminal interactiva para análisis OSINT. Herramienta profesional para recopilación y análisis de información de fuentes abiertas con interfaz tipo terminal.",
+      "technologies": ["React.js", "TypeScript", "TailwindCSS", "Vite"],
+      "url": "https://osint-terminal-app.vercel.app"
     },
     {
       "title": "Mipyme Store - Tienda Digital de Electrodomésticos",

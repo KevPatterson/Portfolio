@@ -42,7 +42,6 @@ export const MouseTrail = () => {
 			coords.y = e.clientY;
 		});
 
-		// Prevent default drag behavior on images
 		const preventDrag = (e: DragEvent) => {
 			e.preventDefault();
 		};

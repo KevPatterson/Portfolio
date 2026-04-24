@@ -9,7 +9,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Enhanced scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -35,24 +34,20 @@ html {
   scrollbar-color: rgba(139, 92, 246, 0.6) rgba(15, 23, 42, 0.8);
 }
 
-/* Professional text selection */
 ::selection {
   background: rgba(139, 92, 246, 0.3);
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Professional focus styles */
 *:focus {
   outline: 2px solid rgba(139, 92, 246, 0.5);
   outline-offset: 2px;
 }
 
-/* Enhanced button and link hover effects */
 @layer components {
   .btn-primary {
     @apply px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-lg 
@@ -85,7 +80,6 @@ html {
   }
 }
 
-/* Professional animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -131,7 +125,6 @@ html {
   animation: fadeInRight 0.6s ease-out;
 }
 
-/* Professional loading states */
 .loading-skeleton {
   @apply bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 bg-size-200 animate-pulse;
   background-size: 200% 100%;
@@ -146,7 +139,6 @@ html {
   animation: shimmer 2s infinite;
 }
 
-/* Enhanced responsive design */
 @media (max-width: 768px) {
   .section-title {
     @apply text-3xl mb-12;
@@ -157,7 +149,6 @@ html {
   }
 }
 
-/* Professional glass morphism effects */
 .glass {
   @apply bg-white/5 backdrop-blur-md border border-white/10;
 }
@@ -166,7 +157,6 @@ html {
   @apply bg-slate-900/50 backdrop-blur-md border border-slate-800/50;
 }
 
-/* Custom cursor styles */
 * {
 	cursor: none !important;
 }
@@ -218,7 +208,6 @@ img {
 	}
 }
 
-/* Text hover animation styles */
 .hover-text {
 	display: inline-block;
 	overflow: hidden;
@@ -249,8 +238,6 @@ img {
 	transform: translateY(-100%);
 }
 
-
-/* Fix for gradient text with hover animation */
 h1.gradient-text .hover-text span,
 h1.gradient-text .hover-text span::after {
 	background: linear-gradient(to right, rgb(147, 197, 253), rgb(203, 213, 225), rgb(192, 132, 252)) !important;
@@ -260,7 +247,6 @@ h1.gradient-text .hover-text span::after {
 	color: transparent !important;
 }
 
-/* Ensure text is visible */
 .hover-text span {
 	color: inherit;
 }

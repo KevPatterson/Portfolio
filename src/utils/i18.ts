@@ -8,13 +8,13 @@ i18n
   .use(LanguageDetector) 
   .use(initReactI18next) 
   .init({
-    fallbackLng: 'en', // Idioma por defecto en caso de que no se detecte o no se encuentre traducción
-    debug: false, // Activa el modo debug solo en desarrollo
+    fallbackLng: 'en',
+    debug: false,
     interpolation: {
-      escapeValue: true, // Protección contra XSS
+      escapeValue: true,
     },
     backend: {
-      loadPath: '../locales/{{lng}}/{{ns}}.json', // Ruta de los archivos de traducción
+      loadPath: '../locales/{{lng}}/{{ns}}.json',
     },
     react: {
       useSuspense: true, 

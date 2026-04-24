@@ -3,64 +3,34 @@
   <head>
     <meta charset="UTF-8" />
 
-    <!-- ===================== SEGURIDAD ===================== -->
-    <!-- Los headers de seguridad principales se configuran en vercel.json -->
-    <!-- Solo incluimos aquí los que funcionan correctamente en meta tags -->
-    <!-- NOTA: Para defensa en profundidad se utilizaron algunos Headers duplicados en meta tags como respaldo -->
-    <!-- Si los headers HTTP fallan (caché, CDN, proxy), estos actúan como segunda línea de defensa -->
-    
-    <!-- Content Security Policy - Ajustado para permitir assets de Vite -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'">
-    
-    <!-- Protección contra clickjacking -->
     <meta http-equiv="X-Frame-Options" content="DENY">
-    
-    <!-- Previene MIME type sniffing -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    
-    <!-- Política de referrer -->
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    
-    <!-- Permissions Policy - Solo características básicas para compatibilidad -->
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
-    
-    <!-- Privacy -->
     <meta name="dnt" content="1">
 
-    <!-- ===================== GOOGLE SEARCH CONSOLE ===================== -->
     <meta name="google-site-verification" content="9onTfubrPFfnRj8Dni6BI8Wpd3_Wmw3Vfvo2pZJiESY" />
 
-    <!-- ===================== BÁSICO ===================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     
-    <!-- Internacionalización -->
     <meta http-equiv="content-language" content="es">
     <link rel="alternate" hreflang="en" href="https://patterson-portfolio.vercel.app/en/">
     <link rel="alternate" hreflang="es" href="https://patterson-portfolio.vercel.app/es/">
 
-    <!-- Título: lo que aparece en Google y en la pestaña del navegador -->
     <title>Portfolio Kevin Patterson</title>
 
-    <!-- Descripción: el texto que Google muestra debajo del título en resultados -->
     <meta
       name="description"
       content="Portfolio of Kevin Patterson, a Frontend Developer specializing in React, TypeScript, and modern web technologies. Explore my projects and get in touch."
     />
 
-    <!-- Palabras clave (menos relevantes hoy, pero no dañan) -->
     <meta name="keywords" content="Kevin Patterson, Cybersecurity Developer, Frontend Developer, React, TypeScript, Tailwind CSS, Portfolio, Web Developer" />
-
-    <!-- Autor -->
     <meta name="author" content="Kevin Patterson" />
-
-    <!-- Robots: permite que Google indexe la página y siga los links -->
     <meta name="robots" content="index, follow" />
-
-    <!-- URL canónica: evita contenido duplicado si el sitio es accesible desde múltiples URLs -->
     <link rel="canonical" href="https://patterson-portfolio.vercel.app/" />
 
-    <!-- ===================== OPEN GRAPH (Facebook, LinkedIn, WhatsApp...) ===================== -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://patterson-portfolio.vercel.app/" />
     <meta property="og:title" content="Kevin Patterson | Frontend Developer" />
@@ -68,12 +38,6 @@
       property="og:description"
       content="Portfolio of Kevin Patterson, a Frontend Developer specializing in React, TypeScript, and modern web technologies. Explore my projects and get in touch."
     />
-    <!--
-      IMPORTANTE: Reemplaza esta URL con la ruta real a tu imagen de preview.
-      Tamaño recomendado: 1200x630px. Puede ser un screenshot de tu portfolio,
-      una imagen tuya profesional, o un banner con tu nombre.
-      Coloca la imagen en /public/og-image.png y despliega.
-    -->
     <meta property="og:image" content="https://patterson-portfolio.vercel.app/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -82,11 +46,6 @@
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="es_ES" />
 
-    <!-- ===================== TWITTER / X CARD ===================== -->
-    <!--
-      "summary_large_image" muestra una imagen grande al compartir en Twitter/X.
-      Cámbialo a "summary" si prefieres una imagen pequeña con el texto al lado.
-    -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://patterson-portfolio.vercel.app/" />
     <meta name="twitter:title" content="Kevin Patterson | Frontend Developer" />
@@ -96,34 +55,16 @@
     />
     <meta name="twitter:image" content="https://patterson-portfolio.vercel.app/og-image.png" />
     <meta name="twitter:image:alt" content="Kevin Patterson - Frontend Developer Portfolio" />
-    <!--
-      Opcional: si tienes cuenta de Twitter/X, descomenta y pon tu @usuario
-      <meta name="twitter:creator" content="@TuUsuario" />
-      <meta name="twitter:site" content="@TuUsuario" />
-    -->
 
-    <!-- ===================== FAVICON Y PWA ===================== -->
-    <!--
-      Vite coloca el favicon en /public. Si ya tienes uno, deja esto como está.
-      Si no, puedes generar uno en https://favicon.io
-    -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="icon" type="image/png" href="/vite.svg" />
     <link rel="apple-touch-icon" href="/vite.svg" />
     
-    <!-- PWA -->
     <meta name="theme-color" content="#020617" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <!-- <link rel="manifest" href="/manifest.json" /> -->
 
-    <!-- ===================== SCHEMA.ORG (datos estructurados para Google) ===================== -->
-    <!--
-      Esto ayuda a Google a entender QUÉ eres, no solo qué dice tu sitio.
-      Puede habilitarte para "rich results" en búsquedas.
-      Personaliza los campos que correspondan.
-    -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -138,37 +79,9 @@
         "knowsAbout": ["React", "TypeScript", "Tailwind CSS", "Vite", "Python", "Cybersecurity",  "JavaScript", "Frontend Development"]
       }
     </script>
-
-    <!-- ===================== PERFORMANCE ===================== -->
-    <!-- Preconecta con Google Fonts si los usas, para cargar más rápido -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
-    <!-- <link rel="dns-prefetch" href="https://cdn.tudominio.com"> -->
-    <!-- <link rel="preload" href="fuente.woff2" as="font" type="font/woff2" crossorigin> -->
-    <!-- <link rel="prefetch" href="/siguiente-pagina.html"> -->
   </head>
   <body>
     <div id="root"></div>
-
-    <!--
-      NOTA SOBRE SEO EN SPAs (React):
-      ────────────────────────────────────────────────────────────────────
-      Las meta tags de arriba mejoran enormemente cómo te ven las redes
-      sociales y los bots básicos. Sin embargo, Google puede tardar más
-      en indexar el contenido dinámico de React.
-
-      Para máximo SEO, considera alguna de estas opciones:
-      
-      Opción A (más sencilla): Instala react-helmet-async para gestionar
-      las meta tags dinámicamente desde tus componentes React:
-        npm install react-helmet-async
-
-      Opción B (más potente): Migra a un framework con SSR/SSG como
-      Next.js o Astro. Esto renderiza el HTML en el servidor y Google
-      puede indexarlo perfectamente sin esperar a JavaScript.
-      ────────────────────────────────────────────────────────────────────
-    -->
-
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

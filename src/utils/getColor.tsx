@@ -43,10 +43,7 @@ const getColor: (tech: string) => string = (tech: string) => {
     return "text-fuchsia-500"
   } else if (tech === "Allure" || tech === "allure") {
     return "text-lime-400"
-  }
-
-  // --- Nuevas herramientas añadidas ---
-  else if (tech === "theHarvester" || tech === "TheHarvester") {
+  } else if (tech === "theHarvester" || tech === "TheHarvester") {
     return "text-rose-500"
   } else if (tech === "SpiderFoot" || tech === "spiderfoot") {
     return "text-sky-500"
@@ -63,7 +60,6 @@ const getColor: (tech: string) => string = (tech: string) => {
   } else if (tech === "WebSpy Analyzer" || tech === "WebSpyAnalyzer" || tech === "webspy analyzer") {
     return "text-teal-400"
   }
-
   else {
     return "text-neutral-400"
   }
