@@ -259,6 +259,36 @@
       "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React"
     },
     {
+      "title": "SubFinder - Multi-Source Subtitle Search Engine",
+      "image": "/src/assets/projects/React.webp",
+      "description": "Modern web application for searching and downloading subtitles in multiple languages. Integrates various sources (OpenSubtitles, Subdl, Subdivx) in an elegant interface with favorites system, search history, and secure authentication via Supabase.",
+      "technologies": ["React.js", "Vite", "TailwindCSS", "Supabase", "TypeScript"],
+      "code": "https://github.com/KevPatterson/subfinder"
+    },
+    {
+      "title": "GoalStream - Football Streaming Platform",
+      "image": "/src/assets/projects/React.webp",
+      "description": "Live football streaming platform with retro terminal-style interface and neon green aesthetics. Features HLS player with multi-quality support (SD, HD, FHD, 4K), admin panel for match and stream management, and optimized responsive design.",
+      "technologies": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "HLS.js"],
+      "code": "https://github.com/KevPatterson/goalstream"
+    },
+    {
+      "title": "Serbero Ink - Tattoo Studio Website",
+      "image": "/src/assets/projects/React.webp",
+      "description": "Tattoo studio website with integrated custom CMS. Operates without traditional database, content lives in versioned files on GitHub. Includes automatic ES/EN translation, password-protected admin panel, and automatic content refresh.",
+      "technologies": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "GitHub API"],
+      "code": "https://github.com/KevPatterson/serberoink",
+      "url": "https://serberoink.vercel.app"
+    },
+    {
+      "title": "CuadreCaja - Offline Cash Register System",
+      "image": "/src/assets/projects/React.webp",
+      "description": "PWA for managing daily cash register reconciliation in Cuban small and medium businesses. Works completely offline with local storage, includes 6-step wizard, OCR with Gemini to scan previous reconciliations, and CSV/PDF export.",
+      "technologies": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "PWA"],
+      "code": "https://github.com/KevPatterson/cuadrecaja",
+      "url": "https://micuadre.vercel.app"
+    },
+    {
       "title": "Weather App",
       "image": "/src/assets/projects/vite-featured.avif",
       "description": "A React web application that allows users to check the current weather in any city in the world.",
