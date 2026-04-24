@@ -33,6 +33,7 @@ import cuadreCajaImg from "../../assets/projects/cuadre-caja.png"
 import serberoinkImg from "../../assets/projects/serberoink.png"
 import clavisoftImg from "../../assets/projects/clavisoft.png"
 import gabyshopImg from "../../assets/projects/gabyshop.png"
+import gabysprintsImg from "../../assets/projects/gabys-prints.png"
 import cubapressImg from "../../assets/projects/cubapress.png"
 import encantshopImg from "../../assets/projects/encantshop.png.png"
 
@@ -70,8 +71,8 @@ const fallbackImageMap: ImageMap = {
   "ERP SaaS — Business Management System for SMEs": sinergiaCubaImg,
   "CubaPress - Buscador de Noticias": cubapressImg,
   "CubaPress - News Search Engine": cubapressImg,
-  "Gaby's Prints - Tienda de Impresiones Personalizadas": gabyshopImg,
-  "Gaby's Prints - Custom Printing Shop": gabyshopImg,
+  "Gaby's Prints - Tienda de Impresiones Personalizadas": gabysprintsImg,
+  "Gaby's Prints - Custom Printing Shop": gabysprintsImg,
   "Encant Shop - Catálogo de Accesorios": encantshopImg,
   "Encant Shop - Accessories Catalog": encantshopImg,
   "SubFinder - Buscador de Subtítulos Multi-Fuente": ReactImg,
