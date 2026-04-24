@@ -36,6 +36,8 @@ import gabyshopImg from "../../assets/projects/gabyshop.png"
 import gabysprintsImg from "../../assets/projects/gabys-prints.png"
 import cubapressImg from "../../assets/projects/cubapress.png"
 import encantshopImg from "../../assets/projects/encantshop.png.png"
+import goalstreamImg from "../../assets/projects/goalstream.svg"
+import subfinderImg from "../../assets/projects/subfinder.svg"
 
 interface ImageMap {
   [key: string]: string;
@@ -75,10 +77,10 @@ const fallbackImageMap: ImageMap = {
   "Gaby's Prints - Custom Printing Shop": gabysprintsImg,
   "Encant Shop - Catálogo de Accesorios": encantshopImg,
   "Encant Shop - Accessories Catalog": encantshopImg,
-  "SubFinder - Buscador de Subtítulos Multi-Fuente": ReactImg,
-  "SubFinder - Multi-Source Subtitle Search Engine": ReactImg,
-  "GoalStream - Plataforma de Streaming de Fútbol": ReactImg,
-  "GoalStream - Football Streaming Platform": ReactImg,
+  "SubFinder - Buscador de Subtítulos Multi-Fuente": subfinderImg,
+  "SubFinder - Multi-Source Subtitle Search Engine": subfinderImg,
+  "GoalStream - Plataforma de Streaming de Fútbol": goalstreamImg,
+  "GoalStream - Football Streaming Platform": goalstreamImg,
   "Serbero Ink - Sitio Web de Estudio de Tatuajes": serberoinkImg,
   "Serbero Ink - Tattoo Studio Website": serberoinkImg,
   "CuadreCaja - Sistema de Cuadre de Caja Offline": cuadreCajaImg,
