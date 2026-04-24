@@ -28,6 +28,11 @@ import incidentManagerImg from "../../assets/projects/incident-manager.png"
 import lacabinaImg from "../../assets/projects/lacabina.png"
 import parselParcelImg from "../../assets/projects/parsel-parcel.png"
 import crmProImg from "../../assets/projects/crmpro.png"
+import osintFrameworkImg from "../../assets/projects/osint-framework.png"
+import cuadreCajaImg from "../../assets/projects/cuadre-caja.png"
+import serberoinkImg from "../../assets/projects/serberoink.png"
+import clavisoftImg from "../../assets/projects/clavisoft.png"
+import gabyshopImg from "../../assets/projects/gabyshop.png"
 
 interface ImageMap {
   [key: string]: string;
@@ -67,10 +72,16 @@ const fallbackImageMap: ImageMap = {
   "SubFinder - Multi-Source Subtitle Search Engine": ReactImg,
   "GoalStream - Plataforma de Streaming de Fútbol": ReactImg,
   "GoalStream - Football Streaming Platform": ReactImg,
-  "Serbero Ink - Sitio Web de Estudio de Tatuajes": ReactImg,
-  "Serbero Ink - Tattoo Studio Website": ReactImg,
-  "CuadreCaja - Sistema de Cuadre de Caja Offline": ReactImg,
-  "CuadreCaja - Offline Cash Register System": ReactImg,
+  "Serbero Ink - Sitio Web de Estudio de Tatuajes": serberoinkImg,
+  "Serbero Ink - Tattoo Studio Website": serberoinkImg,
+  "CuadreCaja - Sistema de Cuadre de Caja Offline": cuadreCajaImg,
+  "CuadreCaja - Offline Cash Register System": cuadreCajaImg,
+  "OSINT Terminal - Herramienta de Inteligencia de Fuentes Abiertas": osintFrameworkImg,
+  "OSINT Terminal - Open Source Intelligence Tool": osintFrameworkImg,
+  "Clavisoft - Plataforma de Servicios de Software": clavisoftImg,
+  "Clavisoft - Software Services Platform": clavisoftImg,
+  "Gaby Shop - Tienda Online de Productos": gabyshopImg,
+  "Gaby Shop - Online Product Store": gabyshopImg,
   "App de Clima": viteFeaturedImg,
   "Weather App": viteFeaturedImg,
   "Cotizador de Seguros de Autos": autoImg,
