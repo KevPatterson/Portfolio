@@ -103,12 +103,6 @@
 			"url": "https://cocinaconnosotros.pythonanywhere.com/"
 		},
     {
-      "title": "CRM Pro - Enterprise Client Management System",
-      "description": "Enterprise CRM platform with full client management, sales pipeline, activity tracking, real-time reports, and metrics. Modern design built for commercial teams.",
-      "technologies": ["React.js", "TailwindCSS", "TypeScript", "Vite"],
-      "url": "https://crmpro-demo.vercel.app/"
-    },
-    {
       "title": "CubanSaas - Cybersecurity Thesis Project",
       "description": "Implementation of an automated perimeter protection service based on Cloudflare, executed at the network edge through Cloudflare Workers, which implement a security proxy that filters and routes traffic to protected origins using information stored dynamically in Cloudflare KV.",
       "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"],
@@ -116,8 +110,36 @@
       "code": "https://github.com/KevPatterson/Cuban-CAS"
     },
     {
+      "title": "Clavisoft - Software Services Platform",
+      "description": "Professional web platform for a software development company. Showcases services, project portfolio, and custom technology solutions.",
+      "technologies": ["React.js", "TailwindCSS", "Vite", "TypeScript"],
+      "url": "https://clavisoft.vercel.app"
+    },
+    {
+      "title": "Patitas — Pet Reunion Platform",
+      "description": "Community platform to reunite lost pets, report found animals, and promote responsible adoptions. Centralizes structured, searchable, and geolocalized information with guaranteed privacy. Includes AI system for form autocompletion, OCR, hybrid matching, and duplicate detection. PWA with real-time notifications, full-text search, interactive Leaflet map, social comment system, sighting timeline, automatic moderation, and complete audit trail. Anime Edition Design System with 11 animation types, perimeter security with RLS across all tables, multi-level rate limiting, and AI assistant visibility via llms.txt and JSON-LD.",
+      "technologies": ["React", "TypeScript", "Vite", "TailwindCSS", "PostgreSQL", "Supabase", "Vercel", "Leaflet"],
+      "url": "https://patitass.vercel.app/",
+      "code": "https://github.com/KevPatterson/Patitas---Plataforma-de-mascotas",
+      "screenshot": "https://app.snap-render.com/v1/embed?url=https://patitass.vercel.app"
+    },
+    {
+      "title": "CubaPress - News Aggregator",
+      "description": "Intelligent news aggregator focused on Cuban and international media sources. Implements a robust fallback system across multiple APIs (NewsData.io, TheNewsAPI, NewsAPI) and RSS feeds, ensuring continuous availability. Features advanced search, category filtering, dual visualization modes (grid/list), infinite scroll, custom Word bulletin export, intelligent web scraping for complete content, and search history. Professional dark editorial newsroom theme with full-text search and automatic prioritization of Cuban sources.",
+      "technologies": ["Javascript", "React.js", "TailwindCSS", "Material UI"],
+      "url": "https://newsearch-delta.vercel.app",
+      "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React",
+      "screenshot": "https://app.snap-render.com/v1/embed?url=https://newsearch-delta.vercel.app"
+    },
+    {
+      "title": "Encant Shop - Accessories Catalog",
+      "description": "Digital product catalog for an accessories store. Allows browsing collections, filtering by categories, and visualizing products in an attractive and intuitive way. It also includes an admin panel for product management.",
+      "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
+      "url": "https://encantshop.vercel.app/"
+    },
+		{
 			"title": "Sinergia Cuba - Multi-tenant SaaS ERP for Cuban SMEs",
-			"description": "Sinergia Cuba is a SaaS ERP designed for Cuban SMEs (Currently in development) that combines daily operations (inventory, material requests, invoicing) with tax compliance and financial analysis. The platform is multi-tenant (one company = one isolated space), offline-first (PWA + intelligent synchronization), and prepared to generate reports and exports compatible with the requirements of ONAT and the Ministry of Finance and Prices.",
+			"description": "Sinergia Cuba is a SaaS ERP designed for Cuban SMEs that combines daily operations (inventory, material requests, invoicing) with tax compliance and financial analysis. The platform is multi-tenant (one company = one isolated space), offline-first (PWA + intelligent synchronization), and prepared to generate reports and exports compatible with the requirements of ONAT and the Ministry of Finance and Prices.",
 			"technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"],
 			"url": "https://sinergiacuba.vercel.app/"
 		},
@@ -134,34 +156,16 @@
       "url": "https://parsel-parcel-house.vercel.app/"
     },
     {
-      "title": "Clavisoft - Software Services Platform",
-      "description": "Professional web platform for a software development company. Showcases services, project portfolio, and custom technology solutions.",
-      "technologies": ["React.js", "TailwindCSS", "Vite", "TypeScript"],
-      "url": "https://clavisoft.vercel.app"
-    },
-    {
-      "title": "Gaby's Prints - Custom Printing Shop",
-      "description": "E-commerce specialized in custom prints and personalized products. Interactive catalog with customization options.",
-      "technologies": ["React.js", "TailwindCSS", "Vite", "Supabase"],
-      "url": "https://gabyshop.vercel.app/gabys-prints"
-    },
-    {
-      "title": "Encant Shop - Accessories Catalog",
-      "description": "Digital product catalog for an accessories store. Allows browsing collections, filtering by categories, and visualizing products in an attractive and intuitive way. It also includes an admin panel for product management.",
-      "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
-      "url": "https://gabyshop.vercel.app/encant-shop"
-    },
-    {
       "title": "Gaby Shop - Online Product Store",
       "description": "Online store with a varied product catalog. Modern interface with shopping cart and integrated order system.",
       "technologies": ["React.js", "TailwindCSS", "Vite", "Supabase"],
       "url": "https://gabyshop.vercel.app"
     },
     {
-      "title": "OSINT Terminal - Open Source Intelligence Tool",
-      "description": "Interactive terminal application for OSINT analysis. Professional tool for gathering and analyzing open-source information with a terminal-style interface.",
-      "technologies": ["React.js", "TypeScript", "TailwindCSS", "Vite"],
-      "url": "https://osint-terminal-app.vercel.app"
+      "title": "Gaby's Prints - Custom Printing Shop",
+      "description": "E-commerce specialized in custom prints and personalized products. Interactive catalog with customization options.",
+      "technologies": ["React.js", "TailwindCSS", "Vite", "Supabase"],
+      "url": "https://gabyshop.vercel.app/gabys-prints"
     },
     {
       "title": "Mipyme Store - Home Appliances Digital Shop",
@@ -178,9 +182,15 @@
     {
   "title": "Incident Management System",
   "description": "Incident tracking dashboard with a synthwave aesthetic. Real-time incident panel with P1–P4 priority levels. Filters by status, assignee, and time range. On-call team status with live availability.",
-  "technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
+  "technologies": ["Javascript", "React.js", "TailwindCSS","Next.js"],
   "url": "https://demo-incident-management.vercel.app/"
 },
+    {
+      "title": "CRM Pro - Enterprise Client Management System",
+      "description": "Enterprise CRM platform with full client management, sales pipeline, activity tracking, real-time reports, and metrics. Modern design built for commercial teams.",
+      "technologies": ["React.js", "TailwindCSS", "TypeScript", "Vite"],
+      "url": "https://crmpro-demo.vercel.app/"
+    },
 {
   "title": "Marketplace",
   "description": "Cuban e-commerce platform with a multi-currency catalog (CUP, USD, MLC), real-time exchange rates via El Toque, shopping cart, and secure payments through EnZona.",
@@ -211,20 +221,6 @@
   "technologies": ["Javascript", "React.js", "TailwindCSS", "Vite"],
   "url": "https://mpv-mipyme.vercel.app/"
 },
-    {
-      "title": "Patitas — Pet Reunion Platform",
-      "description": "Community platform to reunite lost pets, report found animals, and promote responsible adoptions. Centralizes structured, searchable, and geolocalized information with guaranteed privacy. Includes AI system for form autocompletion, OCR, hybrid matching, and duplicate detection. PWA with real-time notifications, full-text search, interactive Leaflet map, social comment system, sighting timeline, automatic moderation, and complete audit trail. Anime Edition Design System with 11 animation types, perimeter security with RLS across all tables, multi-level rate limiting, and AI assistant visibility via llms.txt and JSON-LD.",
-      "technologies": ["React", "TypeScript", "Vite", "TailwindCSS", "PostgreSQL", "Supabase", "Vercel", "Leaflet"],
-      "url": "https://patitass.vercel.app/",
-      "code": "https://github.com/KevPatterson/Patitas---Plataforma-de-mascotas"
-    },
-    {
-      "title": "CubaPress - News Aggregator",
-      "description": "Intelligent news aggregator focused on Cuban and international media sources. Implements a robust fallback system across multiple APIs (NewsData.io, TheNewsAPI, NewsAPI) and RSS feeds, ensuring continuous availability. Features advanced search, category filtering, dual visualization modes (grid/list), infinite scroll, custom Word bulletin export, intelligent web scraping for complete content, and search history. Professional dark editorial newsroom theme with full-text search and automatic prioritization of Cuban sources.",
-      "technologies": ["Javascript", "React.js", "TailwindCSS", "Material UI"],
-      "url": "https://newsearch-delta.vercel.app",
-      "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React"
-    },
     {
       "title": "SubFinder - Multi-Source Subtitle Search Engine",
       "description": "Modern web application for searching and downloading subtitles in multiple languages. Integrates various sources (OpenSubtitles, Subdl, Subdivx) in an elegant interface with favorites system, search history, and secure authentication via Supabase.",
