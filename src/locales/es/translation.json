@@ -43,13 +43,6 @@
       "technologies": ["React.js", "PostgreSQL", "Next.js", "TailwindCSS"]
     },
     {
-      "year": "Septiembre 2024 · Noviembre 2024",
-      "role": "Ingeniero en Ciberseguridad",
-      "company": "Freelance",
-      "description": "Como proyecto personal independiente desarrollé de una metodología de búsqueda y análisis de información en fuentes abiertas para detección temprana de filtraciones de datos y exposición de servicios críticos.",
-      "technologies": ["Maltego", "Google Dorks", "SpiderFoot", "theHarvester"]
-    },
-    {
       "year": "Septiembre 2024 · Febrero 2025",
       "role": "Desarrollador Full Stack",
       "company": "UCI",
@@ -57,18 +50,11 @@
       "technologies": ["Django", "PostgreSQL", "Bootstrap", "jQuery"]
     },
     {
-      "year": "Septiembre 2024 · Presente",
-      "role": "Desarrollador Front-End",
-      "company": "CACSA",
-      "description": "Durante mis prácticas en CACSA me encargué del desarrollo de una plataforma web de servicios de ciberseguridad (CAS) y de la implementación en la misma de un servicio automatizado de protección perimetral basado en Cloudflare. Para este se utilizó la metodología ágil SCRUM, desempeñando un rol activo en la planificación de sprints, elaboración de historias de usuario y definición de criterios de aceptación. Además, mantenía reuniones diarias (daily meetings) con el cliente y el equipo de desarrollo para garantizar la alineación con los requerimientos funcionales, la calidad del producto final y la entrega continua de valor.",
-      "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite"]
-    },
-    {
-      "year": "Septiembre 2024 · Presente",
-      "role": "Ingeniero en Ciberseguridad",
-      "company": "CACSA",
-      "description": "En CACSA me encargué de la realización de análisis pasivos y activos de vulnerabilidades en páginas web corporativas y la evaluación de vulnerabilidades detectadas; además del monitoreo y análisis de la red corporativa, la aplicación de técnicas de correlación de datos en fuentes abiertas para apoyar procesos de análisis forense digital, la creación e implementación de listas de verificación y la realización de auditorías a locales de la empresa.",
-      "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite"]
+      "year": "Septiembre 2024 · Febrero 2026",
+      "role": "Desarrollador Front-End & Ingeniero en Ciberseguridad",
+      "company": "CACSA / UCI",
+      "description": "Durante mis prácticas en CACSA (Sept 2024 - Feb 2025) me encargué del desarrollo de una plataforma web de servicios de ciberseguridad (CAS) y de la implementación en la misma de un servicio automatizado de protección perimetral basado en Cloudflare, utilizando la metodología ágil SCRUM con reuniones diarias con el cliente. Simultáneamente, como proyecto de tesis en UCI (Nov 2025 - Feb 2026), diseñé e implementé un servicio automatizado de protección perimetral basado en Cloudflare, integrando controles de seguridad, automatización de aprovisionamiento y buenas prácticas para mejorar la resiliencia y disponibilidad de las plataformas web al mitigar ataques DDoS, filtrar tráfico malicioso y garantizar un acceso seguro mediante políticas WAF y limitación de velocidad. Ambos proyectos comparten la misma iniciativa de seguridad perimetral. También realicé análisis pasivos y activos de vulnerabilidades en páginas web corporativas, monitoreo de la red corporativa, aplicación de técnicas de correlación de datos en fuentes abiertas para análisis forense digital, y auditorías a locales de la empresa.",
+      "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite", "Python", "Cloudflare"]
     },
     {
       "year": "Abril 2025",
@@ -91,13 +77,7 @@
       "description": "Durante mis prácticas en la ECNA fui el encargado de realizar pruebas E2E automatizadas a plataformas web de la entidad, garantizando el funcionamiento y la disponibilidad e integridad de las mismas.",
       "technologies": ["Cypress", "Allure"]
     },
-    {
-      "year": "Noviembre 2025 · Febrero 2026",
-      "role": "Ingeniero en Ciberseguridad",
-      "company": "UCI",
-      "description": "Como proyecto de tesis para optar por el título de Ingeniero en Ciberseguridad diseñé e implementé un servicio automatizado de protección perimetral basado en Cloudflare, integrando controles de seguridad, automatización de aprovisionamiento y buenas prácticas. Este proyecto tiene como objetivo mejorar la resiliencia y disponibilidad de las plataformas web al mitigar ataques DDoS, filtrar tráfico malicioso y garantizar un acceso seguro mediante políticas WAF y limitación de velocidad.",
-      "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"]
-    },
+
     {
       "year": "Febrero 2026 · Presente",
       "role": "Desarrollador Full Stack",

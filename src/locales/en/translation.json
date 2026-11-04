@@ -43,13 +43,6 @@
       "technologies": ["React.js", "PostgreSQL", "Next.js", "TailwindCSS"]
     },
     {
-      "year": "September 2024 · November 2024",
-      "role": "Cybersecurity Engineer",
-      "company": "Freelance",
-      "description": "As an independent personal project, I developed a methodology for open-source information search and analysis to detect data leaks and exposure of critical services early.",
-      "technologies": ["Maltego", "Google Dorks", "SpiderFoot", "theHarvester"]
-    },
-    {
       "year": "September 2024 · February 2025",
       "role": "Full Stack Developer",
       "company": "UCI",
@@ -57,18 +50,11 @@
       "technologies": ["Django", "PostgreSQL", "Bootstrap", "jQuery"]
     },
     {
-      "year": "September 2024 · Present",
-      "role": "Front-End Developer",
-      "company": "CACSA",
-      "description": "During my internship at CACSA, I was responsible for developing a web platform for cybersecurity services (CAS) and implementing an automated perimeter protection service based on Cloudflare. The agile SCRUM methodology was used, and I played an active role in sprint planning, creating user stories, and defining acceptance criteria. I also held daily meetings with the client and development team to ensure alignment with functional requirements, product quality, and continuous value delivery.",
-      "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite"]
-    },
-    {
-      "year": "September 2024 · Present",
-      "role": "Cybersecurity Engineer",
-      "company": "CACSA",
-      "description": "At CACSA, I was responsible for conducting passive and active vulnerability analysis on corporate web pages, assessing detected vulnerabilities, monitoring and analyzing the corporate network, applying data correlation techniques from open sources to support digital forensic analysis, creating and implementing checklists, and auditing the company's premises.",
-      "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite"]
+      "year": "September 2024 · February 2026",
+      "role": "Front-End Developer & Cybersecurity Engineer",
+      "company": "CACSA / UCI",
+      "description": "During my internship at CACSA (Sept 2024 - Feb 2025), I was responsible for developing a web platform for cybersecurity services (CAS) and implementing an automated perimeter protection service based on Cloudflare, using the agile SCRUM methodology with daily client meetings. Simultaneously, as a thesis project at UCI (Nov 2025 - Feb 2026), I designed and implemented an automated perimeter protection service based on Cloudflare, integrating security controls, provisioning automation, and best practices to improve the resilience and availability of web platforms by mitigating DDoS attacks, filtering malicious traffic, and ensuring secure access through WAF policies and rate limiting. Both projects share the same perimeter security initiative. I also conducted passive and active vulnerability analysis on corporate websites, monitored the corporate network, applied data correlation techniques from open sources for digital forensic analysis, and performed audits of company premises.",
+      "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite", "Python", "Cloudflare"]
     },
     {
       "year": "April 2025",
@@ -91,13 +77,7 @@
       "description": "During my internship at ECNA, I was responsible for performing automated E2E testing on the institution's web platforms, ensuring their functionality, availability, and integrity.",
       "technologies": ["Cypress", "Allure"]
     },
-    {
-      "year": "November 2025 · February 2026",
-      "role": "Cybersecurity Engineer",
-      "company": "UCI",
-      "description": "As a thesis project to obtain the degree of Cybersecurity Engineer, I designed and implemented an automated perimeter protection service based on Cloudflare, integrating security controls, provisioning automation, and best practices. This project aims to improve the resilience and availability of web platforms by mitigating DDoS attacks, filtering malicious traffic, and ensuring secure access through WAF policies and rate limiting.",
-      "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"]
-    },
+
     {
       "year": "February 2026 · Present",
       "role": "Full Stack Developer",
