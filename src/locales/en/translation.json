@@ -22,10 +22,10 @@
       "technologies": ["React.js", "Supabase", "Next.js", "TailwindCSS"]
     },
     {
-      "year": "January 2023 · Present",
+      "year": "January 2023 · July 2026",
       "role": "Full Stack Developer",
       "company": "UCI",
-      "description": "At UCI, I develop scalable web applications using Python, Django, PostgreSQL, Nest.js, and React.js. I collaborate closely with multidisciplinary teams, valuing clear communication and trust as we build solutions that truly enhance user experience, security, and system performance.",
+      "description": "At UCI, I developed scalable web applications using Python, Django, PostgreSQL, Nest.js, and React.js, also collaborated closely with multidisciplinary teams, valuing clear communication and trust while we built solutions that truly enhanced user experience, security, and system performance.",
       "technologies": ["React.js", "PostgreSQL", "Next.js", "TailwindCSS", "Python", "Django"]
     },
     {
@@ -60,7 +60,7 @@
       "year": "April 2025",
       "role": "Cybersecurity Engineer",
       "company": "ECNA",
-      "description": "At ECNA, I was in charge of analyzing corporate Squid proxy web traces, evaluating them and collecting digital forensic evidence following the proper incident management cycle.",
+      "description": "At ECNA, I was in charge of analyzing corporate Squid proxy web traces, evaluating them and collecting digital forensic evidence following the proper incident management cycle. I also conducted passive and active vulnerability analysis on corporate web pages, monitored the corporate network, applied data correlation techniques from open sources for digital forensic analysis, and performed audits of company premises.",
       "technologies": ["WebSpy Analyzer"]
     },
     {
@@ -211,6 +211,13 @@
   "technologies": ["Javascript", "React.js", "TailwindCSS", "Vite"],
   "url": "https://mpv-mipyme.vercel.app/"
 },
+    {
+      "title": "Patitas — Pet Reunion Platform",
+      "description": "Community platform to reunite lost pets, report found animals, and promote responsible adoptions. Centralizes structured, searchable, and geolocalized information with guaranteed privacy. Includes AI system for form autocompletion, OCR, hybrid matching, and duplicate detection. PWA with real-time notifications, full-text search, interactive Leaflet map, social comment system, sighting timeline, automatic moderation, and complete audit trail. Anime Edition Design System with 11 animation types, perimeter security with RLS across all tables, multi-level rate limiting, and AI assistant visibility via llms.txt and JSON-LD.",
+      "technologies": ["React", "TypeScript", "Vite", "TailwindCSS", "PostgreSQL", "Supabase", "Vercel", "Leaflet"],
+      "url": "https://patitass.vercel.app/",
+      "code": "https://github.com/KevPatterson/Patitas---Plataforma-de-mascotas"
+    },
     {
       "title": "CubaPress - News Aggregator",
       "description": "Intelligent news aggregator focused on Cuban and international media sources. Implements a robust fallback system across multiple APIs (NewsData.io, TheNewsAPI, NewsAPI) and RSS feeds, ensuring continuous availability. Features advanced search, category filtering, dual visualization modes (grid/list), infinite scroll, custom Word bulletin export, intelligent web scraping for complete content, and search history. Professional dark editorial newsroom theme with full-text search and automatic prioritization of Cuban sources.",

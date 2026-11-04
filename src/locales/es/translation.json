@@ -87,17 +87,29 @@
 			"url": "https://cocinaconnosotros.pythonanywhere.com/"
 		},
     {
-      "title": "CRM Pro - Sistema de Gestión de Clientes Empresarial",
-      "description": "Forntend de una Plataforma CRM empresarial con gestión completa de clientes, pipeline de ventas, seguimiento de actividades, reportes y métricas en tiempo real. Diseño moderno orientado a equipos comerciales.",
-      "technologies": ["React.js", "TailwindCSS", "TypeScript", "Vite"],
-      "url": "https://crmpro-demo.vercel.app/"
-    },
-    {
       "title": "CubanSaas - Proyecto de Tesis de Ciberseguridad",
       "description": "Implementación de un servicio automatizado de protección perimetral basado en Cloudflare, cuya ejecución se realiza en el borde de la red a través de Cloudflare Workers, los cuales implementan un proxy de seguridad que filtra y enruta el tráfico hacia los orígenes protegidos utilizando información almacenada dinámicamente en Cloudflare KV.",
       "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"],
       "url": "https://cubansaas.tech",
       "code": "https://github.com/KevPatterson/Cuban-CAS"
+    },
+        {
+      "title": "Clavisoft - Plataforma de Servicios de Software",
+      "description": "Plataforma web profesional para empresa de desarrollo de software. Presenta servicios, portafolio de proyectos y soluciones tecnológicas personalizadas.",
+      "technologies": ["React.js", "TailwindCSS", "Vite", "TypeScript"],
+      "url": "https://clavisoft.vercel.app"
+    },
+        {
+      "title": "Encant Shop - Catálogo de Accesorios",
+      "description": "Catálogo digital de productos para una tienda de accesorios. Permite explorar colecciones, filtrar por categorías y visualizar productos de forma atractiva e intuitiva. Además cuenta con un panel de administración para la gestión de los productos.",
+      "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
+      "url": "https://encantshop.vercel.app/"
+    },
+    {
+      "title": "Encant Shop - Catálogo de Accesorios",
+      "description": "Catálogo digital de productos para una tienda de accesorios. Permite explorar colecciones, filtrar por categorías y visualizar productos de forma atractiva e intuitiva. Además cuenta con un panel de administración para la gestión de los productos.",
+      "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
+      "url": "https://encantshop.vercel.app/"
     },
     {
 			"title": "Sinergia Cuba - ERP SaaS multi-tenant para MiPyMEs cubanas",
@@ -118,12 +130,6 @@
       "url": "https://parsel-parcel-house.vercel.app/"
     },
     {
-      "title": "Clavisoft - Plataforma de Servicios de Software",
-      "description": "Plataforma web profesional para empresa de desarrollo de software. Presenta servicios, portafolio de proyectos y soluciones tecnológicas personalizadas.",
-      "technologies": ["React.js", "TailwindCSS", "Vite", "TypeScript"],
-      "url": "https://clavisoft.vercel.app"
-    },
-    {
       "title": "Gaby Shop - Tienda Online de Productos",
       "description": "Tienda online con catálogo de productos variados. Interfaz moderna con carrito de compras y sistema de pedidos integrado.",
       "technologies": ["React.js", "TailwindCSS", "Vite", "Supabase"],
@@ -134,12 +140,6 @@
       "description": "E-commerce especializado en impresiones personalizadas y productos customizados. Catálogo interactivo con opciones de personalización.",
       "technologies": ["React.js", "TailwindCSS", "Vite", "Supabase"],
       "url": "https://gabyshop.vercel.app/gabys-prints"
-    },
-    {
-      "title": "Encant Shop - Catálogo de Accesorios",
-      "description": "Catálogo digital de productos para una tienda de accesorios. Permite explorar colecciones, filtrar por categorías y visualizar productos de forma atractiva e intuitiva. Además cuenta con un panel de administración para la gestión de los productos.",
-      "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
-      "url": "https://encantshop.vercel.app/"
     },
     {
       "title": "Mipyme Store - Tienda Digital de Electrodomésticos",
@@ -159,6 +159,12 @@
   "technologies": ["Javascript", "React.js", "TailwindCSS","Next.js"],
   "url": "https://demo-incident-management.vercel.app/"
 },
+    {
+      "title": "CRM Pro - Sistema de Gestión de Clientes Empresarial",
+      "description": "Forntend de una Plataforma CRM empresarial con gestión completa de clientes, pipeline de ventas, seguimiento de actividades, reportes y métricas en tiempo real. Diseño moderno orientado a equipos comerciales.",
+      "technologies": ["React.js", "TailwindCSS", "TypeScript", "Vite"],
+      "url": "https://crmpro-demo.vercel.app/"
+    },
 {
   "title": "Marketplace",
   "description": "Frontend de una plataforma de comercio electrónico cubana con catálogo multimoneda (CUP, USD, MLC), tasas de cambio en tiempo real vía El Toque, carrito de compras y pagos seguros por EnZona.",
@@ -190,8 +196,15 @@
   "url": "https://mpv-mipyme.vercel.app/"
 },
 		{
+			"title": "Patitas — Plataforma de Mascotas",
+			"description": "Plataforma comunitaria para reencontrar mascotas perdidas, reportar encontradas y promover adopciones responsables. Centraliza información estructurada, buscable y geolocalizada con privacidad garantizada. Incluye sistema de IA para autocompletado de formularios, OCR, matching híbrido y detección de duplicados. PWA con notificaciones en tiempo real, búsqueda full-text, mapa interactivo con Leaflet, sistema social de comentarios y avistamientos, moderación automática y auditoría completa. Design System Anime Edition con 11 tipos de animaciones, seguridad perimetral con RLS en todas las tablas, rate limiting multinivel y visibilidad para asistentes de IA mediante llms.txt y JSON-LD.",
+			"technologies": ["React", "TypeScript", "Vite", "TailwindCSS", "PostgreSQL", "Supabase", "Vercel", "Leaflet"],
+			"url": "https://patitass.vercel.app/",
+			"code": "https://github.com/KevPatterson/Patitas---Plataforma-de-mascotas"
+		},
+		{
 			"title": "CubaPress - Agregador de Noticias",
-			"description": "Agregador inteligente de noticias con enfoque en medios cubanos e internacionales. Implementa un robusto sistema de fallback entre múltiples APIs (NewsData.io, TheNewsAPI, NewsAPI) y fuentes RSS, garantizando disponibilidad continua. Incluye búsqueda avanzada, filtrado por categoría, dos modos de visualización (grid/lista), scroll infinito, exportación a Word de boletines personalizados, scraping inteligente de contenido completo y historial de búsquedas. Tema editorial dark estilo newsroom profesional con búsqueda fulltext y priorización automática de fuentes cubanas.",
+			"description": "Agregador inteligente de noticias con enfoque en medios cubanos e internacionales. Implementa un robusto sistema de fallback entre múltiples APIs (NewsData.io, TheNewsAPI, NewsAPI) y fuentes RSS, garantizando disponibilidad continua. Incluye búsqueda avanzada, filtrado por categoría, dos modos de visualización (grid/lista), scroll infinito, exportación a Word de boletines personalizados, scraping inteligente de contenido completo e historial de búsquedas. Tema editorial dark estilo newsroom profesional con búsqueda fulltext y priorización automática de fuentes cubanas. Este proyecto fue realizado como parte de un curso de React.js y mejorado para el uso diario del mismo.",
 			"technologies": ["Javascript", "React.js", "TailwindCSS", "Material UI"],
       "url": "https://newsearch-delta.vercel.app",
       "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React"
@@ -201,20 +214,6 @@
 			"description": "MVP de una aplicación web moderna para búsqueda y descarga de subtítulos en múltiples idiomas. Integra varias fuentes (OpenSubtitles, Subdl, Subdivx) en una interfaz elegante con sistema de favoritos, historial de búsquedas y autenticación segura mediante Supabase.",
 			"technologies": ["React.js", "Vite", "TailwindCSS", "Supabase", "TypeScript"],
       "code": "https://github.com/KevPatterson/subfinder"
-		},
-		{
-			"title": "Serbero Ink - Sitio Web de Estudio de Tatuajes",
-			"description": "Sitio web de estudio de tatuajes con CMS propio integrado. Opera sin base de datos tradicional, el contenido vive en archivos versionados en GitHub. Incluye traducción automática ES/EN, panel admin protegido por password y refresco automático de contenido.",
-			"technologies": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "GitHub API"],
-      "code": "https://github.com/KevPatterson/serberoink",
-      "url": "https://serberoink.vercel.app"
-		},
-		{
-			"title": "CuadreCaja - Sistema de Cuadre de Caja Offline",
-			"description": "PWA para gestionar el cuadre de caja diario en pequeñas y medianas empresas cubanas. Funciona completamente offline con almacenamiento local, incluye wizard de 6 pasos, OCR con Gemini para escanear cuadres anteriores, y exportación a CSV/PDF.",
-			"technologies": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "PWA"],
-      "code": "https://github.com/KevPatterson/cuadrecaja",
-      "url": "https://micuadre.vercel.app"
 		},
     		{
 			"title": "App de Clima",

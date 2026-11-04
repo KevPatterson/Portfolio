@@ -26,9 +26,9 @@ const iconVariants = (duration: number) => ({
     y: [10, -10],
     transition: {
       duration,
-      ease: "linear",
+      ease: "linear" as const,
       repeat: Infinity,
-      repeatType: "reverse" as "reverse",
+      repeatType: "reverse" as const,
     },
   },
 });
