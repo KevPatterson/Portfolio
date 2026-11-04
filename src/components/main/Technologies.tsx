@@ -13,9 +13,7 @@ import { BsHddNetwork } from "react-icons/bs";
 import { AiOutlinePieChart, AiOutlineFileSearch } from "react-icons/ai";
 import { GiArtificialIntelligence } from "react-icons/gi";
 
-// OSINT y Ciberinteligencia
-import { GiSpiderWeb, GiMagnifyingGlass } from "react-icons/gi";
-import { TbReportSearch } from "react-icons/tb";
+
 
 import { motion } from "framer-motion";
 import { useTranslation } from "../../context/LanguajeContext";
@@ -84,11 +82,7 @@ const Technologies = () => {
     { icon: <BsHddNetwork className="text-teal-400" />, name: "WebSpy Analyzer", gradient: "from-teal-400/20 to-cyan-400/20" },
   ];
 
-  const osintTechs = [
-    { icon: <GiSpiderWeb className="text-sky-500" />, name: "SpiderFoot", gradient: "from-sky-500/20 to-blue-500/20" },
-    { icon: <TbReportSearch className="text-violet-600" />, name: "Maltego", gradient: "from-violet-600/20 to-purple-600/20" },
-    { icon: <GiMagnifyingGlass className="text-indigo-500" />, name: "Google Dorks", gradient: "from-indigo-500/20 to-blue-400/20" },
-  ];
+
 
   return (
     <div className="border-b border-slate-800/50 pb-24 lg:mb-35">
@@ -131,20 +125,7 @@ const Technologies = () => {
         ))}
       </motion.div>
 
-      {/* --- Ciberinteligencia y OSINT --- */}
-      <h3 className="text-xl text-emerald-400 font-semibold text-center mt-10 mb-6">
-        🌐 Ciberinteligencia y OSINT
-      </h3>
-      <motion.div
-        whileInView={{ opacity: 1 }}
-        initial={{ opacity: 0 }}
-        transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-8"
-      >
-        {osintTechs.map((tech, i) => (
-          <TechIcon key={i} icon={tech.icon} name={tech.name} gradient={tech.gradient} duration={3 + i * 0.4} />
-        ))}
-      </motion.div>
+
     </div>
   );
 };
