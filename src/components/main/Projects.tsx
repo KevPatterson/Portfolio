@@ -35,6 +35,7 @@ import clavisoftImg from "../../assets/projects/clavisoft.png"
 import gabyshopImg from "../../assets/projects/gabyshop.png"
 import gabysprintsImg from "../../assets/projects/gabys-prints.png"
 import cubapressImg from "../../assets/projects/cubapress.png"
+import patitasImg from "../../assets/projects/patitas.png"
 import encantshopImg from "../../assets/projects/encantshop.png.png"
 import goalstreamImg from "../../assets/projects/goalstream.svg"
 import subfinderImg from "../../assets/projects/subfinder.svg"
@@ -50,6 +51,10 @@ const fallbackImageMap: ImageMap = {
   "Cocina con Nosotros - Food Recipe Management System": cocinaImg,
   "CubanSaas - Proyecto de Tesis de Ciberseguridad": cubanCasImg,
   "CubanSaas - Cybersecurity Thesis Project": cubanCasImg,
+  "Patitas — Plataforma de Mascotas": patitasImg,
+  "Patitas — Pet Reunion Platform": patitasImg,
+  "CubaPress - Agregador de Noticias": cubapressImg,
+  "CubaPress - News Aggregator": cubapressImg,
   "Sinergia Cuba - ERP SaaS multi-tenant para MiPyMEs cubanas": erpCubaImg,
   "Sinergia Cuba - Multi-tenant SaaS ERP for Cuban SMEs": erpCubaImg,
   "WebSec Framework - Framework para auditorías automáticas de seguridad web": websecImg,
@@ -71,8 +76,6 @@ const fallbackImageMap: ImageMap = {
   "RopaStore — Fashion E-commerce": ropastoreImg,
   "ERP SaaS - Sistema de Gestión para MiPymes": sinergiaCubaImg,
   "ERP SaaS — Business Management System for SMEs": sinergiaCubaImg,
-  "CubaPress - Buscador de Noticias": cubapressImg,
-  "CubaPress - News Search Engine": cubapressImg,
   "Gaby's Prints - Tienda de Impresiones Personalizadas": gabysprintsImg,
   "Gaby's Prints - Custom Printing Shop": gabysprintsImg,
   "Encant Shop - Catálogo de Accesorios": encantshopImg,
@@ -111,30 +114,19 @@ interface ProjectImageProps {
 }
 
 const ProjectImage: React.FC<ProjectImageProps> = ({ project, className }) => {
-  const screenshotSrc = (project as any).screenshot
   const fallbackSrc = fallbackImageMap[project.title] || "/placeholder.svg"
-  const initialSrc = screenshotSrc || fallbackSrc
-  const [src, setSrc] = useState<string>(initialSrc)
+  const [src, setSrc] = useState<string>(fallbackSrc)
 
   return (
     <div className="relative w-full h-64">
-      {src.includes("snap-render") ? (
-        <iframe
-          src={src}
-          className={className}
-          style={{ border: "none" }}
-          title={project.title}
-        />
-      ) : (
-        <img
-          src={src}
-          alt={project.title}
-          className={className}
-          onError={() => {
-            if (src !== fallbackSrc) setSrc(fallbackSrc)
-          }}
-        />
-      )}
+      <img
+        src={src}
+        alt={project.title}
+        className={className}
+        onError={() => {
+          if (src !== fallbackSrc) setSrc(fallbackSrc)
+        }}
+      />
     </div>
   )
 }

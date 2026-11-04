@@ -104,16 +104,14 @@
 			"description": "Plataforma comunitaria para reencontrar mascotas perdidas, reportar encontradas y promover adopciones responsables. Centraliza información estructurada, buscable y geolocalizada con privacidad garantizada. Incluye sistema de IA para autocompletado de formularios, OCR, matching híbrido y detección de duplicados. PWA con notificaciones en tiempo real, búsqueda full-text, mapa interactivo con Leaflet, sistema social de comentarios y avistamientos, moderación automática y auditoría completa. Design System Anime Edition con 11 tipos de animaciones, seguridad perimetral con RLS en todas las tablas, rate limiting multinivel y visibilidad para asistentes de IA mediante llms.txt y JSON-LD.",
 			"technologies": ["React", "TypeScript", "Vite", "TailwindCSS", "PostgreSQL", "Supabase", "Vercel", "Leaflet"],
 			"url": "https://patitass.vercel.app/",
-			"code": "https://github.com/KevPatterson/Patitas---Plataforma-de-mascotas",
-			"screenshot": "https://app.snap-render.com/v1/embed?url=https://patitass.vercel.app"
+			"code": "https://github.com/KevPatterson/Patitas---Plataforma-de-mascotas"
 		},
 		{
 			"title": "CubaPress - Agregador de Noticias",
 			"description": "Agregador inteligente de noticias con enfoque en medios cubanos e internacionales. Implementa un robusto sistema de fallback entre múltiples APIs (NewsData.io, TheNewsAPI, NewsAPI) y fuentes RSS, garantizando disponibilidad continua. Incluye búsqueda avanzada, filtrado por categoría, dos modos de visualización (grid/lista), scroll infinito, exportación a Word de boletines personalizados, scraping inteligente de contenido completo e historial de búsquedas. Tema editorial dark estilo newsroom profesional con búsqueda fulltext y priorización automática de fuentes cubanas. Este proyecto fue realizado como parte de un curso de React.js y mejorado para el uso diario del mismo.",
 			"technologies": ["Javascript", "React.js", "TailwindCSS", "Material UI"],
       "url": "https://newsearch-delta.vercel.app",
-      "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React",
-      "screenshot": "https://app.snap-render.com/v1/embed?url=https://newsearch-delta.vercel.app"
+      "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React"
 		},
         {
       "title": "Encant Shop - Catálogo de Accesorios",

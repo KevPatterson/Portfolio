@@ -120,16 +120,14 @@
       "description": "Community platform to reunite lost pets, report found animals, and promote responsible adoptions. Centralizes structured, searchable, and geolocalized information with guaranteed privacy. Includes AI system for form autocompletion, OCR, hybrid matching, and duplicate detection. PWA with real-time notifications, full-text search, interactive Leaflet map, social comment system, sighting timeline, automatic moderation, and complete audit trail. Anime Edition Design System with 11 animation types, perimeter security with RLS across all tables, multi-level rate limiting, and AI assistant visibility via llms.txt and JSON-LD.",
       "technologies": ["React", "TypeScript", "Vite", "TailwindCSS", "PostgreSQL", "Supabase", "Vercel", "Leaflet"],
       "url": "https://patitass.vercel.app/",
-      "code": "https://github.com/KevPatterson/Patitas---Plataforma-de-mascotas",
-      "screenshot": "https://app.snap-render.com/v1/embed?url=https://patitass.vercel.app"
+      "code": "https://github.com/KevPatterson/Patitas---Plataforma-de-mascotas"
     },
     {
       "title": "CubaPress - News Aggregator",
       "description": "Intelligent news aggregator focused on Cuban and international media sources. Implements a robust fallback system across multiple APIs (NewsData.io, TheNewsAPI, NewsAPI) and RSS feeds, ensuring continuous availability. Features advanced search, category filtering, dual visualization modes (grid/list), infinite scroll, custom Word bulletin export, intelligent web scraping for complete content, and search history. Professional dark editorial newsroom theme with full-text search and automatic prioritization of Cuban sources.",
       "technologies": ["Javascript", "React.js", "TailwindCSS", "Material UI"],
       "url": "https://newsearch-delta.vercel.app",
-      "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React",
-      "screenshot": "https://app.snap-render.com/v1/embed?url=https://newsearch-delta.vercel.app"
+      "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React"
     },
     {
       "title": "Encant Shop - Accessories Catalog",
