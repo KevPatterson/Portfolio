@@ -5,4 +5,5 @@ export interface projects {
   url?: string
   code?: string
   technologies?: string[]
+  screenshot?: string
 }

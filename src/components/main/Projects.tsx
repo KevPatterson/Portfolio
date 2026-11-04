@@ -111,19 +111,30 @@ interface ProjectImageProps {
 }
 
 const ProjectImage: React.FC<ProjectImageProps> = ({ project, className }) => {
+  const screenshotSrc = (project as any).screenshot
   const fallbackSrc = fallbackImageMap[project.title] || "/placeholder.svg"
-  const [src, setSrc] = useState<string>(fallbackSrc)
+  const initialSrc = screenshotSrc || fallbackSrc
+  const [src, setSrc] = useState<string>(initialSrc)
 
   return (
     <div className="relative w-full h-64">
-      <img
-        src={src}
-        alt={project.title}
-        className={className}
-        onError={() => {
-          if (src !== fallbackSrc) setSrc(fallbackSrc)
-        }}
-      />
+      {src.includes("snap-render") ? (
+        <iframe
+          src={src}
+          className={className}
+          style={{ border: "none" }}
+          title={project.title}
+        />
+      ) : (
+        <img
+          src={src}
+          alt={project.title}
+          className={className}
+          onError={() => {
+            if (src !== fallbackSrc) setSrc(fallbackSrc)
+          }}
+        />
+      )}
     </div>
   )
 }
