@@ -22,10 +22,10 @@
       "technologies": ["React.js", "Supabase", "Next.js", "TailwindCSS"]
     },
     {
-      "year": "Enero 2023 · Presente",
+      "year": "Enero 2023 · Julio 2026",
       "role": "Desarrollador Full Stack",
       "company": "UCI",
-      "description": "En la UCI, desarrollo aplicaciones web escalables usando Python, Django, PostgreSQL, Nest.js y React.js. Colaboro estrechamente con equipos multifuncionales, valorando la comunicación clara y la confianza mientras construimos soluciones que mejoran verdaderamente la experiencia del usuario, la seguridad y el rendimiento del sistema.",
+      "description": "En la UCI, desarrollé aplicaciones web escalables usando Python, Django, PostgreSQL, Nest.js y React.js, además colaboré estrechamente con equipos multifuncionales, valorando la comunicación clara y la confianza mientras construimos soluciones que mejoran verdaderamente la experiencia del usuario, la seguridad y el rendimiento del sistema.",
       "technologies": ["React.js", "PostgreSQL", "Next.js", "TailwindCSS", "Python", "Django"]
     },
     {
@@ -53,22 +53,15 @@
       "year": "Septiembre 2024 · Febrero 2026",
       "role": "Desarrollador Front-End & Ingeniero en Ciberseguridad",
       "company": "CACSA / UCI",
-      "description": "Durante mis prácticas en CACSA (Sept 2024 - Feb 2025) me encargué del desarrollo de una plataforma web de servicios de ciberseguridad (CAS) y de la implementación en la misma de un servicio automatizado de protección perimetral basado en Cloudflare, utilizando la metodología ágil SCRUM con reuniones diarias con el cliente. Simultáneamente, como proyecto de tesis en UCI (Nov 2025 - Feb 2026), diseñé e implementé un servicio automatizado de protección perimetral basado en Cloudflare, integrando controles de seguridad, automatización de aprovisionamiento y buenas prácticas para mejorar la resiliencia y disponibilidad de las plataformas web al mitigar ataques DDoS, filtrar tráfico malicioso y garantizar un acceso seguro mediante políticas WAF y limitación de velocidad. Ambos proyectos comparten la misma iniciativa de seguridad perimetral. También realicé análisis pasivos y activos de vulnerabilidades en páginas web corporativas, monitoreo de la red corporativa, aplicación de técnicas de correlación de datos en fuentes abiertas para análisis forense digital, y auditorías a locales de la empresa.",
+      "description": "Durante mis prácticas en CACSA (Sept 2024 - Feb 2025) me encargué del desarrollo de una plataforma web de servicios de ciberseguridad (CAS) y de la implementación en la misma de un servicio automatizado de protección perimetral basado en Cloudflare, utilizando la metodología ágil SCRUM con reuniones diarias con el cliente, dicho servicio fue utilizado como proyecto de tesis en la UCI (Nov 2025 - Feb 2026), diseñando e implementando este, integrando controles de seguridad, automatización de aprovisionamiento y buenas prácticas para mejorar la resiliencia y disponibilidad de las plataformas web al mitigar ataques DDoS, filtrar tráfico malicioso y garantizar un acceso seguro mediante políticas WAF y limitación de velocidad.",
       "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite", "Python", "Cloudflare"]
     },
     {
       "year": "Abril 2025",
       "role": "Ingeniero en Ciberseguridad",
       "company": "ECNA",
-      "description": "En la ECNA me encargué del anális de trazas web de proxys Squid corporativos, analizando y evaluando los mismos permitiendo la recolección de evidencias forenses digitales siguiendo el debido ciclo de gestión de incidentes.",
+      "description": "En la ECNA me encargué del anális de trazas web de proxys Squid corporativos, analizando y evaluando los mismos permitiendo la recolección de evidencias forenses digitales siguiendo el debido ciclo de gestión de incidentes.  También realicé análisis pasivos y activos de vulnerabilidades en páginas web corporativas, monitoreo de la red corporativa, aplicación de técnicas de correlación de datos en fuentes abiertas para análisis forense digital, y auditorías a locales de la empresa.",
       "technologies": ["WebSpy Analyzer"]
-    },
-    {
-      "year": "Junio 2025",
-      "role": "Desarrollador Front-End",
-      "company": "Rollo",
-      "description": "En mi rol en rollo, lideré el desarrollo frontend de una plataforma SaaS Inteligente de Etiquetas Térmicas para Alimentos y Retail. Disfruté la oportunidad de trabajar con un equipo dedicado, donde nuestros esfuerzos colaborativos marcaron una diferencia real en las operaciones diarias.",
-      "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite", "TypeScript"]
     },
     {
       "year": "Septiembre 2025",
@@ -77,20 +70,12 @@
       "description": "Durante mis prácticas en la ECNA fui el encargado de realizar pruebas E2E automatizadas a plataformas web de la entidad, garantizando el funcionamiento y la disponibilidad e integridad de las mismas.",
       "technologies": ["Cypress", "Allure"]
     },
-
     {
       "year": "Febrero 2026 · Presente",
       "role": "Desarrollador Full Stack",
       "company": "Freelance",
       "description": "Como desarrollador freelance definí la estructura del proyecto, el esquema en PostgreSQL con RLS, las funciones críticas en la base de datos y la plataforma frontend PWA orientada a operaciones en entornos con conectividad inestable de un ERP SaaS multi-tenant para MiPyMEs cubanas, con soporte offline-first, multi-moneda (CUP/MLC/USD) y generación de reportes fiscales exportables conforme a la ONAT y el Ministerio de Finanzas y Precios",
       "technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"]
-    },
-    {
-      "year": "Febrero 2026 · Presente",
-      "role": "Ingeniero de Ciberseguridad / Desarrollador de Herramientas",
-      "company": "Freelance",
-      "description": "Como desarrollador freelance diseñé y desarrollé WebSec Framework: un framework modular y ejecutable nativamente (sin Docker) para auditorías de seguridad web autorizadas. Implementé crawling inteligente (soporte JS), fingerprinting tecnológico, un motor modular de detección (XSS, SQLi, LFI, CSRF, CORS, XXE, SSRF, Command Injection, Auth), y un sistema avanzado de validación que reduce falsos positivos mediante comparaciones baseline y scoring multinivel. Incluye generación de reportes HTML/PDF profesionales, evidencias request/response auditables, y orquestación segura para integración en pipelines CI/CD y entornos internos.",
-      "technologies": ["Python"]
     }
   ],
   "project_name": "Proyectos",
@@ -103,7 +88,7 @@
 		},
     {
       "title": "CRM Pro - Sistema de Gestión de Clientes Empresarial",
-      "description": "Plataforma CRM empresarial con gestión completa de clientes, pipeline de ventas, seguimiento de actividades, reportes y métricas en tiempo real. Diseño moderno orientado a equipos comerciales.",
+      "description": "Forntend de una Plataforma CRM empresarial con gestión completa de clientes, pipeline de ventas, seguimiento de actividades, reportes y métricas en tiempo real. Diseño moderno orientado a equipos comerciales.",
       "technologies": ["React.js", "TailwindCSS", "TypeScript", "Vite"],
       "url": "https://crmpro-demo.vercel.app/"
     },
@@ -154,18 +139,12 @@
       "title": "Encant Shop - Catálogo de Accesorios",
       "description": "Catálogo digital de productos para una tienda de accesorios. Permite explorar colecciones, filtrar por categorías y visualizar productos de forma atractiva e intuitiva. Además cuenta con un panel de administración para la gestión de los productos.",
       "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
-      "url": "https://gabyshop.vercel.app/encant-shop"
-    },
-    {
-      "title": "OSINT Terminal - Herramienta de Inteligencia de Fuentes Abiertas",
-      "description": "Aplicación terminal interactiva para análisis OSINT. Herramienta profesional para recopilación y análisis de información de fuentes abiertas con interfaz tipo terminal.",
-      "technologies": ["React.js", "TypeScript", "TailwindCSS", "Vite"],
-      "url": "https://osint-terminal-app.vercel.app"
+      "url": "https://encantshop.vercel.app/"
     },
     {
       "title": "Mipyme Store - Tienda Digital de Electrodomésticos",
       "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase"],
-      "description": "Tienda digital completa para una mipyme cubana de electrodomésticos. Incluye catálogo de productos con filtros por categoría, búsqueda en tiempo real, tarjetas con efectos 3D interactivos y redirección directa a WhatsApp para gestionar pedidos. Cuenta con un panel de administración para gestión completa de productos, categorías e imágenes mediante CRUD con Supabase.",
+      "description": "MVP de una tienda digital completa para una mipyme cubana de electrodomésticos. Incluye catálogo de productos con filtros por categoría, búsqueda en tiempo real, tarjetas con efectos 3D interactivos y redirección directa a WhatsApp para gestionar pedidos. Cuenta con un panel de administración para gestión completa de productos, categorías e imágenes mediante CRUD con Supabase.",
       "url": "https://mipyme-store.vercel.app/"
     },
 		{
@@ -176,31 +155,31 @@
 		},
     {
   "title": "Sistema de Gestión de Incidentes",
-  "description": "Dashboard de gestión y seguimiento de incidentes con estética synthwave. Panel de incidencias con prioridades P1–P4 en tiempo real. Filtros por estado, asignado y rango de tiempo. Estado de equipo on-call con disponibilidad en vivo",
+  "description": "Frontend de un dashboard de gestión y seguimiento de incidentes con estética synthwave. Panel de incidencias con prioridades P1–P4 en tiempo real. Filtros por estado, asignado y rango de tiempo. Estado de equipo on-call con disponibilidad en vivo",
   "technologies": ["Javascript", "React.js", "TailwindCSS","Next.js"],
   "url": "https://demo-incident-management.vercel.app/"
 },
 {
   "title": "Marketplace",
-  "description": "Plataforma de comercio electrónico cubana con catálogo multimoneda (CUP, USD, MLC), tasas de cambio en tiempo real vía El Toque, carrito de compras y pagos seguros por EnZona.",
+  "description": "Frontend de una plataforma de comercio electrónico cubana con catálogo multimoneda (CUP, USD, MLC), tasas de cambio en tiempo real vía El Toque, carrito de compras y pagos seguros por EnZona.",
   "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
   "url": "https://mercadocu.vercel.app/"
 },
 {
   "title": "Las Delicias — Menú Digital",
-  "description": "Sitio web para restaurante de cocina cubana con menú interactivo, sistema de reservaciones, pedidos en línea y galería. Diseño cálido con identidad caribeña y sección de reservas online",
+  "description": "Frontend de un sitio web para restaurante de cocina cubana con menú interactivo, sistema de reservaciones, pedidos en línea y galería. Diseño cálido con identidad caribeña y sección de reservas online",
   "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
   "url": "https://restaurantecubano.vercel.app/"
 },
 {
   "title": "RopaStore — E-commerce de Moda",
-  "description": "Catálogo con fichas de producto detalladas y galería de imágenes. Carrito de compras con pedido directo por WhatsApp. Soporte multi-moneda: USD, CUP y MLC",
+  "description": "Frontend de un e-commerce de moda con catálogo con fichas de producto detalladas y galería de imágenes. Carrito de compras con pedido directo por WhatsApp. Soporte multi-moneda: USD, CUP y MLC",
   "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
-  "url": "https://ropastore-two.vercel.app/"
+  "url": "https://ropastore-two.vercel.app/home"
 },
 {
   "title": "La Cabina — Marketplace de Estudios de Grabación en Cuba",
-  "description": "Plataforma estilo Airbnb que conecta estudios de grabación en Cuba con músicos y artistas. Directorio, perfiles de estudios, sistema de reservas y reseñas.",
+  "description": "Frontend de una plataforma estilo Airbnb que conecta estudios de grabación en Cuba con músicos y artistas. Directorio, perfiles de estudios, sistema de reservas y reseñas.",
   "technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
   "url": "https://lacabina-five.vercel.app/"
 },
@@ -211,23 +190,17 @@
   "url": "https://mpv-mipyme.vercel.app/"
 },
 		{
-			"title": "CubaPress - Buscador de Noticias",
-			"description": "Buscador de noticias diseñado para centralizar información de medios cubanos e internacionales. Implementa un sistema inteligente de fallback entre múltiples APIs y fuentes RSS, garantizando disponibilidad continua del servicio. Este proyecto fue realizado como parte de un curso de React.js y mejorado para el uso diario del mismo.",
-			"technologies": ["Javascript", "TailwindCSS", "React.js", "Next.js"],
+			"title": "CubaPress - Agregador de Noticias",
+			"description": "Agregador inteligente de noticias con enfoque en medios cubanos e internacionales. Implementa un robusto sistema de fallback entre múltiples APIs (NewsData.io, TheNewsAPI, NewsAPI) y fuentes RSS, garantizando disponibilidad continua. Incluye búsqueda avanzada, filtrado por categoría, dos modos de visualización (grid/lista), scroll infinito, exportación a Word de boletines personalizados, scraping inteligente de contenido completo y historial de búsquedas. Tema editorial dark estilo newsroom profesional con búsqueda fulltext y priorización automática de fuentes cubanas.",
+			"technologies": ["Javascript", "React.js", "TailwindCSS", "Material UI"],
       "url": "https://newsearch-delta.vercel.app",
       "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React"
 		},
 		{
 			"title": "SubFinder - Buscador de Subtítulos Multi-Fuente",
-			"description": "Aplicación web moderna para búsqueda y descarga de subtítulos en múltiples idiomas. Integra varias fuentes (OpenSubtitles, Subdl, Subdivx) en una interfaz elegante con sistema de favoritos, historial de búsquedas y autenticación segura mediante Supabase.",
+			"description": "MVP de una aplicación web moderna para búsqueda y descarga de subtítulos en múltiples idiomas. Integra varias fuentes (OpenSubtitles, Subdl, Subdivx) en una interfaz elegante con sistema de favoritos, historial de búsquedas y autenticación segura mediante Supabase.",
 			"technologies": ["React.js", "Vite", "TailwindCSS", "Supabase", "TypeScript"],
       "code": "https://github.com/KevPatterson/subfinder"
-		},
-		{
-			"title": "GoalStream - Plataforma de Streaming de Fútbol",
-			"description": "Plataforma de streaming de fútbol en vivo con interfaz estilo terminal retro y estética verde neón. Incluye reproductor HLS con soporte multi-calidad (SD, HD, FHD, 4K), panel de administración para gestión de partidos y streams, y diseño responsive optimizado.",
-			"technologies": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "HLS.js"],
-      "code": "https://github.com/KevPatterson/goalstream"
 		},
 		{
 			"title": "Serbero Ink - Sitio Web de Estudio de Tatuajes",
@@ -243,7 +216,7 @@
       "code": "https://github.com/KevPatterson/cuadrecaja",
       "url": "https://micuadre.vercel.app"
 		},
-		{
+    		{
 			"title": "App de Clima",
 			"description": "Aplicación web desarrollada en React que permite a los usuarios consultar el clima actual en cualquier ciudad del mundo.",
 			"technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],

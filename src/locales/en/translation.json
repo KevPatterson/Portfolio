@@ -212,9 +212,9 @@
   "url": "https://mpv-mipyme.vercel.app/"
 },
     {
-      "title": "CubaPress - News Search Engine",
-      "description": "News search engine designed to centralize information from Cuban and international media. Implements an intelligent fallback system between multiple APIs and RSS feeds, ensuring continuous service availability. This project was created as part of a React.js course and improved for daily use.",
-      "technologies": ["Javascript", "TailwindCSS", "React.js", "Next.js"],
+      "title": "CubaPress - News Aggregator",
+      "description": "Intelligent news aggregator focused on Cuban and international media sources. Implements a robust fallback system across multiple APIs (NewsData.io, TheNewsAPI, NewsAPI) and RSS feeds, ensuring continuous availability. Features advanced search, category filtering, dual visualization modes (grid/list), infinite scroll, custom Word bulletin export, intelligent web scraping for complete content, and search history. Professional dark editorial newsroom theme with full-text search and automatic prioritization of Cuban sources.",
+      "technologies": ["Javascript", "React.js", "TailwindCSS", "Material UI"],
       "url": "https://newsearch-delta.vercel.app",
       "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React"
     },
