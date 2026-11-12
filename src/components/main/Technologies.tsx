@@ -24,28 +24,56 @@ const iconVariants = (duration: number) => ({
     y: [10, -10],
     transition: {
       duration,
-      ease: "linear" as const,
+      ease: "easeInOut" as const,
       repeat: Infinity,
       repeatType: "reverse" as const,
     },
   },
 });
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.05,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
+
 const TechIcon = ({ icon, name, gradient, duration }: any) => (
   <motion.div
-    variants={iconVariants(duration)}
-    initial="initial"
-    animate="animate"
+    variants={itemVariants}
     className="relative group flex flex-col items-center justify-center w-28"
   >
-    <div
-      className={`absolute inset-0 bg-gradient-to-r ${gradient} rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500`}
-    ></div>
-    <div className="relative rounded-2xl border border-slate-700/30 p-6 bg-slate-900/50 backdrop-blur-sm group-hover:border-slate-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
-      <div className="text-7xl group-hover:scale-105 transition-transform duration-300 flex justify-center">
-        {icon}
+    <motion.div
+      variants={iconVariants(duration)}
+      initial="initial"
+      animate="animate"
+      className="w-full"
+    >
+      <div
+        className={`absolute inset-0 bg-gradient-to-r ${gradient} rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500`}
+      ></div>
+      <div className="relative rounded-2xl border border-slate-700/30 p-6 bg-slate-900/50 backdrop-blur-sm group-hover:border-slate-600/50 transition-all duration-300 shadow-lg hover:shadow-xl">
+        <div className="text-7xl group-hover:scale-105 transition-transform duration-300 flex justify-center">
+          {icon}
+        </div>
       </div>
-    </div>
+    </motion.div>
     <span className="mt-3 text-slate-300 text-sm font-medium text-center group-hover:text-white transition-colors duration-300">
       {name}
     </span>
