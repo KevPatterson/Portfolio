@@ -26,7 +26,14 @@
       "role": "Full Stack Developer",
       "company": "UCI",
       "description": "At UCI, I developed scalable web applications using Python, Django, PostgreSQL, Nest.js, and React.js, also collaborated closely with multidisciplinary teams, valuing clear communication and trust while we built solutions that truly enhanced user experience, security, and system performance.",
-      "technologies": ["React.js", "PostgreSQL", "Next.js", "TailwindCSS", "Python", "Django"]
+      "technologies": [
+        "React.js",
+        "PostgreSQL",
+        "Next.js",
+        "TailwindCSS",
+        "Python",
+        "Django"
+      ]
     },
     {
       "year": "September 2023 · December 2024",
@@ -54,7 +61,14 @@
       "role": "Front-End Developer & Cybersecurity Engineer",
       "company": "CACSA / UCI",
       "description": "During my internship at CACSA (Sept 2024 - Feb 2025), I was responsible for developing a web platform for cybersecurity services (CAS) and implementing an automated perimeter protection service based on Cloudflare, using the agile SCRUM methodology with daily client meetings. Simultaneously, as a thesis project at UCI (Nov 2025 - Feb 2026), I designed and implemented an automated perimeter protection service based on Cloudflare, integrating security controls, provisioning automation, and best practices to improve the resilience and availability of web platforms by mitigating DDoS attacks, filtering malicious traffic, and ensuring secure access through WAF policies and rate limiting. Both projects share the same perimeter security initiative. I also conducted passive and active vulnerability analysis on corporate websites, monitored the corporate network, applied data correlation techniques from open sources for digital forensic analysis, and performed audits of company premises.",
-      "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite", "Python", "Cloudflare"]
+      "technologies": [
+        "React.js",
+        "Supabase",
+        "TailwindCSS",
+        "Vite",
+        "Python",
+        "Cloudflare"
+      ]
     },
     {
       "year": "April 2025",
@@ -75,22 +89,49 @@
       "role": "Full Stack Developer",
       "company": "Freelance",
       "description": "As a freelance developer, I defined the project structure, PostgreSQL schema with RLS, critical database functions, and the PWA frontend platform oriented to operations in environments with unstable connectivity for a multi-tenant SaaS ERP for Cuban SMEs, with offline-first support, multi-currency (CUP/MLC/USD), and generation of exportable tax reports compliant with ONAT and the Ministry of Finance and Prices.",
-      "technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"]
+      "technologies": [
+        "React.js",
+        "Vite",
+        "TypeScript",
+        "TailwindCSS",
+        "Supabase",
+        "Python",
+        "PostgreSQL"
+      ]
     }
   ],
   "project_name": "Projects",
 
   "projects": [
-		{
-			"title": "Cocina con Nosotros - Food Recipe Management System",
-			"description": "Full-stack web system for cooking recipe management with authentication, moderated publishing, and interactive community. Features: user registration and login with Google OAuth support (django-allauth), anti-brute-force blocking system (django-axes) after failed attempts, recipe publishing with images (Pillow), categorization (Breakfasts, Meals, Desserts, Beverages), moderation system with recipe approval, user comments and ratings, advanced search and sorting by date/category, change auditing (django-auditlog), QR code generation (qrcode). Security: CSRF protection, strict password validation, access control with @login_required, restricted access to private files, compliance with Regulation 128/2019 MINCOM.",
-			"technologies": ["Python", "Django", "PostgreSQL", "Bootstrap", "jQuery", "DataTables", "SweetAlert2", "Pillow", "QR Code"],
-			"url": "https://cocinaconnosotros.pythonanywhere.com/"
-		},
+    {
+      "title": "Cocina con Nosotros - Food Recipe Management System",
+      "description": "Full-stack web system for cooking recipe management with authentication, moderated publishing, and interactive community. Features: user registration and login with Google OAuth support (django-allauth), anti-brute-force blocking system (django-axes) after failed attempts, recipe publishing with images (Pillow), categorization (Breakfasts, Meals, Desserts, Beverages), moderation system with recipe approval, user comments and ratings, advanced search and sorting by date/category, change auditing (django-auditlog), QR code generation (qrcode). Security: CSRF protection, strict password validation, access control with @login_required, restricted access to private files, compliance with Regulation 128/2019 MINCOM.",
+      "technologies": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "Bootstrap",
+        "jQuery",
+        "DataTables",
+        "SweetAlert2",
+        "Pillow",
+        "QR Code"
+      ],
+      "url": "https://cocinaconnosotros.pythonanywhere.com/"
+    },
     {
       "title": "CubanSaas - Cybersecurity Thesis Project",
       "description": "Automated perimeter protection service based on Cloudflare, developed as an academic thesis project. Implementation of a CSaaS (Cloudflare as a Service) model compatible with free plan. Frontend in React 18 + TypeScript + Tailwind CSS, serverless backend in Python with Vercel Functions. Features: automatic provisioning in under 2 seconds, unique subdomain generation, DNS A proxied, mapping in Workers KV, application of 8 automatic protections (SSL/TLS Strict, Force HTTPS, WAF, Bot Fight Mode, Browser Integrity Check, Security Level High, Rate Limiting, custom Firewall Rules). Security proxy at edge with Cloudflare Worker filtering malicious patterns (XSS, SQLi, LFI, path traversal), blocking unsafe methods (TRACE, TRACK), normalizing inputs and forwarding to real origin. Admin panel, DNS delegation checker, real-time logs, Turnstile anti-bot. Database-less architecture, Workers KV persistence, 13 automated tests passed, extensive documentation with 38+ files.",
-      "technologies": ["React", "TypeScript", "Vite", "TailwindCSS", "Framer Motion", "Python", "Cloudflare Workers", "Cloudflare KV"],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "TailwindCSS",
+        "Framer Motion",
+        "Python",
+        "Cloudflare Workers",
+        "Cloudflare KV"
+      ],
       "url": "https://cubansaas.tech",
       "code": "https://github.com/KevPatterson/Cuban-CAS"
     },
@@ -103,7 +144,16 @@
     {
       "title": "Patitas — Pet Reunion Platform",
       "description": "Community platform to reunite lost pets, report found animals, and promote responsible adoptions. Centralizes structured, searchable, and geolocalized information with guaranteed privacy. Includes AI system for form autocompletion, OCR, hybrid matching, and duplicate detection. PWA with real-time notifications, full-text search, interactive Leaflet map, social comment system, sighting timeline, automatic moderation, and complete audit trail. Anime Edition Design System with 11 animation types, perimeter security with RLS across all tables, multi-level rate limiting, and AI assistant visibility via llms.txt and JSON-LD.",
-      "technologies": ["React", "TypeScript", "Vite", "TailwindCSS", "PostgreSQL", "Supabase", "Vercel", "Leaflet"],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "TailwindCSS",
+        "PostgreSQL",
+        "Supabase",
+        "Vercel",
+        "Leaflet"
+      ],
       "url": "https://patitass.vercel.app/",
       "code": "https://github.com/KevPatterson/Patitas"
     },
@@ -117,7 +167,14 @@
     {
       "title": "Encant Shop - Accessories Catalog",
       "description": "Comprehensive web catalog platform for accessories and personalized gifts with a complete admin panel. Modern frontend in React + TypeScript + TailwindCSS and serverless Python APIs. Features product and category management, image uploads to Supabase Storage, persistent shopping cart in localStorage, real-time search, WhatsApp ordering, visitor analytics dashboard, light/dark theme, secure authentication with PBKDF2-SHA512, 24-hour httpOnly sessions, login rate limiting, and multi-store support. Architecture includes Row Level Security on Supabase, 30-second caching, image validation (JPEG/PNG/WebP, max 3MB), and daily cron to keep the database active.",
-      "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
+      "technologies": [
+        "Python",
+        "React.js",
+        "TailwindCSS",
+        "Vite",
+        "Supabase",
+        "TypeScript"
+      ],
       "url": "https://encantshop.vercel.app/"
     },
     {
@@ -126,12 +183,46 @@
       "technologies": ["HTML5", "CSS3", "JavaScript"],
       "url": "https://kevpatterson.github.io/regalo-aniversario/"
     },
-		{
-			"title": "Sinergia Cuba - Multi-tenant SaaS ERP for Cuban SMEs",
-			"description": "Sinergia Cuba is a SaaS ERP designed for Cuban SMEs that combines daily operations (inventory, material requests, invoicing) with tax compliance and financial analysis. The platform is multi-tenant (one company = one isolated space), offline-first (PWA + intelligent synchronization), and prepared to generate reports and exports compatible with the requirements of ONAT and the Ministry of Finance and Prices.",
-			"technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"],
-			"url": "https://sinergiacuba.vercel.app/"
-		},
+    {
+      "title": "CuadreCaja - Offline Cash Register System",
+      "description": "PWA for managing daily cash register reconciliation in Cuban small and medium businesses. Works completely offline with local storage, includes 6-step wizard, OCR with Gemini to scan previous reconciliations, and CSV/PDF export.",
+      "technologies": [
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "TailwindCSS",
+        "PWA"
+      ],
+      "code": "https://github.com/KevPatterson/cuadrecaja",
+      "url": "https://micuadre.vercel.app",
+      "image": "cuadrecaja.png"
+    },
+    {
+      "title": "Serbero Ink - Tattoo Studio Website",
+      "description": "Tattoo studio website with integrated custom CMS. Operates without traditional database, content lives in versioned files on GitHub. Includes automatic ES/EN translation, password-protected admin panel, and automatic content refresh.",
+      "technologies": [
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "TailwindCSS",
+        "GitHub API"
+      ],
+      "url": "https://serberoink.vercel.app"
+    },
+    {
+      "title": "Sinergia Cuba - Multi-tenant SaaS ERP for Cuban SMEs",
+      "description": "Sinergia Cuba is a SaaS ERP designed for Cuban SMEs that combines daily operations (inventory, material requests, invoicing) with tax compliance and financial analysis. The platform is multi-tenant (one company = one isolated space), offline-first (PWA + intelligent synchronization), and prepared to generate reports and exports compatible with the requirements of ONAT and the Ministry of Finance and Prices.",
+      "technologies": [
+        "React.js",
+        "Vite",
+        "TypeScript",
+        "TailwindCSS",
+        "Supabase",
+        "Python",
+        "PostgreSQL"
+      ],
+      "url": "https://sinergiacuba.vercel.app/"
+    },
     {
       "title": "WebSec Framework - Framework for automated web security audits",
       "description": "Modular framework executable natively (Currently in development) for web application security audits. Automates the entire workflow: intelligent crawling (incl. JS), technology fingerprinting, module-based scanning (XSS, SQLi, LFI, CSRF, CORS, XXE, SSRF, Command Injection, Auth), automatic false positive validation, and professional HTML/PDF report generation with contextual risk scoring, which also includes integration with some external tools.",
@@ -162,99 +253,65 @@
       "description": "MVP of a complete digital store for a Cuban small business specializing in home appliances. Features a product catalog with category filters, real-time search, interactive 3D card effects on product cards, and direct WhatsApp redirection for order management. Includes an admin panel for complete product, category, and image management through CRUD operations with Supabase.",
       "url": "https://mipyme-store.vercel.app/"
     },
-		{
-			"title": "Termal Print Pro (MVP) - SaaS Platform for Thermal Labels in Food and Retail",
-			"description": "Minimum Viable Product of a SaaS platform for thermal labeling in Food and Retail using React.js, TailwindCSS, and Next.js.",
-			"technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
-			"url": "https://thermalprint-pro.vercel.app/"
-		},
     {
-  "title": "Incident Management System",
-  "description": "Incident tracking dashboard with a synthwave aesthetic. Real-time incident panel with P1–P4 priority levels. Filters by status, assignee, and time range. On-call team status with live availability.",
-  "technologies": ["Javascript", "React.js", "TailwindCSS","Next.js"],
-  "url": "https://demo-incident-management.vercel.app/"
-},
+      "title": "Termal Print Pro (MVP) - SaaS Platform for Thermal Labels in Food and Retail",
+      "description": "Minimum Viable Product of a SaaS platform for thermal labeling in Food and Retail using React.js, TailwindCSS, and Next.js.",
+      "technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
+      "url": "https://thermalprint-pro.vercel.app/"
+    },
+    {
+      "title": "Incident Management System",
+      "description": "Incident tracking dashboard with a synthwave aesthetic. Real-time incident panel with P1–P4 priority levels. Filters by status, assignee, and time range. On-call team status with live availability.",
+      "technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
+      "url": "https://demo-incident-management.vercel.app/"
+    },
     {
       "title": "CRM Pro - Enterprise Client Management System",
       "description": "Frontend of an enterprise CRM platform with full client management, sales pipeline, activity tracking, real-time reports, and metrics. Modern design oriented to commercial teams.",
       "technologies": ["React.js", "TailwindCSS", "TypeScript", "Vite"],
       "url": "https://crmpro-demo.vercel.app/"
     },
-{
-  "title": "Marketplace",
-  "description": "Frontend of a Cuban e-commerce platform with multi-currency catalog (CUP, USD, MLC), real-time exchange rates via El Toque, shopping cart, and secure payments through EnZona.",
-  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
-  "url": "https://mercadocu.vercel.app/"
-},
-{
-  "title": "Las Delicias — Digital Menu",
-  "description": "Frontend of a Cuban cuisine restaurant website with interactive menu, reservation system, online ordering, and gallery. Warm design with Caribbean identity and online booking section.",
-  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
-  "url": "https://restaurantecubano.vercel.app/"
-},
-{
-  "title": "RopaStore — Fashion E-commerce",
-  "description": "Frontend of an e-commerce store with detailed product pages and image gallery. Shopping cart with direct WhatsApp ordering. Multi-currency support: USD, CUP, and MLC.",
-  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
-  "url": "https://ropastore-two.vercel.app/home"
-},
-{
-  "title": "La Cabina — Recording Studio Marketplace in Cuba",
-  "description": "Frontend of an Airbnb-style platform connecting recording studios in Cuba with musicians and artists. Directory, studio profiles, booking system, and reviews.",
-  "technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
-  "url": "https://lacabina-five.vercel.app/"
-},
-{
-  "title": "ERP SaaS — Business Management System for SMEs",
-  "description": "MVP of a SaaS ERP for Cuban micro, small, and medium-sized businesses. Operations, resource, and business process management in a single platform. Scalable multi-tenant architecture and full admin dashboard.",
-  "technologies": ["Javascript", "React.js", "TailwindCSS", "Vite"],
-  "url": "https://mpv-mipyme.vercel.app/"
-},
+    {
+      "title": "Marketplace",
+      "description": "Frontend of a Cuban e-commerce platform with multi-currency catalog (CUP, USD, MLC), real-time exchange rates via El Toque, shopping cart, and secure payments through EnZona.",
+      "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+      "url": "https://mercadocu.vercel.app/"
+    },
+    {
+      "title": "Las Delicias — Digital Menu",
+      "description": "Frontend of a Cuban cuisine restaurant website with interactive menu, reservation system, online ordering, and gallery. Warm design with Caribbean identity and online booking section.",
+      "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+      "url": "https://restaurantecubano.vercel.app/"
+    },
+    {
+      "title": "RopaStore — Fashion E-commerce",
+      "description": "Frontend of an e-commerce store with detailed product pages and image gallery. Shopping cart with direct WhatsApp ordering. Multi-currency support: USD, CUP, and MLC.",
+      "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+      "url": "https://ropastore-two.vercel.app/home"
+    },
+    {
+      "title": "La Cabina — Recording Studio Marketplace in Cuba",
+      "description": "Frontend of an Airbnb-style platform connecting recording studios in Cuba with musicians and artists. Directory, studio profiles, booking system, and reviews.",
+      "technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
+      "url": "https://lacabina-five.vercel.app/"
+    },
+    {
+      "title": "ERP SaaS — Business Management System for SMEs",
+      "description": "MVP of a SaaS ERP for Cuban micro, small, and medium-sized businesses. Operations, resource, and business process management in a single platform. Scalable multi-tenant architecture and full admin dashboard.",
+      "technologies": ["Javascript", "React.js", "TailwindCSS", "Vite"],
+      "url": "https://mpv-mipyme.vercel.app/"
+    },
     {
       "title": "SubFinder - Multi-Source Subtitle Search Engine",
       "description": "MVP of a modern web application for searching and downloading subtitles in multiple languages. Integrates various sources (OpenSubtitles, Subdl, Subdivx) in an elegant interface with favorites system, search history, and secure authentication via Supabase.",
-      "technologies": ["React.js", "Vite", "TailwindCSS", "Supabase", "TypeScript"],
+      "technologies": [
+        "React.js",
+        "Vite",
+        "TailwindCSS",
+        "Supabase",
+        "TypeScript"
+      ],
       "code": "https://github.com/KevPatterson/subfinder"
-    },
-    {
-      "title": "GoalStream - Football Streaming Platform",
-      "description": "Live football streaming platform with retro terminal-style interface and neon green aesthetics. Features HLS player with multi-quality support (SD, HD, FHD, 4K), admin panel for match and stream management, and optimized responsive design.",
-      "technologies": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "HLS.js"],
-      "code": "https://github.com/KevPatterson/goalstream"
-    },
-    {
-      "title": "Serbero Ink - Tattoo Studio Website",
-      "description": "Tattoo studio website with integrated custom CMS. Operates without traditional database, content lives in versioned files on GitHub. Includes automatic ES/EN translation, password-protected admin panel, and automatic content refresh.",
-      "technologies": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "GitHub API"],
-      "code": "https://github.com/KevPatterson/serberoink",
-      "url": "https://serberoink.vercel.app"
-    },
-    {
-      "title": "CuadreCaja - Offline Cash Register System",
-      "description": "PWA for managing daily cash register reconciliation in Cuban small and medium businesses. Works completely offline with local storage, includes 6-step wizard, OCR with Gemini to scan previous reconciliations, and CSV/PDF export.",
-      "technologies": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "PWA"],
-      "code": "https://github.com/KevPatterson/cuadrecaja",
-      "url": "https://micuadre.vercel.app"
-    },
-    {
-      "title": "GoalStream - Football Streaming Platform",
-      "description": "Live football streaming platform with retro terminal-style interface and neon green aesthetics. Features HLS player with multi-quality support (SD, HD, FHD, 4K), admin panel for match and stream management, and optimized responsive design.",
-      "technologies": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "HLS.js"],
-      "code": "https://github.com/KevPatterson/goalstream"
-    },
-    {
-      "title": "Serbero Ink - Tattoo Studio Website",
-      "description": "Tattoo studio website with integrated custom CMS. Operates without traditional database, content lives in versioned files on GitHub. Includes automatic ES/EN translation, password-protected admin panel, and automatic content refresh.",
-      "technologies": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "GitHub API"],
-      "code": "https://github.com/KevPatterson/serberoink",
-      "url": "https://serberoink.vercel.app"
-    },
-    {
-      "title": "CuadreCaja - Offline Cash Register System",
-      "description": "PWA for managing daily cash register reconciliation in Cuban small and medium businesses. Works completely offline with local storage, includes 6-step wizard, OCR with Gemini to scan previous reconciliations, and CSV/PDF export.",
-      "technologies": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "PWA"],
-      "code": "https://github.com/KevPatterson/cuadrecaja",
-      "url": "https://micuadre.vercel.app"
     },
     {
       "title": "Weather App",

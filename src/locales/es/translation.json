@@ -26,7 +26,14 @@
       "role": "Desarrollador Full Stack",
       "company": "UCI",
       "description": "En la UCI, desarrollé aplicaciones web escalables usando Python, Django, PostgreSQL, Nest.js y React.js, además colaboré estrechamente con equipos multifuncionales, valorando la comunicación clara y la confianza mientras construimos soluciones que mejoran verdaderamente la experiencia del usuario, la seguridad y el rendimiento del sistema.",
-      "technologies": ["React.js", "PostgreSQL", "Next.js", "TailwindCSS", "Python", "Django"]
+      "technologies": [
+        "React.js",
+        "PostgreSQL",
+        "Next.js",
+        "TailwindCSS",
+        "Python",
+        "Django"
+      ]
     },
     {
       "year": "Septiembre 2023 · Diciembre 2024",
@@ -54,7 +61,14 @@
       "role": "Desarrollador Front-End & Ingeniero en Ciberseguridad",
       "company": "CACSA / UCI",
       "description": "Durante mis prácticas en CACSA (Sept 2024 - Feb 2025) me encargué del desarrollo de una plataforma web de servicios de ciberseguridad (CAS) y de la implementación en la misma de un servicio automatizado de protección perimetral basado en Cloudflare, utilizando la metodología ágil SCRUM con reuniones diarias con el cliente, dicho servicio fue utilizado como proyecto de tesis en la UCI (Nov 2025 - Feb 2026), diseñando e implementando este, integrando controles de seguridad, automatización de aprovisionamiento y buenas prácticas para mejorar la resiliencia y disponibilidad de las plataformas web al mitigar ataques DDoS, filtrar tráfico malicioso y garantizar un acceso seguro mediante políticas WAF y limitación de velocidad.",
-      "technologies": ["React.js", "Supabase", "TailwindCSS", "Vite", "Python", "Cloudflare"]
+      "technologies": [
+        "React.js",
+        "Supabase",
+        "TailwindCSS",
+        "Vite",
+        "Python",
+        "Cloudflare"
+      ]
     },
     {
       "year": "Abril 2025",
@@ -75,62 +89,139 @@
       "role": "Desarrollador Full Stack",
       "company": "Freelance",
       "description": "Como desarrollador freelance definí la estructura del proyecto, el esquema en PostgreSQL con RLS, las funciones críticas en la base de datos y la plataforma frontend PWA orientada a operaciones en entornos con conectividad inestable de un ERP SaaS multi-tenant para MiPyMEs cubanas, con soporte offline-first, multi-moneda (CUP/MLC/USD) y generación de reportes fiscales exportables conforme a la ONAT y el Ministerio de Finanzas y Precios",
-      "technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"]
+      "technologies": [
+        "React.js",
+        "Vite",
+        "TypeScript",
+        "TailwindCSS",
+        "Supabase",
+        "Python",
+        "PostgreSQL"
+      ]
     }
   ],
   "project_name": "Proyectos",
   "projects": [
-		{
-			"title": "Cocina con Nosotros - Sistema de Gestión de Recetas de Comida",
-			"description": "Sistema web full stack para gestión de recetas de cocina con autenticación, publicación moderada y comunidad interactiva. Posee registro e inicio de sesión con soporte OAuth Google (django-allauth), sistema de bloqueo anti-fuerza bruta (django-axes) tras intentos fallidos, publicación de recetas con imágenes (Pillow), categorización (Desayunos, Comidas, Postres, Bebidas), sistema de moderación con aprobación de recetas, comentarios y valoraciones de usuarios, búsquedas avanzadas y ordenamiento por fecha/categoría, auditoría de cambios (django-auditlog), generación de códigos QR (qrcode). Seguridad con protección CSRF, validación estricta de contraseñas, control de acceso con @login_required, acceso restringido a archivos privados, cumplimiento de Reglamento 128/2019 MINCOM.",
-			"technologies": ["Python", "Django", "PostgreSQL", "Bootstrap", "jQuery", "DataTables", "SweetAlert2", "Pillow", "QR Code"],
-			"url": "https://cocinaconnosotros.pythonanywhere.com/"
-		},
+    {
+      "title": "Cocina con Nosotros - Sistema de Gestión de Recetas de Comida",
+      "description": "Sistema web full stack para gestión de recetas de cocina con autenticación, publicación moderada y comunidad interactiva. Posee registro e inicio de sesión con soporte OAuth Google (django-allauth), sistema de bloqueo anti-fuerza bruta (django-axes) tras intentos fallidos, publicación de recetas con imágenes (Pillow), categorización (Desayunos, Comidas, Postres, Bebidas), sistema de moderación con aprobación de recetas, comentarios y valoraciones de usuarios, búsquedas avanzadas y ordenamiento por fecha/categoría, auditoría de cambios (django-auditlog), generación de códigos QR (qrcode). Seguridad con protección CSRF, validación estricta de contraseñas, control de acceso con @login_required, acceso restringido a archivos privados, cumplimiento de Reglamento 128/2019 MINCOM.",
+      "technologies": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "Bootstrap",
+        "jQuery",
+        "DataTables",
+        "SweetAlert2",
+        "Pillow",
+        "QR Code"
+      ],
+      "url": "https://cocinaconnosotros.pythonanywhere.com/"
+    },
     {
       "title": "CubanSaas - Proyecto de Tesis de Ciberseguridad",
       "description": "Servicio automatizado de protección perimetral basado en Cloudflare, desarrollado como proyecto de tesis académica. Implementación de un modelo CSaaS (Cloudflare as a Service) compatible con plan gratuito. Frontend en React 18 + TypeScript + Tailwind CSS, backend serverless en Python con Vercel Functions. Características: provisión automática en menos de 2 segundos, generación de subdominios únicos, DNS A proxied, mapeo en Workers KV, aplicación de 8 protecciones (SSL/TLS Strict, Force HTTPS, WAF, Bot Fight Mode, Browser Integrity Check, Security Level High, Rate Limiting, Firewall Rules personalizadas). Proxy de seguridad en edge con Cloudflare Worker que filtra patrones maliciosos (XSS, SQLi, LFI, path traversal), bloquea métodos inseguros (TRACE, TRACK), normaliza entradas y reenvía al origin real. Panel de administración, verificador de delegación DNS, logs en tiempo real, Turnstile anti-bot. Arquitectura sin base de datos local, persistencia en Workers KV, 13 tests automatizados pasados, documentación extensiva de 38+ archivos.",
-      "technologies": ["React", "TypeScript", "Vite", "TailwindCSS", "Framer Motion", "Python", "Cloudflare Workers", "Cloudflare KV"],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "TailwindCSS",
+        "Framer Motion",
+        "Python",
+        "Cloudflare Workers",
+        "Cloudflare KV"
+      ],
       "url": "https://cubansaas.tech",
       "code": "https://github.com/KevPatterson/Cuban-CAS"
     },
-        {
+    {
       "title": "Clavisoft - Plataforma de Servicios de Software",
       "description": "Plataforma web corporativa moderna para empresa especializada en soluciones digitales y desarrollo de software. Construida con una arquitectura moderna basada en features escalable y profesional. Incluye panel de administración completo con gestión de proyectos, servicios, productos, mensajes de contacto, activity logs y notificaciones en tiempo real. Sistema de seguridad robusto: autenticación JWT con Jose, hashing con Argon2/bcryptjs, CSP headers, HSTS, URLs firmadas. Optimizaciones: compresión de imágenes en cliente con browser-image-compression, formatos AVIF/WebP, build optimization con RemoveConsole. SEO completo: metadata dinámica, Google Analytics, sitemap, Open Graph, robots.txt. Sistema de formularios con validación Zod, envío de emails con Nodemailer, rate limiting. Testing integral: Vitest para unitarios, Playwright para E2E. 150+ dependencias, 9 features principales, 20+ componentes compartidos y feature flags para control de funcionalidades.",
       "technologies": ["React.js", "TailwindCSS", "Next.js", "TypeScript"],
       "url": "https://clavisoft.vercel.app"
     },
-    		{
-			"title": "Patitas — Plataforma de Mascotas",
-			"description": "Plataforma comunitaria para reencontrar mascotas perdidas, reportar encontradas y promover adopciones responsables. Centraliza información estructurada, buscable y geolocalizada con privacidad garantizada. Incluye sistema de IA para autocompletado de formularios, OCR, matching híbrido y detección de duplicados. PWA con notificaciones en tiempo real, búsqueda full-text, mapa interactivo con Leaflet, sistema social de comentarios y avistamientos, moderación automática y auditoría completa. Design System Anime Edition con 11 tipos de animaciones, seguridad perimetral con RLS en todas las tablas, rate limiting multinivel y visibilidad para asistentes de IA mediante llms.txt y JSON-LD.",
-			"technologies": ["React", "TypeScript", "Vite", "TailwindCSS", "PostgreSQL", "Supabase", "Vercel", "Leaflet"],
-			"url": "https://patitass.vercel.app/",
-			"code": "https://github.com/KevPatterson/Patitas"
-		},
-		{
-			"title": "CubaPress - Agregador de Noticias",
-			"description": "Agregador inteligente de noticias con enfoque en medios cubanos e internacionales. Implementa un robusto sistema de fallback entre múltiples APIs (NewsData.io, TheNewsAPI, NewsAPI) y fuentes RSS, garantizando disponibilidad continua. Incluye búsqueda avanzada, filtrado por categoría, dos modos de visualización (grid/lista), scroll infinito, exportación a Word de boletines personalizados, scraping inteligente de contenido completo e historial de búsquedas. Tema editorial dark estilo newsroom profesional con búsqueda fulltext y priorización automática de fuentes cubanas. Este proyecto fue realizado como parte de un curso de React.js y mejorado para el uso diario del mismo.",
-			"technologies": ["Javascript", "React.js", "TailwindCSS", "Material UI"],
+    {
+      "title": "Patitas — Plataforma de Mascotas",
+      "description": "Plataforma comunitaria para reencontrar mascotas perdidas, reportar encontradas y promover adopciones responsables. Centraliza información estructurada, buscable y geolocalizada con privacidad garantizada. Incluye sistema de IA para autocompletado de formularios, OCR, matching híbrido y detección de duplicados. PWA con notificaciones en tiempo real, búsqueda full-text, mapa interactivo con Leaflet, sistema social de comentarios y avistamientos, moderación automática y auditoría completa. Design System Anime Edition con 11 tipos de animaciones, seguridad perimetral con RLS en todas las tablas, rate limiting multinivel y visibilidad para asistentes de IA mediante llms.txt y JSON-LD.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "TailwindCSS",
+        "PostgreSQL",
+        "Supabase",
+        "Vercel",
+        "Leaflet"
+      ],
+      "url": "https://patitass.vercel.app/",
+      "code": "https://github.com/KevPatterson/Patitas"
+    },
+    {
+      "title": "CubaPress - Agregador de Noticias",
+      "description": "Agregador inteligente de noticias con enfoque en medios cubanos e internacionales. Implementa un robusto sistema de fallback entre múltiples APIs (NewsData.io, TheNewsAPI, NewsAPI) y fuentes RSS, garantizando disponibilidad continua. Incluye búsqueda avanzada, filtrado por categoría, dos modos de visualización (grid/lista), scroll infinito, exportación a Word de boletines personalizados, scraping inteligente de contenido completo e historial de búsquedas. Tema editorial dark estilo newsroom profesional con búsqueda fulltext y priorización automática de fuentes cubanas. Este proyecto fue realizado como parte de un curso de React.js y mejorado para el uso diario del mismo.",
+      "technologies": ["Javascript", "React.js", "TailwindCSS", "Material UI"],
       "url": "https://newsearch-delta.vercel.app",
       "code": "https://github.com/KevPatterson/Buscador-de-Noticias-con-React"
-		},
-        {
+    },
+    {
       "title": "Encant Shop - Catálogo de Accesorios",
       "description": "Plataforma integral de catálogo web de accesorios y regalos personalizados con panel de administración. Frontend moderno en React 19 + TypeScript + TailwindCSS y APIs serverless en Python. Incluye gestión de productos y categorías, subida de imágenes a Supabase Storage, carrito persistente en localStorage, búsqueda en tiempo real, pedidos por WhatsApp, dashboard con analíticas de visitas, tema claro/oscuro, autenticación segura con PBKDF2-SHA512, sesiones httpOnly de 24 horas, rate limiting en login, y soporte multi-tienda. Arquitectura con Row Level Security en Supabase, caché de 30 segundos, validación de imágenes (JPEG/PNG/WebP, máx 3MB) y cron diario para mantener activa la base de datos.",
-      "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
+      "technologies": [
+        "Python",
+        "React.js",
+        "TailwindCSS",
+        "Vite",
+        "Supabase",
+        "TypeScript"
+      ],
       "url": "https://encantshop.vercel.app/"
     },
     {
-			"title": "Regalo Aniversario — Página Personalizada Romántica",
-			"description": "Página interactiva y emotiva diseñada como regalo de aniversario. Incluye un contador de tiempo juntos que actualiza en tiempo real, galería de fotos con scroll horizontal, línea de tiempo interactiva de momentos especiales, carta personalizada, música de fondo, animaciones delicadas y una sección sorpresa con interacción lúdica. Incluye código QR integrado para acceso rápido y una página aparte en la cual generarlo, personalizarlo y descargarlo. Diseño cálido con paleta de colores románticos (tonos de vino, rosa y crema) y tipografía elegante Cormorant Garamond.",
-			"technologies": ["HTML5", "CSS3", "JavaScript"],
-			"url": "https://kevpatterson.github.io/regalo-aniversario/"
-		},
+      "title": "Regalo Aniversario — Página Personalizada Romántica",
+      "description": "Página interactiva y emotiva diseñada como regalo de aniversario. Incluye un contador de tiempo juntos que actualiza en tiempo real, galería de fotos con scroll horizontal, línea de tiempo interactiva de momentos especiales, carta personalizada, música de fondo, animaciones delicadas y una sección sorpresa con interacción lúdica. Incluye código QR integrado para acceso rápido y una página aparte en la cual generarlo, personalizarlo y descargarlo. Diseño cálido con paleta de colores románticos (tonos de vino, rosa y crema) y tipografía elegante Cormorant Garamond.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "url": "https://kevpatterson.github.io/regalo-aniversario/"
+    },
     {
-			"title": "Sinergia Cuba - ERP SaaS multi-tenant para MiPyMEs cubanas",
-			"description": "Sinergia Cuba es un ERP SaaS diseñado para MiPyMEs cubanas que combina operativa diaria (inventario, solicitudes de materiales, facturación) con cumplimiento fiscal y análisis financiero. La plataforma es multi-tenant (una empresa = un espacio aislado), offline-first (PWA + sincronización inteligente) y preparada para generar reportes y exportaciones compatibles con los requerimientos de la ONAT y el Ministerio de Finanzas y Precios",
-			"technologies": ["React.js", "Vite", "TypeScript", "TailwindCSS", "Supabase", "Python", "PostgreSQL"],
-			"url": "https://sinergiacuba.vercel.app/"
-		},
+      "title": "CuadreCaja - Sistema de Cuadratura de Caja Offline",
+      "description": "PWA para gestionar la cuadratura diaria de caja en pequeñas y medianas empresas cubanas. Funciona completamente offline con almacenamiento local, incluye asistente de 6 pasos, OCR con Gemini para escanear cuadraturas previas, y exportación a CSV/PDF.",
+      "technologies": [
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "TailwindCSS",
+        "PWA"
+      ],
+      "code": "https://github.com/KevPatterson/cuadrecaja",
+      "url": "https://micuadre.vercel.app",
+      "image": "cuadrecaja.png"
+    },
+    {
+      "title": "Serbero Ink - Sitio Web de Estudio de Tatuajes",
+      "description": "Sitio web de estudio de tatuajes con CMS personalizado integrado. Opera sin base de datos tradicional, el contenido vive en archivos versionados en GitHub. Incluye traducción automática ES/EN, panel de administración protegido por contraseña y refresco automático de contenido.",
+      "technologies": [
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "TailwindCSS",
+        "GitHub API"
+      ],
+      "url": "https://serberoink.vercel.app"
+    },
+    {
+      "title": "Sinergia Cuba - ERP SaaS multi-tenant para MiPyMEs cubanas",
+      "description": "Sinergia Cuba es un ERP SaaS diseñado para MiPyMEs cubanas que combina operativa diaria (inventario, solicitudes de materiales, facturación) con cumplimiento fiscal y análisis financiero. La plataforma es multi-tenant (una empresa = un espacio aislado), offline-first (PWA + sincronización inteligente) y preparada para generar reportes y exportaciones compatibles con los requerimientos de la ONAT y el Ministerio de Finanzas y Precios",
+      "technologies": [
+        "React.js",
+        "Vite",
+        "TypeScript",
+        "TailwindCSS",
+        "Supabase",
+        "Python",
+        "PostgreSQL"
+      ],
+      "url": "https://sinergiacuba.vercel.app/"
+    },
     {
       "title": "WebSec Framework - Framework para auditorías automáticas de seguridad web",
       "description": "Framework modular y ejecutable nativamente (Actualmente en desarrollo) para auditorías de seguridad de aplicaciones web. Automatiza todo el flujo: crawling inteligente (incl. JS), fingerprinting tecnológico, escaneo por módulos (XSS, SQLi, LFI, CSRF, CORS, XXE, SSRF, Command Injection, Auth), validación automática de falsos positivos y generación de reportes HTML/PDF profesionales con scoring contextual de riesgo, el cual además incluye integración con algunas herramientas externas",
@@ -161,103 +252,109 @@
       "description": "MVP de una tienda digital completa para una mipyme cubana de electrodomésticos. Incluye catálogo de productos con filtros por categoría, búsqueda en tiempo real, tarjetas con efectos 3D interactivos y redirección directa a WhatsApp para gestionar pedidos. Cuenta con un panel de administración para gestión completa de productos, categorías e imágenes mediante CRUD con Supabase.",
       "url": "https://mipyme-store.vercel.app/"
     },
-		{
-			"title": "Termal Print Pro (MVP) - Sistema SaaS de Etiquetas Térmicas para Alimentos y Retail",
-			"description": "Producto Mínimo Viable de una Plataforma SaaS Inteligente de Etiquetas Térmicas para Alimentos y Retail usando React.js, TailwindCSS y Next.js.",
-			"technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
-			"url": "https://thermalprint-pro.vercel.app/"
-		},
     {
-  "title": "Sistema de Gestión de Incidentes",
-  "description": "Frontend de un dashboard de gestión y seguimiento de incidentes con estética synthwave. Panel de incidencias con prioridades P1–P4 en tiempo real. Filtros por estado, asignado y rango de tiempo. Estado de equipo on-call con disponibilidad en vivo",
-  "technologies": ["Javascript", "React.js", "TailwindCSS","Next.js"],
-  "url": "https://demo-incident-management.vercel.app/"
-},
+      "title": "Termal Print Pro (MVP) - Sistema SaaS de Etiquetas Térmicas para Alimentos y Retail",
+      "description": "Producto Mínimo Viable de una Plataforma SaaS Inteligente de Etiquetas Térmicas para Alimentos y Retail usando React.js, TailwindCSS y Next.js.",
+      "technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
+      "url": "https://thermalprint-pro.vercel.app/"
+    },
+    {
+      "title": "Sistema de Gestión de Incidentes",
+      "description": "Frontend de un dashboard de gestión y seguimiento de incidentes con estética synthwave. Panel de incidencias con prioridades P1–P4 en tiempo real. Filtros por estado, asignado y rango de tiempo. Estado de equipo on-call con disponibilidad en vivo",
+      "technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
+      "url": "https://demo-incident-management.vercel.app/"
+    },
     {
       "title": "CRM Pro - Sistema de Gestión de Clientes Empresarial",
       "description": "Forntend de una Plataforma CRM empresarial con gestión completa de clientes, pipeline de ventas, seguimiento de actividades, reportes y métricas en tiempo real. Diseño moderno orientado a equipos comerciales.",
       "technologies": ["React.js", "TailwindCSS", "TypeScript", "Vite"],
       "url": "https://crmpro-demo.vercel.app/"
     },
-{
-  "title": "Marketplace",
-  "description": "Frontend de una plataforma de comercio electrónico cubana con catálogo multimoneda (CUP, USD, MLC), tasas de cambio en tiempo real vía El Toque, carrito de compras y pagos seguros por EnZona.",
-  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
-  "url": "https://mercadocu.vercel.app/"
-},
-{
-  "title": "Las Delicias — Menú Digital",
-  "description": "Frontend de un sitio web para restaurante de cocina cubana con menú interactivo, sistema de reservaciones, pedidos en línea y galería. Diseño cálido con identidad caribeña y sección de reservas online",
-  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
-  "url": "https://restaurantecubano.vercel.app/"
-},
-{
-  "title": "RopaStore — E-commerce de Moda",
-  "description": "Frontend de un e-commerce de moda con catálogo con fichas de producto detalladas y galería de imágenes. Carrito de compras con pedido directo por WhatsApp. Soporte multi-moneda: USD, CUP y MLC",
-  "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
-  "url": "https://ropastore-two.vercel.app/home"
-},
-{
-  "title": "La Cabina — Marketplace de Estudios de Grabación en Cuba",
-  "description": "Frontend de una plataforma estilo Airbnb que conecta estudios de grabación en Cuba con músicos y artistas. Directorio, perfiles de estudios, sistema de reservas y reseñas.",
-  "technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
-  "url": "https://lacabina-five.vercel.app/"
-},
-{
-  "title": "ERP SaaS - Sistema de Gestión para MiPymes",
-  "description": "Producto Mínimo Viable de un ERP SaaS orientado a micro, pequeñas y medianas empresas cubanas. Gestión de operaciones, recursos y procesos de negocio en una sola plataforma. Arquitectura multi-tenant escalable. Gestión integral de recursos empresariales. Panel de administración completo",
-  "technologies": ["Javascript", "React.js", "TailwindCSS", "Vite"],
-  "url": "https://mpv-mipyme.vercel.app/"
-},
-		{
-			"title": "SubFinder - Buscador de Subtítulos Multi-Fuente",
-			"description": "MVP de una aplicación web moderna para búsqueda y descarga de subtítulos en múltiples idiomas. Integra varias fuentes (OpenSubtitles, Subdl, Subdivx) en una interfaz elegante con sistema de favoritos, historial de búsquedas y autenticación segura mediante Supabase.",
-			"technologies": ["React.js", "Vite", "TailwindCSS", "Supabase", "TypeScript"],
+    {
+      "title": "Marketplace",
+      "description": "Frontend de una plataforma de comercio electrónico cubana con catálogo multimoneda (CUP, USD, MLC), tasas de cambio en tiempo real vía El Toque, carrito de compras y pagos seguros por EnZona.",
+      "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+      "url": "https://mercadocu.vercel.app/"
+    },
+    {
+      "title": "Las Delicias — Menú Digital",
+      "description": "Frontend de un sitio web para restaurante de cocina cubana con menú interactivo, sistema de reservaciones, pedidos en línea y galería. Diseño cálido con identidad caribeña y sección de reservas online",
+      "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+      "url": "https://restaurantecubano.vercel.app/"
+    },
+    {
+      "title": "RopaStore — E-commerce de Moda",
+      "description": "Frontend de un e-commerce de moda con catálogo con fichas de producto detalladas y galería de imágenes. Carrito de compras con pedido directo por WhatsApp. Soporte multi-moneda: USD, CUP y MLC",
+      "technologies": ["Javascript", "React.js", "Next.js", "TailwindCSS"],
+      "url": "https://ropastore-two.vercel.app/home"
+    },
+    {
+      "title": "La Cabina — Marketplace de Estudios de Grabación en Cuba",
+      "description": "Frontend de una plataforma estilo Airbnb que conecta estudios de grabación en Cuba con músicos y artistas. Directorio, perfiles de estudios, sistema de reservas y reseñas.",
+      "technologies": ["Javascript", "React.js", "TailwindCSS", "Next.js"],
+      "url": "https://lacabina-five.vercel.app/"
+    },
+    {
+      "title": "ERP SaaS - Sistema de Gestión para MiPymes",
+      "description": "Producto Mínimo Viable de un ERP SaaS orientado a micro, pequeñas y medianas empresas cubanas. Gestión de operaciones, recursos y procesos de negocio en una sola plataforma. Arquitectura multi-tenant escalable. Gestión integral de recursos empresariales. Panel de administración completo",
+      "technologies": ["Javascript", "React.js", "TailwindCSS", "Vite"],
+      "url": "https://mpv-mipyme.vercel.app/"
+    },
+    {
+      "title": "SubFinder - Buscador de Subtítulos Multi-Fuente",
+      "description": "MVP de una aplicación web moderna para búsqueda y descarga de subtítulos en múltiples idiomas. Integra varias fuentes (OpenSubtitles, Subdl, Subdivx) en una interfaz elegante con sistema de favoritos, historial de búsquedas y autenticación segura mediante Supabase.",
+      "technologies": [
+        "React.js",
+        "Vite",
+        "TailwindCSS",
+        "Supabase",
+        "TypeScript"
+      ],
       "code": "https://github.com/KevPatterson/subfinder"
-		},
-    		{
-			"title": "App de Clima",
-			"description": "Aplicación web desarrollada en React que permite a los usuarios consultar el clima actual en cualquier ciudad del mundo.",
-			"technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],
+    },
+    {
+      "title": "App de Clima",
+      "description": "Aplicación web desarrollada en React que permite a los usuarios consultar el clima actual en cualquier ciudad del mundo.",
+      "technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],
       "code": "https://github.com/KevPatterson/App-de-Clima-en-React"
-		},
-		{
-			"title": "Cotizador de Seguros de Autos",
-			"description": "Aplicación web para cotizar seguros de autos usando React.js, TypeScript y TailwindCSS.",
-			"technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],
-			"url": "https://cotizador-seguro-teal.vercel.app/",
+    },
+    {
+      "title": "Cotizador de Seguros de Autos",
+      "description": "Aplicación web para cotizar seguros de autos usando React.js, TypeScript y TailwindCSS.",
+      "technologies": ["Typescript", "Vite", "TailwindCSS", "React.js"],
+      "url": "https://cotizador-seguro-teal.vercel.app/",
       "code": "https://github.com/KevPatterson/Cotizador-de-Seguro-de-Automovil-en-React"
-		},
-		{
-			"title": "CRM para Gestión de Clientes",
-			"description": "Aplicación web minimalista diseñada para gestionar la información de clientes de manera fácil y efectiva.",
-			"technologies": ["React.js", "TailwindCSS", "Vite"],
-			"code": "https://github.com/KevPatterson/CRM-en-React"
-		},
+    },
     {
-			"title": "Cotizador de Criptomonedas",
-			"description": "Aplicación web que permite a los usuarios cotizar el valor de diferentes criptomonedas en tiempo real.",
-			"technologies": ["React.js", "TailwindCSS", "Vite"],
-			"code": "https://github.com/KevPatterson/Cotizador-de-Criptomonedas-en-React"
-		},
+      "title": "CRM para Gestión de Clientes",
+      "description": "Aplicación web minimalista diseñada para gestionar la información de clientes de manera fácil y efectiva.",
+      "technologies": ["React.js", "TailwindCSS", "Vite"],
+      "code": "https://github.com/KevPatterson/CRM-en-React"
+    },
     {
-			"title": "Gestión de Pacientes de una Veterinaria",
-			"description": "Aplicación frontend con React y Vite para gestionar y administrar pacientes de una veterinaria de manera eficiente y práctica.",
-			"technologies": ["React.js", "TailwindCSS", "Vite"],
-			"code": "https://github.com/KevPatterson/Gestion-de-Pacientes-de-una-Veterinaria"
-		},
+      "title": "Cotizador de Criptomonedas",
+      "description": "Aplicación web que permite a los usuarios cotizar el valor de diferentes criptomonedas en tiempo real.",
+      "technologies": ["React.js", "TailwindCSS", "Vite"],
+      "code": "https://github.com/KevPatterson/Cotizador-de-Criptomonedas-en-React"
+    },
     {
-			"title": "Control de Presupuesto",
-			"description": "Aplicación frontend interactiva diseñada en React con Vite y LocalStorage para ayudarte a administrar tu presupuesto de manera eficiente",
-			"technologies": ["React.js", "TailwindCSS", "Vite"],
-			"code": "https://github.com/KevPatterson/Control-de-Gastos-en-React"
-		}
-	],
+      "title": "Gestión de Pacientes de una Veterinaria",
+      "description": "Aplicación frontend con React y Vite para gestionar y administrar pacientes de una veterinaria de manera eficiente y práctica.",
+      "technologies": ["React.js", "TailwindCSS", "Vite"],
+      "code": "https://github.com/KevPatterson/Gestion-de-Pacientes-de-una-Veterinaria"
+    },
+    {
+      "title": "Control de Presupuesto",
+      "description": "Aplicación frontend interactiva diseñada en React con Vite y LocalStorage para ayudarte a administrar tu presupuesto de manera eficiente",
+      "technologies": ["React.js", "TailwindCSS", "Vite"],
+      "code": "https://github.com/KevPatterson/Control-de-Gastos-en-React"
+    }
+  ],
   "contact": {
     "title": "Contáctame aquí",
     "address": "Playa, La Habana, Cuba",
     "phoneNo": "+53 56954200",
-    "email": "kevinpatterson618@gmail.com", 
+    "email": "kevinpatterson618@gmail.com",
     "whatsapp": "Contactar por WhatsApp",
     "linkedin": "https://www.linkedin.com/in/kevin-patterson-098a5b366",
     "github": "https://github.com/KevPatterson"
