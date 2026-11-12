@@ -82,8 +82,8 @@
   "projects": [
 		{
 			"title": "Cocina con Nosotros - Sistema de Gestión de Recetas de Comida",
-			"description": "Un sistema de gestión de recetas de comida usando Python, Django, PostgreSQL, Bootstrap y jQuery.",
-			"technologies": ["Python", "Django", "PostgreSQL", "Bootstrap", "jQuery"],
+			"description": "Sistema web full stack para gestión de recetas de cocina con autenticación, publicación moderada y comunidad interactiva. Posee registro e inicio de sesión con soporte OAuth Google (django-allauth), sistema de bloqueo anti-fuerza bruta (django-axes) tras intentos fallidos, publicación de recetas con imágenes (Pillow), categorización (Desayunos, Comidas, Postres, Bebidas), sistema de moderación con aprobación de recetas, comentarios y valoraciones de usuarios, búsquedas avanzadas y ordenamiento por fecha/categoría, auditoría de cambios (django-auditlog), generación de códigos QR (qrcode). Seguridad con protección CSRF, validación estricta de contraseñas, control de acceso con @login_required, acceso restringido a archivos privados, cumplimiento de Reglamento 128/2019 MINCOM.",
+			"technologies": ["Python", "Django", "PostgreSQL", "Bootstrap", "jQuery", "DataTables", "SweetAlert2", "Pillow", "QR Code"],
 			"url": "https://cocinaconnosotros.pythonanywhere.com/"
 		},
     {
