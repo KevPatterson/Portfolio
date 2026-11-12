@@ -6,5 +6,4 @@ export interface projects {
   code?: string
   technologies?: string[]
   screenshot?: string
-  version?: string
 }
