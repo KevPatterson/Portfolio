@@ -104,14 +104,14 @@
 		},
     {
       "title": "CubanSaas - Cybersecurity Thesis Project",
-      "description": "Implementation of an automated perimeter protection service based on Cloudflare, executed at the network edge through Cloudflare Workers, which implement a security proxy that filters and routes traffic to protected origins using information stored dynamically in Cloudflare KV.",
-      "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"],
+      "description": "Automated perimeter protection service based on Cloudflare, developed as an academic thesis project. Implementation of a CSaaS (Cloudflare as a Service) model compatible with free plan. Frontend built with React 18 + TypeScript + Tailwind CSS, serverless backend in Python with Vercel Functions. Features: automatic provisioning in under 2 seconds, unique subdomain generation, DNS A proxied, mapping in Workers KV, application of 8 automatic protections (SSL/TLS Strict, Force HTTPS, WAF, Bot Fight Mode, Browser Integrity Check, Security Level High, Rate Limiting, custom Firewall Rules). Security proxy at edge with Cloudflare Worker filtering malicious patterns (XSS, SQLi, LFI, path traversal), blocking unsafe methods (TRACE, TRACK), normalizing inputs and forwarding to real origin. Admin panel, DNS delegation checker, real-time logs, Turnstile anti-bot. Database-less architecture, Workers KV persistence, 13 automated tests passed, extensive documentation with 38+ files covering architecture, implementation, deployment, and troubleshooting.",
+      "technologies": ["React", "TypeScript", "Vite", "TailwindCSS", "Framer Motion", "Python", "Cloudflare Workers", "Cloudflare KV"],
       "url": "https://cubansaas.tech",
       "code": "https://github.com/KevPatterson/Cuban-CAS"
     },
     {
       "title": "Clavisoft - Software Services Platform",
-      "description": "Professional web platform for a software development company. Showcases services, project portfolio, and custom technology solutions.",
+      "description": "Modern corporate web platform for a software development company specializing in digital solutions and technology services. Built with Next.js 15 + React 19 + TypeScript + TailwindCSS using a scalable, professional feature-based architecture. Includes a complete admin panel with project, service, product, and message management, real-time notifications and activity logs. Robust security: JWT authentication with Jose, password hashing with Argon2/bcryptjs, CSP headers, HSTS, signed URLs. Performance optimizations: client-side image compression with browser-image-compression, AVIF/WebP formats, production build optimization with RemoveConsole. Full SEO: dynamic metadata, Google Analytics integration, sitemap, Open Graph, robots.txt. Form system with Zod validation, Nodemailer email delivery, rate limiting protection. Comprehensive testing: Vitest for unit tests, Playwright for E2E. 150+ dependencies, 9 main features, 20+ shared components, feature flags for functionality control. Production-ready with ESLint, Prettier, and complete documentation.",
       "technologies": ["React.js", "TailwindCSS", "Vite", "TypeScript"],
       "url": "https://clavisoft.vercel.app"
     },
@@ -131,7 +131,7 @@
     },
     {
       "title": "Encant Shop - Accessories Catalog",
-      "description": "Digital product catalog for an accessories store. Allows browsing collections, filtering by categories, and visualizing products in an attractive and intuitive way. It also includes an admin panel for product management.",
+      "description": "Comprehensive web catalog platform for accessories and personalized gifts with a powerful admin panel. Modern frontend built with React 19 + TypeScript + TailwindCSS and serverless Python APIs. Features complete product and category management, image uploads to Supabase Storage, persistent shopping cart in localStorage, real-time search, WhatsApp ordering, visitor analytics dashboard, light/dark theme, secure authentication with PBKDF2-SHA512, 24-hour httpOnly sessions, login rate limiting, and multi-store support. Architecture includes Row Level Security on Supabase, 30-second caching, image validation (JPEG/PNG/WebP, max 3MB), and daily cron to keep the database active. Fully responsive design with bottom navigation on mobile.",
       "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
       "url": "https://encantshop.vercel.app/"
     },

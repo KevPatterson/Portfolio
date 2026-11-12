@@ -88,15 +88,15 @@
 		},
     {
       "title": "CubanSaas - Proyecto de Tesis de Ciberseguridad",
-      "description": "Implementación de un servicio automatizado de protección perimetral basado en Cloudflare, cuya ejecución se realiza en el borde de la red a través de Cloudflare Workers, los cuales implementan un proxy de seguridad que filtra y enruta el tráfico hacia los orígenes protegidos utilizando información almacenada dinámicamente en Cloudflare KV.",
-      "technologies": ["React.js", "Python", "TailwindCSS", "Vite", "Cloudflare"],
+      "description": "Servicio automatizado de protección perimetral basado en Cloudflare, desarrollado como proyecto de tesis académica. Implementación de un modelo CSaaS (Cloudflare as a Service) compatible con plan gratuito. Frontend en React 18 + TypeScript + Tailwind CSS, backend serverless en Python con Vercel Functions. Características: provisión automática en menos de 2 segundos, generación de subdominios únicos, DNS A proxied, mapeo en Workers KV, aplicación de 8 protecciones (SSL/TLS Strict, Force HTTPS, WAF, Bot Fight Mode, Browser Integrity Check, Security Level High, Rate Limiting, Firewall Rules personalizadas). Proxy de seguridad en edge con Cloudflare Worker que filtra patrones maliciosos (XSS, SQLi, LFI, path traversal), bloquea métodos inseguros (TRACE, TRACK), normaliza entradas y reenvía al origin real. Panel de administración, verificador de delegación DNS, logs en tiempo real, Turnstile anti-bot. Arquitectura sin base de datos local, persistencia en Workers KV, 13 tests automatizados pasados, documentación extensiva de 38+ archivos.",
+      "technologies": ["React", "TypeScript", "Vite", "TailwindCSS", "Framer Motion", "Python", "Cloudflare Workers", "Cloudflare KV"],
       "url": "https://cubansaas.tech",
       "code": "https://github.com/KevPatterson/Cuban-CAS"
     },
         {
       "title": "Clavisoft - Plataforma de Servicios de Software",
-      "description": "Plataforma web profesional para empresa de desarrollo de software. Presenta servicios, portafolio de proyectos y soluciones tecnológicas personalizadas.",
-      "technologies": ["React.js", "TailwindCSS", "Vite", "TypeScript"],
+      "description": "Plataforma web corporativa moderna para empresa especializada en soluciones digitales y desarrollo de software. Construida con una arquitectura moderna basada en features escalable y profesional. Incluye panel de administración completo con gestión de proyectos, servicios, productos, mensajes de contacto, activity logs y notificaciones en tiempo real. Sistema de seguridad robusto: autenticación JWT con Jose, hashing con Argon2/bcryptjs, CSP headers, HSTS, URLs firmadas. Optimizaciones: compresión de imágenes en cliente con browser-image-compression, formatos AVIF/WebP, build optimization con RemoveConsole. SEO completo: metadata dinámica, Google Analytics, sitemap, Open Graph, robots.txt. Sistema de formularios con validación Zod, envío de emails con Nodemailer, rate limiting. Testing integral: Vitest para unitarios, Playwright para E2E. 150+ dependencias, 9 features principales, 20+ componentes compartidos y feature flags para control de funcionalidades.",
+      "technologies": ["React.js", "TailwindCSS", "Next.js", "TypeScript"],
       "url": "https://clavisoft.vercel.app"
     },
     		{
@@ -104,7 +104,7 @@
 			"description": "Plataforma comunitaria para reencontrar mascotas perdidas, reportar encontradas y promover adopciones responsables. Centraliza información estructurada, buscable y geolocalizada con privacidad garantizada. Incluye sistema de IA para autocompletado de formularios, OCR, matching híbrido y detección de duplicados. PWA con notificaciones en tiempo real, búsqueda full-text, mapa interactivo con Leaflet, sistema social de comentarios y avistamientos, moderación automática y auditoría completa. Design System Anime Edition con 11 tipos de animaciones, seguridad perimetral con RLS en todas las tablas, rate limiting multinivel y visibilidad para asistentes de IA mediante llms.txt y JSON-LD.",
 			"technologies": ["React", "TypeScript", "Vite", "TailwindCSS", "PostgreSQL", "Supabase", "Vercel", "Leaflet"],
 			"url": "https://patitass.vercel.app/",
-			"code": "https://github.com/KevPatterson/Patitas---Plataforma-de-mascotas"
+			"code": "https://github.com/KevPatterson/Patitas"
 		},
 		{
 			"title": "CubaPress - Agregador de Noticias",
@@ -115,7 +115,7 @@
 		},
         {
       "title": "Encant Shop - Catálogo de Accesorios",
-      "description": "Catálogo digital de productos para una tienda de accesorios. Permite explorar colecciones, filtrar por categorías y visualizar productos de forma atractiva e intuitiva. Además cuenta con un panel de administración para la gestión de los productos.",
+      "description": "Plataforma integral de catálogo web de accesorios y regalos personalizados con panel de administración. Frontend moderno en React 19 + TypeScript + TailwindCSS y APIs serverless en Python. Incluye gestión de productos y categorías, subida de imágenes a Supabase Storage, carrito persistente en localStorage, búsqueda en tiempo real, pedidos por WhatsApp, dashboard con analíticas de visitas, tema claro/oscuro, autenticación segura con PBKDF2-SHA512, sesiones httpOnly de 24 horas, rate limiting en login, y soporte multi-tienda. Arquitectura con Row Level Security en Supabase, caché de 30 segundos, validación de imágenes (JPEG/PNG/WebP, máx 3MB) y cron diario para mantener activa la base de datos.",
       "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
       "url": "https://encantshop.vercel.app/"
     },
