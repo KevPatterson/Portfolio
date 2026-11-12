@@ -1,8 +1,9 @@
-import { FaReact, FaNodeJs, FaPython, FaGithub, FaDocker } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaPython, FaGithub } from "react-icons/fa";
 import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
 import {
-  SiDjango, SiNestjs, SiTypescript, SiBootstrap, SiJquery,
-  SiSupabase, SiVite, SiCypress, SiCloudflare, SiVercel, SiPostgresql, SiRedis, SiLeaflet
+  SiDjango, SiNestjs, SiTypescript,
+  SiSupabase, SiVite, SiCypress, SiCloudflare, SiVercel, SiRedis, SiLeaflet,
+  SiFramer, SiZod, SiVitest, SiRadixui, SiBootstrap, SiJquery
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 
@@ -10,7 +11,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { MdSecurity } from "react-icons/md";
 import { TbShieldLock } from "react-icons/tb";
 import { BsHddNetwork } from "react-icons/bs";
-import { AiOutlinePieChart, AiOutlineFileSearch } from "react-icons/ai";
+import { AiOutlinePieChart, AiOutlineFileSearch, AiOutlineBell } from "react-icons/ai";
 import { GiArtificialIntelligence } from "react-icons/gi";
 
 
@@ -49,7 +50,6 @@ const itemVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: "easeOut",
     },
   },
 };
@@ -89,14 +89,17 @@ const Technologies = () => {
     { icon: <RiNextjsLine className="text-white" />, name: "Next.js", gradient: "from-slate-600/20 to-gray-600/20" },
     { icon: <SiTypescript className="text-blue-400" />, name: "TypeScript", gradient: "from-blue-500/20 to-indigo-500/20" },
     { icon: <SiVite className="text-purple-400" />, name: "Vite", gradient: "from-purple-500/20 to-fuchsia-500/20" },
+    { icon: <SiFramer className="text-pink-400" />, name: "Framer Motion", gradient: "from-pink-500/20 to-rose-500/20" },
   ];
 
   // Estilos & UI
   const stylesTechs = [
     { icon: <RiTailwindCssFill className="text-cyan-400" />, name: "TailwindCSS", gradient: "from-cyan-600/20 to-blue-600/20" },
-    { icon: <SiBootstrap className="text-purple-400" />, name: "Bootstrap", gradient: "from-purple-600/20 to-indigo-600/20" },
-    { icon: <SiJquery className="text-blue-300" />, name: "jQuery", gradient: "from-blue-300/20 to-blue-500/20" },
+    { icon: <SiRadixui className="text-slate-400" />, name: "shadcn/ui", gradient: "from-slate-400/20 to-slate-600/20" },
     { icon: <SiLeaflet className="text-green-500" />, name: "Leaflet", gradient: "from-green-500/20 to-emerald-500/20" },
+    { icon: <AiOutlineBell className="text-red-400" />, name: "SweetAlert2", gradient: "from-red-400/20 to-rose-400/20" },
+    { icon: <SiBootstrap className="text-purple-600" />, name: "Bootstrap", gradient: "from-purple-600/20 to-purple-800/20" },
+    { icon: <SiJquery className="text-blue-600" />, name: "jQuery", gradient: "from-blue-600/20 to-indigo-600/20" },
   ];
 
   // Backend & Lenguajes
@@ -125,6 +128,8 @@ const Technologies = () => {
   const testingTechs = [
     { icon: <SiCypress className="text-fuchsia-500" />, name: "Cypress", gradient: "from-fuchsia-500/20 to-pink-500/20" },
     { icon: <AiOutlineFileSearch className="text-lime-400" />, name: "Playwright", gradient: "from-lime-400/20 to-green-400/20" },
+    { icon: <SiVitest className="text-yellow-500" />, name: "Vitest", gradient: "from-yellow-500/20 to-amber-500/20" },
+    { icon: <SiZod className="text-red-400" />, name: "Zod", gradient: "from-red-400/20 to-rose-400/20" },
   ];
 
   const cyberTechs = [
@@ -151,18 +156,19 @@ const Technologies = () => {
         {t("technologies.title")}
       </motion.h2>
 
-      {/* --- Desarrollo Web --- */}
+      {/* --- Frontend & Frameworks --- */}
       <h3 className="text-xl text-cyan-400 font-semibold text-center mt-10 mb-6">
         💻 Frontend & Frameworks
       </h3>
       <motion.div
-        whileInView={{ opacity: 1 }}
-        initial={{ opacity: 0 }}
-        transition={{ duration: 1.5 }}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
         className="flex flex-wrap items-center justify-center gap-8 mb-12"
       >
         {frontendTechs.map((tech, i) => (
-          <TechIcon key={i} icon={tech.icon} name={tech.name} gradient={tech.gradient} duration={2 + i * 0.3} />
+          <TechIcon key={i} icon={tech.icon} name={tech.name} gradient={tech.gradient} duration={2 + i * 0.2} />
         ))}
       </motion.div>
 
@@ -171,13 +177,14 @@ const Technologies = () => {
         🎨 Estilos & UI
       </h3>
       <motion.div
-        whileInView={{ opacity: 1 }}
-        initial={{ opacity: 0 }}
-        transition={{ duration: 1.5 }}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
         className="flex flex-wrap items-center justify-center gap-8 mb-12"
       >
         {stylesTechs.map((tech, i) => (
-          <TechIcon key={i} icon={tech.icon} name={tech.name} gradient={tech.gradient} duration={2.2 + i * 0.3} />
+          <TechIcon key={i} icon={tech.icon} name={tech.name} gradient={tech.gradient} duration={2.2 + i * 0.2} />
         ))}
       </motion.div>
 
@@ -186,13 +193,14 @@ const Technologies = () => {
         🔧 Backend & Lenguajes
       </h3>
       <motion.div
-        whileInView={{ opacity: 1 }}
-        initial={{ opacity: 0 }}
-        transition={{ duration: 1.5 }}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
         className="flex flex-wrap items-center justify-center gap-8 mb-12"
       >
         {backendTechs.map((tech, i) => (
-          <TechIcon key={i} icon={tech.icon} name={tech.name} gradient={tech.gradient} duration={2.4 + i * 0.3} />
+          <TechIcon key={i} icon={tech.icon} name={tech.name} gradient={tech.gradient} duration={2.4 + i * 0.2} />
         ))}
       </motion.div>
 
@@ -201,13 +209,14 @@ const Technologies = () => {
         🗄️ Bases de Datos
       </h3>
       <motion.div
-        whileInView={{ opacity: 1 }}
-        initial={{ opacity: 0 }}
-        transition={{ duration: 1.5 }}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
         className="flex flex-wrap items-center justify-center gap-8 mb-12"
       >
         {databaseTechs.map((tech, i) => (
-          <TechIcon key={i} icon={tech.icon} name={tech.name} gradient={tech.gradient} duration={2.6 + i * 0.3} />
+          <TechIcon key={i} icon={tech.icon} name={tech.name} gradient={tech.gradient} duration={2.6 + i * 0.2} />
         ))}
       </motion.div>
 
@@ -216,13 +225,14 @@ const Technologies = () => {
         ☁️ Cloud & DevOps
       </h3>
       <motion.div
-        whileInView={{ opacity: 1 }}
-        initial={{ opacity: 0 }}
-        transition={{ duration: 1.5 }}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
         className="flex flex-wrap items-center justify-center gap-8 mb-12"
       >
         {cloudTechs.map((tech, i) => (
-          <TechIcon key={i} icon={tech.icon} name={tech.name} gradient={tech.gradient} duration={2.8 + i * 0.3} />
+          <TechIcon key={i} icon={tech.icon} name={tech.name} gradient={tech.gradient} duration={2.8 + i * 0.2} />
         ))}
       </motion.div>
 
@@ -231,13 +241,14 @@ const Technologies = () => {
         ✅ Testing & QA
       </h3>
       <motion.div
-        whileInView={{ opacity: 1 }}
-        initial={{ opacity: 0 }}
-        transition={{ duration: 1.5 }}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
         className="flex flex-wrap items-center justify-center gap-8 mb-12"
       >
         {testingTechs.map((tech, i) => (
-          <TechIcon key={i} icon={tech.icon} name={tech.name} gradient={tech.gradient} duration={3 + i * 0.3} />
+          <TechIcon key={i} icon={tech.icon} name={tech.name} gradient={tech.gradient} duration={3 + i * 0.2} />
         ))}
       </motion.div>
 
@@ -246,13 +257,14 @@ const Technologies = () => {
         🛡️ Ciberseguridad
       </h3>
       <motion.div
-        whileInView={{ opacity: 1 }}
-        initial={{ opacity: 0 }}
-        transition={{ duration: 1.5 }}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
         className="flex flex-wrap items-center justify-center gap-8 mb-12"
       >
         {cyberTechs.map((tech, i) => (
-          <TechIcon key={i} icon={tech.icon} name={tech.name} gradient={tech.gradient} duration={3.2 + i * 0.3} />
+          <TechIcon key={i} icon={tech.icon} name={tech.name} gradient={tech.gradient} duration={3.2 + i * 0.2} />
         ))}
       </motion.div>
 
