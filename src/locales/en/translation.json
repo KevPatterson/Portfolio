@@ -135,6 +135,12 @@
       "technologies": ["Python", "React.js", "TailwindCSS", "Vite", "Supabase", "TypeScript"],
       "url": "https://encantshop.vercel.app/"
     },
+    {
+      "title": "Anniversary Gift — Romantic Personalized Page",
+      "description": "Interactive and emotional page designed as an anniversary gift. Features a real-time counter for time spent together, horizontal-scrolling photo gallery, interactive timeline of special moments, personalized letter, background music, delicate animations, and a playful surprise section. Includes integrated QR code for quick access and a separate page to generate, customize, and download it. Warm design with romantic color palette (wine, rose, and cream tones) and elegant Cormorant Garamond typography.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "url": "https://kevpatterson.github.io/regalo-aniversario/"
+    },
 		{
 			"title": "Sinergia Cuba - Multi-tenant SaaS ERP for Cuban SMEs",
 			"description": "Sinergia Cuba is a SaaS ERP designed for Cuban SMEs that combines daily operations (inventory, material requests, invoicing) with tax compliance and financial analysis. The platform is multi-tenant (one company = one isolated space), offline-first (PWA + intelligent synchronization), and prepared to generate reports and exports compatible with the requirements of ONAT and the Ministry of Finance and Prices.",

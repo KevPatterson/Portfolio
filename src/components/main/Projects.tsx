@@ -39,6 +39,7 @@ import patitasImg from "../../assets/projects/patitas.png"
 import encantshopImg from "../../assets/projects/encantshop.png.png"
 import goalstreamImg from "../../assets/projects/goalstream.svg"
 import subfinderImg from "../../assets/projects/subfinder.svg"
+import regaloAniversarioImg from "../../assets/projects/regalo-aniversario.png"
 
 interface ImageMap {
   [key: string]: string;
@@ -106,6 +107,8 @@ const fallbackImageMap: ImageMap = {
   "Veterinary Patient Management": veterinariaImg,
   "Control de Presupuesto": budgetImg,
   "Budget Control": budgetImg,
+  "Regalo Aniversario — Página Personalizada Romántica": regaloAniversarioImg,
+  "Anniversary Gift — Romantic Personalized Page": regaloAniversarioImg,
 }
 
 interface ProjectImageProps {
