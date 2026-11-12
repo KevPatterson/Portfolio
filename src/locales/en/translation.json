@@ -1,7 +1,7 @@
 {
   "hero": {
     "name": "Kevin Patterson",
-    "fullStackDeveloper": "Cybersecurity Engineer & Full Stack Web Developer",
+    "fullStackDeveloper": "Cybersecurity Engineer & Web Developer",
     "content": "I'm a passionate Cybersecurity Engineer and Web Developer, specialized in creating robust, scalable, and secure web applications. I study Cybersecurity Engineering at the University of Informatics Sciences (UCI) in Havana and have solid hands-on experience with modern technologies such as React, Next.js, Node.js, Django, PostgreSQL, and MySQL, combined with an advanced focus on offensive and defensive security. I have participated in Capture the Flag competitions, vulnerability analysis projects, E2E test automation, and perimeter protection using tools like Nmap, Wireshark, Burp Suite, Nessus, Metasploit, Shodan, and OpenVAS, among others. I also have experience in Cyber Intelligence and OSINT, applying methodologies for early detection of data leaks, exposure of critical services, and corporate digital footprint analysis, supported by tools such as Maltego, SpiderFoot, theHarvester, Shodan, and Google Dorks."
   },
   "about": {
@@ -185,27 +185,31 @@
     },
     {
       "title": "CuadreCaja - Offline Cash Register System",
-      "description": "PWA for managing daily cash register reconciliation in Cuban small and medium businesses. Works completely offline with local storage, includes 6-step wizard, OCR with Gemini to scan previous reconciliations, and CSV/PDF export.",
+      "description": "Progressive web app for daily cash reconciliation in small and medium Cuban businesses. Works completely offline with local IndexedDB storage. Includes 6-step wizard: shift configuration, OCR with Gemini to scan previous reconciliation documents, product inventory, income/expense tracking, physical cash audit with bill/coin counting, and final summary. Features: complete reconciliation history with filters, advanced search, CSV/PDF export, backup import, automatic backups every 5 minutes, service worker caching, and manual sync between devices.",
       "technologies": [
         "Next.js",
-        "React.js",
+        "React",
         "TypeScript",
         "TailwindCSS",
-        "PWA"
+        "PWA",
+        "Gemini API",
+        "IndexedDB"
       ],
-      "code": "https://github.com/KevPatterson/cuadrecaja",
       "url": "https://micuadre.vercel.app",
       "image": "cuadrecaja.png"
     },
     {
       "title": "Serbero Ink - Tattoo Studio Website",
-      "description": "Tattoo studio website with integrated custom CMS. Operates without traditional database, content lives in versioned files on GitHub. Includes automatic ES/EN translation, password-protected admin panel, and automatic content refresh.",
+      "description": "Tattoo studio website with integrated headless CMS at /admin. Zero database architecture: all content lives in GitHub-versioned JSON files with automatic sync. Public homepage with real-time content polling (5-second refresh). CMS panel password-protected with 12-hour sessions, httpOnly signed cookie authentication, automatic ES/EN translation via Azure Translator or Gemini, image upload management, real-time section editing, and version history. Deployed on Vercel with optional Upstash Redis for distributed rate limiting.",
       "technologies": [
         "Next.js",
-        "React.js",
+        "React",
         "TypeScript",
         "TailwindCSS",
-        "GitHub API"
+        "GitHub API",
+        "Sonner",
+        "Azure Translator",
+        "Gemini API"
       ],
       "url": "https://serberoink.vercel.app"
     },

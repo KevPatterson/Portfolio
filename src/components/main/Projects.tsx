@@ -87,7 +87,7 @@ const fallbackImageMap: ImageMap = {
   "GoalStream - Football Streaming Platform": goalstreamImg,
   "Serbero Ink - Sitio Web de Estudio de Tatuajes": serberoinkImg,
   "Serbero Ink - Tattoo Studio Website": serberoinkImg,
-  "CuadreCaja - Sistema de Cuadre de Caja Offline": cuadreCajaImg,
+  "CuadreCaja - Sistema de Cuadratura de Caja Offline": cuadreCajaImg,
   "CuadreCaja - Offline Cash Register System": cuadreCajaImg,
   "OSINT Terminal - Herramienta de Inteligencia de Fuentes Abiertas": osintFrameworkImg,
   "OSINT Terminal - Open Source Intelligence Tool": osintFrameworkImg,

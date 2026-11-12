@@ -1,7 +1,7 @@
 {
   "hero": {
     "name": "Kevin Patterson",
-    "fullStackDeveloper": "Ingeniero en Ciberseguridad y Desarrollador web Full Stack",
+    "fullStackDeveloper": "Ingeniero en Ciberseguridad y Desarrollador web",
     "content": "Soy un ingeniero en Ciberseguridad y desarrollador web apasionado, especializado en crear aplicaciones web robustas, escalables y seguras. Estudio Ingeniería en Ciberseguridad en la Universidad de Ciencias Informáticas (UCI) de La Habana y poseo una sólida experiencia práctica en tecnologías modernas como React, Next.js, Node.js, Django, PostgreSQL y MySQL, combinadas con un enfoque avanzado en seguridad ofensiva y defensiva. He participado en competencias de Capture the Flag, en proyectos de análisis de vulnerabilidades, automatización de pruebas E2E y protección perimetral, utilizando herramientas como Nmap, Wireshark, Burp Suite, Nessus, Metasploit, Shodan, OpenVAS, entre otras. También tengo experiencia en Ciberinteligencia y OSINT, aplicando metodologías para detección temprana de filtraciones, exposición de servicios críticos y análisis de huella digital corporativa, apoyado en herramientas como Shodan y Google Dorks."
   },
   "about": {
@@ -184,27 +184,31 @@
     },
     {
       "title": "CuadreCaja - Sistema de Cuadratura de Caja Offline",
-      "description": "PWA para gestionar la cuadratura diaria de caja en pequeñas y medianas empresas cubanas. Funciona completamente offline con almacenamiento local, incluye asistente de 6 pasos, OCR con Gemini para escanear cuadraturas previas, y exportación a CSV/PDF.",
+      "description": "Aplicación web progresiva para cuadre de caja diario en pequeñas y medianas empresas cubanas. Funciona completamente offline con almacenamiento local en IndexedDB. Incluye wizard de 6 pasos: configuración de turno, OCR con Gemini para escanear cuadres anteriores, inventario de productos, registro de ingresos/gastos, arqueo físico de billetes, y resumen final. Características: historial completo de cuadres con filtros, búsqueda avanzada, exportación a CSV/PDF, importación de respaldos, respaldos automáticos cada 5 minutos, service worker para caché, y sincronización manual entre dispositivos.",
       "technologies": [
         "Next.js",
-        "React.js",
+        "React",
         "TypeScript",
         "TailwindCSS",
-        "PWA"
+        "PWA",
+        "Gemini API",
+        "IndexedDB"
       ],
-      "code": "https://github.com/KevPatterson/cuadrecaja",
       "url": "https://micuadre.vercel.app",
       "image": "cuadrecaja.png"
     },
     {
       "title": "Serbero Ink - Sitio Web de Estudio de Tatuajes",
-      "description": "Sitio web de estudio de tatuajes con CMS personalizado integrado. Opera sin base de datos tradicional, el contenido vive en archivos versionados en GitHub. Incluye traducción automática ES/EN, panel de administración protegido por contraseña y refresco automático de contenido.",
+      "description": "Sitio web de estudio de tatuajes con CMS headless integrado en /admin. Arquitectura sin base de datos: todo el contenido vive en archivos JSON versionados en GitHub con sincronización automática. Homepage pública con polling de contenido en tiempo real (refresco cada 5 segundos). Panel CMS protegido por contraseña con sesiones de 12 horas, autenticación basada en cookies httpOnly firmadas, traducción automática ES/EN mediante Azure Translator o Gemini API, gestión de subida de imágenes, edición de secciones en tiempo real, e historial de versiones. Despliegue en Vercel con soporte opcional de Upstash Redis para rate limiting distribuido.",
       "technologies": [
         "Next.js",
-        "React.js",
+        "React",
         "TypeScript",
         "TailwindCSS",
-        "GitHub API"
+        "GitHub API",
+        "Sonner",
+        "Azure Translator",
+        "Gemini API"
       ],
       "url": "https://serberoink.vercel.app"
     },
